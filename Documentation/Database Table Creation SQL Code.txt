@@ -1,0 +1,87 @@
+-- Create the User table
+CREATE TABLE [User] (
+    UserID VARCHAR(10) PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    UserName VARCHAR(50) NOT NULL UNIQUE,
+    PasswordHash VARCHAR(255) NOT NULL,
+    Role VARCHAR(20) NOT NULL CHECK (Role IN ('Manager', 'SalesRepresentative'))
+);
+
+-- Create the Supplier table
+CREATE TABLE Supplier (
+    SupplierID INT PRIMARY KEY IDENTITY(1,1),
+    SupplierName VARCHAR(100) NOT NULL UNIQUE,
+    ContactName VARCHAR(100),
+    ContactEmail VARCHAR(100),
+    ContactPhone VARCHAR(20)
+);
+
+-- Create the Customer table
+CREATE TABLE Customer (
+    CustomerID INT PRIMARY KEY IDENTITY(1,1),
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    PhoneNumber VARCHAR(20),
+    Email VARCHAR(100)
+);
+
+-- Create the Product table
+CREATE TABLE Product (
+    ProductID INT PRIMARY KEY IDENTITY(1,1),
+    ProductName VARCHAR(100) NOT NULL,
+    Category VARCHAR(50) NOT NULL,
+    Description TEXT,
+    Price DECIMAL(10, 2) NOT NULL,
+    Cost DECIMAL(10, 2) NOT NULL,
+    StockQuantity INT NOT NULL DEFAULT 0,
+    SKU VARCHAR(50) NOT NULL UNIQUE,
+    SupplierID INT,
+    FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
+);
+
+-- Create the Discount table
+CREATE TABLE Discount (
+    DiscountID INT PRIMARY KEY IDENTITY(1,1),
+    DiscountName VARCHAR(100) NOT NULL,
+    DiscountType VARCHAR(20) NOT NULL CHECK (DiscountType IN ('Percentage', 'FixedAmount')),
+    DiscountValue DECIMAL(10, 2) NOT NULL,
+    ApplicableTo VARCHAR(50),
+    StartDate DATE,
+    EndDate DATE
+);
+
+-- Create the Sale table
+CREATE TABLE Sale (
+    SaleID INT PRIMARY KEY IDENTITY(1,1),
+    SaleDate DATETIME NOT NULL,
+    TotalAmount DECIMAL(10, 2) NOT NULL,
+    PaymentMethod VARCHAR(50) NOT NULL,
+    SalesRepresentativeID VARCHAR(10),
+    CustomerID INT,
+    FOREIGN KEY (SalesRepresentativeID) REFERENCES [User](UserID),
+    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
+);
+
+-- Create the SaleItem table
+CREATE TABLE SaleItem (
+    SaleItemID INT PRIMARY KEY IDENTITY(1,1),
+    SaleID INT,
+    ProductID INT,
+    Quantity INT NOT NULL CHECK (Quantity > 0),
+    UnitPrice DECIMAL(10, 2) NOT NULL,
+    DiscountApplied DECIMAL(10, 2) NOT NULL DEFAULT 0,
+    FOREIGN KEY (SaleID) REFERENCES Sale(SaleID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
+);
+
+-- Create the Expense table
+CREATE TABLE Expense (
+    ExpenseID INT PRIMARY KEY IDENTITY(1,1),
+    ExpenseDate DATE NOT NULL,
+    ExpenseCategory VARCHAR(50) NOT NULL,
+    Description TEXT,
+    Amount DECIMAL(10, 2) NOT NULL,
+    UserID VARCHAR(10),
+    FOREIGN KEY (UserID) REFERENCES [User](UserID)
+);

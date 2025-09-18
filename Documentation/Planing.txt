@@ -1,0 +1,87 @@
+This is an excellent approach. Prioritizing core features for the initial release is the most effective way to get your application up and running. Skipping the more complex functionalities like stock returns, bundle discounts, and a dynamic targets system for now is a smart and practical decision.
+
+Given your updated plan, here is a refined and finalized entity list, along with a summary of the simplified feature set, to serve as your definitive blueprint for the initial build.
+
+### Finalized Entities List (for Initial Build)
+
+### 1. User
+* **`UserID`**: Primary Key
+* **`FirstName`**: User's first name
+* **`LastName`**: User's last name
+* **`UserName`**: For login
+* **`PasswordHash`**: Secure password storage
+* **`Role`**: (e.g., 'Manager', 'Sales Representative')
+
+### 2. Customer
+* **`CustomerID`**: Primary Key
+* **`FirstName`**: Customer's first name
+* **`LastName`**: Customer's last name
+* **`PhoneNumber`**: Contact number
+* **`Email`**: Email address
+
+### 3. Product
+* **`ProductID`**: Primary Key
+* **`ProductName`**: Name of the product
+* **`Category`**: (e.g., 'CPU', 'GPU')
+* **`Description`**: A brief description
+* **`Price`**: The standard selling price
+* **`Cost`**: The price paid to the supplier
+* **`StockQuantity`**: The number of units in inventory
+* **`SKU`**: Stock Keeping Unit
+* **`SupplierID`**: Foreign Key linking to the `Supplier` entity
+
+### 4. Supplier
+* **`SupplierID`**: Primary Key
+* **`SupplierName`**: Name of the supplier
+* **`ContactName`**: Primary contact person
+* **`ContactEmail`**: Email for the primary contact
+* **`ContactPhone`**: Phone number for the primary contact
+
+### 5. Sale / Order
+* **`SaleID`**: Primary Key
+* **`SaleDate`**: Date and time of the transaction
+* **`TotalAmount`**: Total cost of the sale after discounts
+* **`PaymentMethod`**: (e.g., 'Cash', 'Card')
+* **`SalesRepresentativeID`**: Foreign Key linking to the `User` who conducted the sale
+* **`CustomerID`**: Foreign Key linking to the `Customer` (optional)
+
+### 6. SaleItem
+* **`SaleItemID`**: Primary Key
+* **`SaleID`**: Foreign Key linking to the `Sale` entity
+* **`ProductID`**: Foreign Key linking to the `Product` entity
+* **`Quantity`**: The number of this product sold
+* **`UnitPrice`**: The price of the item at the time of sale
+* **`DiscountApplied`**: Any discount applied to this item
+
+### 7. Expense
+* **`ExpenseID`**: Primary Key
+* **`ExpenseDate`**: The date the expense was incurred
+* **`ExpenseCategory`**: (e.g., 'Rent', 'Utilities', 'Marketing')
+* **`Description`**: A brief description
+* **`Amount`**: The monetary value of the expense
+* **`UserID`**: Foreign Key linking to the user who recorded the expense (optional)
+
+### 8. Discount / Offer
+* **`DiscountID`**: Primary Key
+* **`DiscountName`**: A descriptive name (e.g., "Manager's Discount")
+* **`DiscountType`**: (e.g., 'Percentage', 'Fixed Amount')
+* **`DiscountValue`**: The value of the discount
+* **`ApplicableTo`**: (e.g., 'All Products', 'Specific Product', 'Category')
+* **`StartDate`**: When the offer becomes active
+* **`EndDate`**: When the offer expires
+
+---
+
+### Key Feature Set for Initial Release (Based on your plan)
+
+1.  **User Authentication:** Managers and sales reps can log in with a username and password.
+2.  **User Roles:** Access to features is determined by the 'Manager' or 'Sales Representative' role.
+3.  **Sales & Billing:** Sales reps can create new sales, add products to a cart, apply discounts, and process payments.
+4.  **Customer Management (Basic):** During a sale, sales reps can quickly add a customer's basic details.
+5.  **Inventory Management:** Sales reps can view product inventory levels. Managers have full control to add, edit, and update product details and stock.
+6.  **Expense Tracking:** Managers can record various shop expenses, with categories for easy filtering.
+7.  **Financial Oversight (Manager-only):** Managers can view total earnings, transaction details, and all recorded expenses. They can also see a simple list of sales per sales rep for performance evaluation.
+8.  **Discounts:** Managers can create and manage basic percentage or fixed-amount discounts that sales reps can apply during a sale.
+9.  **PC Builder (Customer-facing):** A simple interface for customers to select and see the cost of PC components. This feature will have a print-to-PDF/TXT function for the customer to save their build, without storing it in the database.
+
+This refined plan is focused, clear, and provides a perfect starting point for your development. It ensures you build a functional and valuable product quickly, with the potential to expand with the more complex features you've wisely decided to add later.

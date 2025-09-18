@@ -1,0 +1,89 @@
+Here is the list of 2NF database tables with column names for your project.
+
+### 1. User
+This table stores information about the staff who use the system.
+* `UserID` (Primary Key)
+* `FirstName`
+* `LastName`
+* `UserName`
+* `PasswordHash`
+* `Role`
+
+***
+
+### 2. Customer
+This table stores basic details about customers for sales records.
+* `CustomerID` (Primary Key)
+* `FirstName`
+* `LastName`
+* `PhoneNumber`
+* `Email`
+
+***
+
+### 3. Supplier
+This table holds information about the vendors.
+* `SupplierID` (Primary Key)
+* `SupplierName`
+* `ContactName`
+* `ContactEmail`
+* `ContactPhone`
+
+***
+
+### 4. Product
+This table represents your inventory.
+* `ProductID` (Primary Key)
+* `ProductName`
+* `Category`
+* `Description`
+* `Price`
+* `Cost`
+* `StockQuantity`
+* `SKU`
+* `SupplierID` (Foreign Key)
+
+***
+
+### 5. Sale
+This table records overall transaction details.
+* `SaleID` (Primary Key)
+* `SaleDate`
+* `TotalAmount`
+* `PaymentMethod`
+* `SalesRepresentativeID` (Foreign Key)
+* `CustomerID` (Foreign Key, Nullable)
+
+***
+
+### 6. SaleItem
+This table details the specific products in a sale.
+* `SaleItemID` (Primary Key)
+* `SaleID` (Foreign Key)
+* `ProductID` (Foreign Key)
+* `Quantity`
+* `UnitPrice`
+* `DiscountApplied`
+
+***
+
+### 7. Expense
+This table is for tracking business expenses.
+* `ExpenseID` (Primary Key)
+* `ExpenseDate`
+* `ExpenseCategory`
+* `Description`
+* `Amount`
+* `UserID` (Foreign Key, Nullable)
+
+***
+
+### 8. Discount
+This table stores information about price offers.
+* `DiscountID` (Primary Key)
+* `DiscountName`
+* `DiscountType`
+* `DiscountValue`
+* `ApplicableTo`
+* `StartDate`
+* `EndDate`

@@ -1,0 +1,13 @@
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
