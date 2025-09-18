@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.gunaAdminDashboard = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Menu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2rbtnOffers = new Guna.UI2.WinForms.Guna2Button();
             this.gunna2rbtnAnalytics = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnSales = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnEmplyee = new Guna.UI2.WinForms.Guna2Button();
@@ -43,8 +45,6 @@
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
             this.guna2Logo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2rbtnOffers = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Menu.SuspendLayout();
             this.guna2Body.SuspendLayout();
             this.guna2pnlLogo.SuspendLayout();
@@ -83,6 +83,60 @@
             this.guna2Menu.Size = new System.Drawing.Size(200, 700);
             this.guna2Menu.TabIndex = 0;
             // 
+            // guna2btnLogout
+            // 
+            this.guna2btnLogout.Animated = true;
+            this.guna2btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.guna2btnLogout.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2btnLogout.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.guna2btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2btnLogout.FillColor = System.Drawing.Color.Transparent;
+            this.guna2btnLogout.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2btnLogout.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.guna2btnLogout.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2btnLogout.HoverState.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2btnLogout.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2btnLogout.Location = new System.Drawing.Point(9, 620);
+            this.guna2btnLogout.Name = "guna2btnLogout";
+            this.guna2btnLogout.Size = new System.Drawing.Size(180, 45);
+            this.guna2btnLogout.TabIndex = 6;
+            this.guna2btnLogout.Text = "Logout";
+            // 
+            // guna2rbtnOffers
+            // 
+            this.guna2rbtnOffers.Animated = true;
+            this.guna2rbtnOffers.AnimatedGIF = true;
+            this.guna2rbtnOffers.AutoRoundedCorners = true;
+            this.guna2rbtnOffers.BackColor = System.Drawing.Color.Transparent;
+            this.guna2rbtnOffers.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2rbtnOffers.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2rbtnOffers.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.guna2rbtnOffers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2rbtnOffers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2rbtnOffers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2rbtnOffers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2rbtnOffers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.guna2rbtnOffers.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2rbtnOffers.ForeColor = System.Drawing.Color.White;
+            this.guna2rbtnOffers.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2rbtnOffers.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.guna2rbtnOffers.Image = ((System.Drawing.Image)(resources.GetObject("guna2rbtnOffers.Image")));
+            this.guna2rbtnOffers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2rbtnOffers.ImageOffset = new System.Drawing.Point(20, 0);
+            this.guna2rbtnOffers.Location = new System.Drawing.Point(9, 540);
+            this.guna2rbtnOffers.Name = "guna2rbtnOffers";
+            this.guna2rbtnOffers.Size = new System.Drawing.Size(180, 45);
+            this.guna2rbtnOffers.TabIndex = 5;
+            this.guna2rbtnOffers.Text = "Offers";
+            this.guna2rbtnOffers.TextOffset = new System.Drawing.Point(6, 0);
+            // 
             // gunna2rbtnAnalytics
             // 
             this.gunna2rbtnAnalytics.Animated = true;
@@ -109,8 +163,7 @@
             this.gunna2rbtnAnalytics.Size = new System.Drawing.Size(180, 45);
             this.gunna2rbtnAnalytics.TabIndex = 4;
             this.gunna2rbtnAnalytics.Text = "Analytics";
-            this.gunna2rbtnAnalytics.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunna2rbtnAnalytics.TextOffset = new System.Drawing.Point(-5, 0);
+            this.gunna2rbtnAnalytics.TextOffset = new System.Drawing.Point(20, 0);
             // 
             // guna2rbtnSales
             // 
@@ -138,8 +191,7 @@
             this.guna2rbtnSales.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnSales.TabIndex = 3;
             this.guna2rbtnSales.Text = "Sales";
-            this.guna2rbtnSales.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2rbtnSales.TextOffset = new System.Drawing.Point(-23, 0);
+            this.guna2rbtnSales.TextOffset = new System.Drawing.Point(2, 0);
             // 
             // guna2rbtnEmplyee
             // 
@@ -167,8 +219,7 @@
             this.guna2rbtnEmplyee.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnEmplyee.TabIndex = 2;
             this.guna2rbtnEmplyee.Text = "Employee";
-            this.guna2rbtnEmplyee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2rbtnEmplyee.TextOffset = new System.Drawing.Point(-10, 0);
+            this.guna2rbtnEmplyee.TextOffset = new System.Drawing.Point(17, 0);
             // 
             // gunn2rbtnInventory
             // 
@@ -196,8 +247,7 @@
             this.gunn2rbtnInventory.Size = new System.Drawing.Size(180, 45);
             this.gunn2rbtnInventory.TabIndex = 2;
             this.gunn2rbtnInventory.Text = "Inventory";
-            this.gunn2rbtnInventory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunn2rbtnInventory.TextOffset = new System.Drawing.Point(-7, 0);
+            this.gunn2rbtnInventory.TextOffset = new System.Drawing.Point(21, 0);
             // 
             // guna2rbtnHome
             // 
@@ -310,61 +360,6 @@
             this.guna2Logo.TabIndex = 4;
             this.guna2Logo.TabStop = false;
             this.guna2Logo.UseTransparentBackground = true;
-            // 
-            // guna2rbtnOffers
-            // 
-            this.guna2rbtnOffers.Animated = true;
-            this.guna2rbtnOffers.AnimatedGIF = true;
-            this.guna2rbtnOffers.AutoRoundedCorners = true;
-            this.guna2rbtnOffers.BackColor = System.Drawing.Color.Transparent;
-            this.guna2rbtnOffers.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2rbtnOffers.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2rbtnOffers.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2rbtnOffers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2rbtnOffers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2rbtnOffers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2rbtnOffers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2rbtnOffers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnOffers.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.guna2rbtnOffers.ForeColor = System.Drawing.Color.White;
-            this.guna2rbtnOffers.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2rbtnOffers.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2rbtnOffers.Image = ((System.Drawing.Image)(resources.GetObject("guna2rbtnOffers.Image")));
-            this.guna2rbtnOffers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2rbtnOffers.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2rbtnOffers.Location = new System.Drawing.Point(9, 540);
-            this.guna2rbtnOffers.Name = "guna2rbtnOffers";
-            this.guna2rbtnOffers.Size = new System.Drawing.Size(180, 45);
-            this.guna2rbtnOffers.TabIndex = 5;
-            this.guna2rbtnOffers.Text = "Offers";
-            this.guna2rbtnOffers.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2rbtnOffers.TextOffset = new System.Drawing.Point(-18, 0);
-            // 
-            // guna2btnLogout
-            // 
-            this.guna2btnLogout.Animated = true;
-            this.guna2btnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.guna2btnLogout.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2btnLogout.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2btnLogout.FillColor = System.Drawing.Color.Transparent;
-            this.guna2btnLogout.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2btnLogout.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.guna2btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.guna2btnLogout.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2btnLogout.HoverState.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2btnLogout.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2btnLogout.Location = new System.Drawing.Point(9, 620);
-            this.guna2btnLogout.Name = "guna2btnLogout";
-            this.guna2btnLogout.Size = new System.Drawing.Size(180, 45);
-            this.guna2btnLogout.TabIndex = 6;
-            this.guna2btnLogout.Text = "Logout";
             // 
             // AdminDashboard
             // 
