@@ -40,6 +40,11 @@
             this.rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblAdminName = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
@@ -47,6 +52,8 @@
             this.Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlBody.SuspendLayout();
+            this.pnlHeading.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -291,15 +298,87 @@
             this.pnlBody.BorderColor = System.Drawing.Color.Transparent;
             this.pnlBody.BorderRadius = 10;
             this.pnlBody.BorderThickness = 1;
-            this.pnlBody.Controls.Add(this.btnExit);
+            this.pnlBody.Controls.Add(this.pnlHeading);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.FillColor = System.Drawing.Color.White;
             this.pnlBody.FillColor2 = System.Drawing.Color.White;
             this.pnlBody.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlBody.Location = new System.Drawing.Point(210, 10);
             this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pnlBody.Size = new System.Drawing.Size(1060, 700);
             this.pnlBody.TabIndex = 1;
+            // 
+            // pnlHeading
+            // 
+            this.pnlHeading.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.pnlHeading.BorderRadius = 10;
+            this.pnlHeading.BorderThickness = 2;
+            this.pnlHeading.Controls.Add(this.lblRole);
+            this.pnlHeading.Controls.Add(this.guna2PictureBox1);
+            this.pnlHeading.Controls.Add(this.lblAdminName);
+            this.pnlHeading.Controls.Add(this.lblTitle);
+            this.pnlHeading.Controls.Add(this.btnExit);
+            this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeading.FillColor = System.Drawing.Color.Transparent;
+            this.pnlHeading.FillColor2 = System.Drawing.Color.Transparent;
+            this.pnlHeading.FillColor3 = System.Drawing.Color.Transparent;
+            this.pnlHeading.FillColor4 = System.Drawing.Color.Transparent;
+            this.pnlHeading.Location = new System.Drawing.Point(2, 0);
+            this.pnlHeading.Name = "pnlHeading";
+            this.pnlHeading.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlHeading.Size = new System.Drawing.Size(1056, 100);
+            this.pnlHeading.TabIndex = 1;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.lblRole.Location = new System.Drawing.Point(886, 66);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(45, 14);
+            this.lblRole.TabIndex = 6;
+            this.lblRole.Text = "Admin";
+            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BorderRadius = 10;
+            this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(807, 30);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(73, 50);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 5;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // lblAdminName
+            // 
+            this.lblAdminName.AutoSize = true;
+            this.lblAdminName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminName.Location = new System.Drawing.Point(885, 34);
+            this.lblAdminName.Name = "lblAdminName";
+            this.lblAdminName.Size = new System.Drawing.Size(54, 24);
+            this.lblAdminName.TabIndex = 3;
+            this.lblAdminName.Text = "Alex";
+            this.lblAdminName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(20, 25);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(98, 33);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Home";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnExit
             // 
@@ -313,10 +392,10 @@
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
             this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1012, 3);
+            this.btnExit.Location = new System.Drawing.Point(1007, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 0;
+            this.btnExit.TabIndex = 1;
             // 
             // pnlLogo
             // 
@@ -336,7 +415,7 @@
             this.lblMoto.BackColor = System.Drawing.Color.Transparent;
             this.lblMoto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoto.ForeColor = System.Drawing.Color.Black;
-            this.lblMoto.Location = new System.Drawing.Point(18, 142);
+            this.lblMoto.Location = new System.Drawing.Point(20, 146);
             this.lblMoto.Name = "lblMoto";
             this.lblMoto.Size = new System.Drawing.Size(154, 34);
             this.lblMoto.TabIndex = 5;
@@ -348,7 +427,7 @@
             this.lblSiliconSource.BackColor = System.Drawing.Color.Transparent;
             this.lblSiliconSource.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSiliconSource.ForeColor = System.Drawing.Color.Black;
-            this.lblSiliconSource.Location = new System.Drawing.Point(17, 109);
+            this.lblSiliconSource.Location = new System.Drawing.Point(19, 111);
             this.lblSiliconSource.Name = "lblSiliconSource";
             this.lblSiliconSource.Size = new System.Drawing.Size(158, 24);
             this.lblSiliconSource.TabIndex = 3;
@@ -362,7 +441,7 @@
             this.Logo.FillColor = System.Drawing.Color.Transparent;
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
             this.Logo.ImageRotate = 0F;
-            this.Logo.Location = new System.Drawing.Point(43, 3);
+            this.Logo.Location = new System.Drawing.Point(46, 8);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(102, 99);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -387,6 +466,9 @@
             this.Text = "Form1";
             this.pnlMenu.ResumeLayout(false);
             this.pnlBody.ResumeLayout(false);
+            this.pnlHeading.ResumeLayout(false);
+            this.pnlHeading.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
@@ -399,7 +481,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm gunaAdminDashboard;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMenu;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlBody;
-        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
         private System.Windows.Forms.Label lblMoto;
         private System.Windows.Forms.Label lblSiliconSource;
@@ -411,6 +492,12 @@
         private Guna.UI2.WinForms.Guna2Button rbtnAnalytics;
         private Guna.UI2.WinForms.Guna2Button rbtnOffers;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlHeading;
+        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblRole;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label lblAdminName;
     }
 }
 
