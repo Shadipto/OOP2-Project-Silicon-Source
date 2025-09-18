@@ -29,7 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Guna2GradientPanel pnlBody;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
+            this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.pboxAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblAdminName = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.gunaAdminDashboard = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnlMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
@@ -38,25 +46,138 @@
             this.rbtnSales = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnEmplyee = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2rbtnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.lblRole = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblAdminName = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
-            this.Logo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pnlMenu.SuspendLayout();
-            this.pnlBody.SuspendLayout();
+            this.pboxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.inventoryControl = new SiliconSource.InventoryControl();
+            pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
+            pnlBody.SuspendLayout();
             this.pnlHeading.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).BeginInit();
+            this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
+            this.pnlGrid.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlBody
+            // 
+            pnlBody.BackColor = System.Drawing.Color.Transparent;
+            pnlBody.BorderColor = System.Drawing.Color.Transparent;
+            pnlBody.BorderRadius = 10;
+            pnlBody.BorderThickness = 1;
+            pnlBody.Controls.Add(this.pnlGrid);
+            pnlBody.Controls.Add(this.pnlHeading);
+            pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlBody.FillColor = System.Drawing.Color.White;
+            pnlBody.FillColor2 = System.Drawing.Color.White;
+            pnlBody.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            pnlBody.ForeColor = System.Drawing.SystemColors.ControlText;
+            pnlBody.Location = new System.Drawing.Point(210, 10);
+            pnlBody.Name = "pnlBody";
+            pnlBody.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
+            pnlBody.Size = new System.Drawing.Size(1060, 700);
+            pnlBody.TabIndex = 1;
+            // 
+            // pnlHeading
+            // 
+            this.pnlHeading.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.pnlHeading.BorderRadius = 10;
+            this.pnlHeading.BorderThickness = 2;
+            this.pnlHeading.Controls.Add(this.gunaSeperator);
+            this.pnlHeading.Controls.Add(this.lblRole);
+            this.pnlHeading.Controls.Add(this.pboxAdmin);
+            this.pnlHeading.Controls.Add(this.lblAdminName);
+            this.pnlHeading.Controls.Add(this.lblTitle);
+            this.pnlHeading.Controls.Add(this.btnExit);
+            this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeading.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor3 = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor4 = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.Location = new System.Drawing.Point(5, 0);
+            this.pnlHeading.Name = "pnlHeading";
+            this.pnlHeading.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlHeading.Size = new System.Drawing.Size(1053, 100);
+            this.pnlHeading.TabIndex = 1;
+            // 
+            // gunaSeperator
+            // 
+            this.gunaSeperator.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.gunaSeperator.Location = new System.Drawing.Point(815, 82);
+            this.gunaSeperator.Name = "gunaSeperator";
+            this.gunaSeperator.Size = new System.Drawing.Size(130, 10);
+            this.gunaSeperator.TabIndex = 3;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.lblRole.Location = new System.Drawing.Point(886, 66);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(45, 14);
+            this.lblRole.TabIndex = 6;
+            this.lblRole.Text = "Admin";
+            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pboxAdmin
+            // 
+            this.pboxAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.pboxAdmin.BorderRadius = 10;
+            this.pboxAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.ErrorImage")));
+            this.pboxAdmin.FillColor = System.Drawing.Color.Transparent;
+            this.pboxAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.Image")));
+            this.pboxAdmin.ImageRotate = 0F;
+            this.pboxAdmin.Location = new System.Drawing.Point(807, 30);
+            this.pboxAdmin.Name = "pboxAdmin";
+            this.pboxAdmin.Size = new System.Drawing.Size(73, 50);
+            this.pboxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboxAdmin.TabIndex = 5;
+            this.pboxAdmin.TabStop = false;
+            this.pboxAdmin.UseTransparentBackground = true;
+            // 
+            // lblAdminName
+            // 
+            this.lblAdminName.AutoSize = true;
+            this.lblAdminName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminName.Location = new System.Drawing.Point(885, 34);
+            this.lblAdminName.Name = "lblAdminName";
+            this.lblAdminName.Size = new System.Drawing.Size(54, 24);
+            this.lblAdminName.TabIndex = 3;
+            this.lblAdminName.Text = "Alex";
+            this.lblAdminName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(35, 47);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(98, 33);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Home";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 13;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(1004, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 1;
             // 
             // gunaAdminDashboard
             // 
@@ -81,7 +202,7 @@
             this.pnlMenu.Controls.Add(this.rbtnSales);
             this.pnlMenu.Controls.Add(this.rbtnEmplyee);
             this.pnlMenu.Controls.Add(this.rbtnInventory);
-            this.pnlMenu.Controls.Add(this.guna2rbtnHome);
+            this.pnlMenu.Controls.Add(this.rbtnHome);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.pnlMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -263,146 +384,41 @@
             this.rbtnInventory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.rbtnInventory.TextOffset = new System.Drawing.Point(-12, 0);
             // 
-            // guna2rbtnHome
+            // rbtnHome
             // 
-            this.guna2rbtnHome.Animated = true;
-            this.guna2rbtnHome.AnimatedGIF = true;
-            this.guna2rbtnHome.AutoRoundedCorners = true;
-            this.guna2rbtnHome.BackColor = System.Drawing.Color.Transparent;
-            this.guna2rbtnHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2rbtnHome.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2rbtnHome.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2rbtnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2rbtnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2rbtnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2rbtnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2rbtnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2rbtnHome.ForeColor = System.Drawing.Color.White;
-            this.guna2rbtnHome.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2rbtnHome.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2rbtnHome.Image = ((System.Drawing.Image)(resources.GetObject("guna2rbtnHome.Image")));
-            this.guna2rbtnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2rbtnHome.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2rbtnHome.Location = new System.Drawing.Point(9, 240);
-            this.guna2rbtnHome.Name = "guna2rbtnHome";
-            this.guna2rbtnHome.Size = new System.Drawing.Size(180, 45);
-            this.guna2rbtnHome.TabIndex = 1;
-            this.guna2rbtnHome.Text = "Home";
-            this.guna2rbtnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2rbtnHome.TextOffset = new System.Drawing.Point(-25, 0);
-            // 
-            // pnlBody
-            // 
-            this.pnlBody.BackColor = System.Drawing.Color.Transparent;
-            this.pnlBody.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlBody.BorderRadius = 10;
-            this.pnlBody.BorderThickness = 1;
-            this.pnlBody.Controls.Add(this.pnlHeading);
-            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.FillColor = System.Drawing.Color.White;
-            this.pnlBody.FillColor2 = System.Drawing.Color.White;
-            this.pnlBody.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlBody.Location = new System.Drawing.Point(210, 10);
-            this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.pnlBody.Size = new System.Drawing.Size(1060, 700);
-            this.pnlBody.TabIndex = 1;
-            // 
-            // pnlHeading
-            // 
-            this.pnlHeading.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.pnlHeading.BorderRadius = 10;
-            this.pnlHeading.BorderThickness = 2;
-            this.pnlHeading.Controls.Add(this.lblRole);
-            this.pnlHeading.Controls.Add(this.guna2PictureBox1);
-            this.pnlHeading.Controls.Add(this.lblAdminName);
-            this.pnlHeading.Controls.Add(this.lblTitle);
-            this.pnlHeading.Controls.Add(this.btnExit);
-            this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeading.FillColor = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor2 = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor3 = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor4 = System.Drawing.Color.Transparent;
-            this.pnlHeading.Location = new System.Drawing.Point(2, 0);
-            this.pnlHeading.Name = "pnlHeading";
-            this.pnlHeading.Padding = new System.Windows.Forms.Padding(10);
-            this.pnlHeading.Size = new System.Drawing.Size(1056, 100);
-            this.pnlHeading.TabIndex = 1;
-            // 
-            // lblRole
-            // 
-            this.lblRole.AutoSize = true;
-            this.lblRole.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.lblRole.Location = new System.Drawing.Point(886, 66);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(45, 14);
-            this.lblRole.TabIndex = 6;
-            this.lblRole.Text = "Admin";
-            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderRadius = 10;
-            this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(807, 30);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(73, 50);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 5;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // lblAdminName
-            // 
-            this.lblAdminName.AutoSize = true;
-            this.lblAdminName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminName.Location = new System.Drawing.Point(885, 34);
-            this.lblAdminName.Name = "lblAdminName";
-            this.lblAdminName.Size = new System.Drawing.Size(54, 24);
-            this.lblAdminName.TabIndex = 3;
-            this.lblAdminName.Text = "Alex";
-            this.lblAdminName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(20, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(98, 33);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "Home";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 13;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1007, 5);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 1;
+            this.rbtnHome.Animated = true;
+            this.rbtnHome.AnimatedGIF = true;
+            this.rbtnHome.AutoRoundedCorners = true;
+            this.rbtnHome.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.rbtnHome.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbtnHome.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.rbtnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.rbtnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.rbtnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnHome.ForeColor = System.Drawing.Color.White;
+            this.rbtnHome.HoverState.FillColor = System.Drawing.Color.White;
+            this.rbtnHome.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnHome.Image = ((System.Drawing.Image)(resources.GetObject("rbtnHome.Image")));
+            this.rbtnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbtnHome.ImageOffset = new System.Drawing.Point(20, 0);
+            this.rbtnHome.Location = new System.Drawing.Point(9, 240);
+            this.rbtnHome.Name = "rbtnHome";
+            this.rbtnHome.Size = new System.Drawing.Size(180, 45);
+            this.rbtnHome.TabIndex = 1;
+            this.rbtnHome.Text = "Home";
+            this.rbtnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.rbtnHome.TextOffset = new System.Drawing.Point(-25, 0);
             // 
             // pnlLogo
             // 
             this.pnlLogo.BackColor = System.Drawing.Color.Transparent;
             this.pnlLogo.Controls.Add(this.lblMoto);
             this.pnlLogo.Controls.Add(this.lblSiliconSource);
-            this.pnlLogo.Controls.Add(this.Logo);
+            this.pnlLogo.Controls.Add(this.pboxLogo);
             this.pnlLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.pnlLogo.Location = new System.Drawing.Point(10, 28);
             this.pnlLogo.Name = "pnlLogo";
@@ -433,21 +449,42 @@
             this.lblSiliconSource.TabIndex = 3;
             this.lblSiliconSource.Text = "Silicon Source";
             // 
-            // Logo
+            // pboxLogo
             // 
-            this.Logo.BackColor = System.Drawing.Color.Transparent;
-            this.Logo.BorderRadius = 10;
-            this.Logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Logo.ErrorImage")));
-            this.Logo.FillColor = System.Drawing.Color.Transparent;
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.ImageRotate = 0F;
-            this.Logo.Location = new System.Drawing.Point(46, 8);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(102, 99);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 4;
-            this.Logo.TabStop = false;
-            this.Logo.UseTransparentBackground = true;
+            this.pboxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pboxLogo.BorderRadius = 10;
+            this.pboxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pboxLogo.ErrorImage")));
+            this.pboxLogo.FillColor = System.Drawing.Color.Transparent;
+            this.pboxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pboxLogo.Image")));
+            this.pboxLogo.ImageRotate = 0F;
+            this.pboxLogo.Location = new System.Drawing.Point(46, 8);
+            this.pboxLogo.Name = "pboxLogo";
+            this.pboxLogo.Size = new System.Drawing.Size(102, 99);
+            this.pboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboxLogo.TabIndex = 4;
+            this.pboxLogo.TabStop = false;
+            this.pboxLogo.UseTransparentBackground = true;
+            // 
+            // pnlGrid
+            // 
+            this.pnlGrid.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGrid.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlGrid.BorderRadius = 10;
+            this.pnlGrid.Controls.Add(this.inventoryControl);
+            this.pnlGrid.Location = new System.Drawing.Point(5, 106);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
+            this.pnlGrid.TabIndex = 4;
+            // 
+            // inventoryControl
+            // 
+            this.inventoryControl.BackColor = System.Drawing.Color.White;
+            this.inventoryControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inventoryControl.Location = new System.Drawing.Point(0, 0);
+            this.inventoryControl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.inventoryControl.Name = "inventoryControl";
+            this.inventoryControl.Size = new System.Drawing.Size(1053, 590);
+            this.inventoryControl.TabIndex = 0;
             // 
             // AdminDashboard
             // 
@@ -456,7 +493,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.pnlLogo);
-            this.Controls.Add(this.pnlBody);
+            this.Controls.Add(pnlBody);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -464,14 +501,15 @@
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.pnlMenu.ResumeLayout(false);
-            this.pnlBody.ResumeLayout(false);
+            pnlBody.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).EndInit();
+            this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
+            this.pnlGrid.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -480,12 +518,11 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm gunaAdminDashboard;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMenu;
-        private Guna.UI2.WinForms.Guna2GradientPanel pnlBody;
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
         private System.Windows.Forms.Label lblMoto;
         private System.Windows.Forms.Label lblSiliconSource;
-        private Guna.UI2.WinForms.Guna2PictureBox Logo;
-        private Guna.UI2.WinForms.Guna2Button guna2rbtnHome;
+        private Guna.UI2.WinForms.Guna2PictureBox pboxLogo;
+        private Guna.UI2.WinForms.Guna2Button rbtnHome;
         private Guna.UI2.WinForms.Guna2Button rbtnInventory;
         private Guna.UI2.WinForms.Guna2Button rbtnEmplyee;
         private Guna.UI2.WinForms.Guna2Button rbtnSales;
@@ -496,8 +533,11 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblRole;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pboxAdmin;
         private System.Windows.Forms.Label lblAdminName;
+        private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
+        private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
+        private InventoryControl inventoryControl;
     }
 }
 
