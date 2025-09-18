@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.gunaAdminDashboard = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2Menu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2pnlMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnOffers = new Guna.UI2.WinForms.Guna2Button();
             this.gunna2rbtnAnalytics = new Guna.UI2.WinForms.Guna2Button();
@@ -39,14 +39,14 @@
             this.guna2rbtnEmplyee = new Guna.UI2.WinForms.Guna2Button();
             this.gunn2rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Body = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
             this.guna2Logo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Menu.SuspendLayout();
-            this.guna2Body.SuspendLayout();
+            this.guna2pnlMenu.SuspendLayout();
+            this.guna2pnlBody.SuspendLayout();
             this.guna2pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2Logo)).BeginInit();
             this.SuspendLayout();
@@ -59,33 +59,36 @@
             this.gunaAdminDashboard.ContainerControl = this;
             this.gunaAdminDashboard.DockForm = false;
             this.gunaAdminDashboard.DockIndicatorTransparencyValue = 0.6D;
+            this.gunaAdminDashboard.ResizeForm = false;
             this.gunaAdminDashboard.TransparentWhileDrag = true;
             // 
-            // guna2Menu
+            // guna2pnlMenu
             // 
-            this.guna2Menu.BackColor = System.Drawing.Color.White;
-            this.guna2Menu.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Menu.BorderRadius = 10;
-            this.guna2Menu.BorderThickness = 1;
-            this.guna2Menu.Controls.Add(this.guna2btnLogout);
-            this.guna2Menu.Controls.Add(this.guna2rbtnOffers);
-            this.guna2Menu.Controls.Add(this.gunna2rbtnAnalytics);
-            this.guna2Menu.Controls.Add(this.guna2rbtnSales);
-            this.guna2Menu.Controls.Add(this.guna2rbtnEmplyee);
-            this.guna2Menu.Controls.Add(this.gunn2rbtnInventory);
-            this.guna2Menu.Controls.Add(this.guna2rbtnHome);
-            this.guna2Menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Menu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.guna2Menu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.guna2Menu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Menu.Location = new System.Drawing.Point(10, 10);
-            this.guna2Menu.Name = "guna2Menu";
-            this.guna2Menu.Size = new System.Drawing.Size(200, 700);
-            this.guna2Menu.TabIndex = 0;
+            this.guna2pnlMenu.BackColor = System.Drawing.Color.White;
+            this.guna2pnlMenu.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2pnlMenu.BorderRadius = 10;
+            this.guna2pnlMenu.BorderThickness = 1;
+            this.guna2pnlMenu.Controls.Add(this.guna2btnLogout);
+            this.guna2pnlMenu.Controls.Add(this.guna2rbtnOffers);
+            this.guna2pnlMenu.Controls.Add(this.gunna2rbtnAnalytics);
+            this.guna2pnlMenu.Controls.Add(this.guna2rbtnSales);
+            this.guna2pnlMenu.Controls.Add(this.guna2rbtnEmplyee);
+            this.guna2pnlMenu.Controls.Add(this.gunn2rbtnInventory);
+            this.guna2pnlMenu.Controls.Add(this.guna2rbtnHome);
+            this.guna2pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2pnlMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.guna2pnlMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.guna2pnlMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2pnlMenu.Location = new System.Drawing.Point(10, 10);
+            this.guna2pnlMenu.Name = "guna2pnlMenu";
+            this.guna2pnlMenu.Size = new System.Drawing.Size(200, 700);
+            this.guna2pnlMenu.TabIndex = 0;
             // 
             // guna2btnLogout
             // 
             this.guna2btnLogout.Animated = true;
+            this.guna2btnLogout.AnimatedGIF = true;
+            this.guna2btnLogout.AutoRoundedCorners = true;
             this.guna2btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.guna2btnLogout.CheckedState.FillColor = System.Drawing.Color.White;
             this.guna2btnLogout.CheckedState.ForeColor = System.Drawing.Color.Black;
@@ -95,7 +98,6 @@
             this.guna2btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2btnLogout.FillColor = System.Drawing.Color.Transparent;
-            this.guna2btnLogout.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2btnLogout.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.guna2btnLogout.ForeColor = System.Drawing.Color.Black;
             this.guna2btnLogout.HoverState.FillColor = System.Drawing.Color.Transparent;
@@ -123,7 +125,7 @@
             this.guna2rbtnOffers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2rbtnOffers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2rbtnOffers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnOffers.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2rbtnOffers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2rbtnOffers.ForeColor = System.Drawing.Color.White;
             this.guna2rbtnOffers.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2rbtnOffers.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -135,7 +137,8 @@
             this.guna2rbtnOffers.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnOffers.TabIndex = 5;
             this.guna2rbtnOffers.Text = "Offers";
-            this.guna2rbtnOffers.TextOffset = new System.Drawing.Point(6, 0);
+            this.guna2rbtnOffers.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2rbtnOffers.TextOffset = new System.Drawing.Point(-25, 0);
             // 
             // gunna2rbtnAnalytics
             // 
@@ -151,7 +154,7 @@
             this.gunna2rbtnAnalytics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunna2rbtnAnalytics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunna2rbtnAnalytics.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.gunna2rbtnAnalytics.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.gunna2rbtnAnalytics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunna2rbtnAnalytics.ForeColor = System.Drawing.Color.White;
             this.gunna2rbtnAnalytics.HoverState.FillColor = System.Drawing.Color.White;
             this.gunna2rbtnAnalytics.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -163,7 +166,8 @@
             this.gunna2rbtnAnalytics.Size = new System.Drawing.Size(180, 45);
             this.gunna2rbtnAnalytics.TabIndex = 4;
             this.gunna2rbtnAnalytics.Text = "Analytics";
-            this.gunna2rbtnAnalytics.TextOffset = new System.Drawing.Point(20, 0);
+            this.gunna2rbtnAnalytics.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunna2rbtnAnalytics.TextOffset = new System.Drawing.Point(-14, 0);
             // 
             // guna2rbtnSales
             // 
@@ -179,7 +183,7 @@
             this.guna2rbtnSales.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2rbtnSales.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2rbtnSales.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnSales.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2rbtnSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2rbtnSales.ForeColor = System.Drawing.Color.White;
             this.guna2rbtnSales.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2rbtnSales.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -191,7 +195,8 @@
             this.guna2rbtnSales.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnSales.TabIndex = 3;
             this.guna2rbtnSales.Text = "Sales";
-            this.guna2rbtnSales.TextOffset = new System.Drawing.Point(2, 0);
+            this.guna2rbtnSales.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2rbtnSales.TextOffset = new System.Drawing.Point(-27, 0);
             // 
             // guna2rbtnEmplyee
             // 
@@ -207,7 +212,7 @@
             this.guna2rbtnEmplyee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2rbtnEmplyee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2rbtnEmplyee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnEmplyee.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2rbtnEmplyee.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2rbtnEmplyee.ForeColor = System.Drawing.Color.White;
             this.guna2rbtnEmplyee.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2rbtnEmplyee.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -219,7 +224,8 @@
             this.guna2rbtnEmplyee.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnEmplyee.TabIndex = 2;
             this.guna2rbtnEmplyee.Text = "Employee";
-            this.guna2rbtnEmplyee.TextOffset = new System.Drawing.Point(17, 0);
+            this.guna2rbtnEmplyee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2rbtnEmplyee.TextOffset = new System.Drawing.Point(-11, 0);
             // 
             // gunn2rbtnInventory
             // 
@@ -235,7 +241,7 @@
             this.gunn2rbtnInventory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunn2rbtnInventory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunn2rbtnInventory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.gunn2rbtnInventory.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.gunn2rbtnInventory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunn2rbtnInventory.ForeColor = System.Drawing.Color.White;
             this.gunn2rbtnInventory.HoverState.FillColor = System.Drawing.Color.White;
             this.gunn2rbtnInventory.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -247,7 +253,8 @@
             this.gunn2rbtnInventory.Size = new System.Drawing.Size(180, 45);
             this.gunn2rbtnInventory.TabIndex = 2;
             this.gunn2rbtnInventory.Text = "Inventory";
-            this.gunn2rbtnInventory.TextOffset = new System.Drawing.Point(21, 0);
+            this.gunn2rbtnInventory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunn2rbtnInventory.TextOffset = new System.Drawing.Point(-12, 0);
             // 
             // guna2rbtnHome
             // 
@@ -263,7 +270,7 @@
             this.guna2rbtnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2rbtnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2rbtnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.guna2rbtnHome.Font = new System.Drawing.Font("JetBrains Mono ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2rbtnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2rbtnHome.ForeColor = System.Drawing.Color.White;
             this.guna2rbtnHome.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2rbtnHome.HoverState.ForeColor = System.Drawing.Color.Black;
@@ -275,22 +282,24 @@
             this.guna2rbtnHome.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnHome.TabIndex = 1;
             this.guna2rbtnHome.Text = "Home";
+            this.guna2rbtnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2rbtnHome.TextOffset = new System.Drawing.Point(-25, 0);
             // 
-            // guna2Body
+            // guna2pnlBody
             // 
-            this.guna2Body.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Body.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Body.BorderRadius = 10;
-            this.guna2Body.BorderThickness = 1;
-            this.guna2Body.Controls.Add(this.guna2btnExit);
-            this.guna2Body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Body.FillColor = System.Drawing.Color.White;
-            this.guna2Body.FillColor2 = System.Drawing.Color.White;
-            this.guna2Body.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Body.Location = new System.Drawing.Point(210, 10);
-            this.guna2Body.Name = "guna2Body";
-            this.guna2Body.Size = new System.Drawing.Size(1060, 700);
-            this.guna2Body.TabIndex = 1;
+            this.guna2pnlBody.BackColor = System.Drawing.Color.Transparent;
+            this.guna2pnlBody.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2pnlBody.BorderRadius = 10;
+            this.guna2pnlBody.BorderThickness = 1;
+            this.guna2pnlBody.Controls.Add(this.guna2btnExit);
+            this.guna2pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2pnlBody.FillColor = System.Drawing.Color.White;
+            this.guna2pnlBody.FillColor2 = System.Drawing.Color.White;
+            this.guna2pnlBody.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2pnlBody.Location = new System.Drawing.Point(210, 10);
+            this.guna2pnlBody.Name = "guna2pnlBody";
+            this.guna2pnlBody.Size = new System.Drawing.Size(1060, 700);
+            this.guna2pnlBody.TabIndex = 1;
             // 
             // guna2btnExit
             // 
@@ -325,11 +334,11 @@
             // 
             this.lblMoto.AutoSize = true;
             this.lblMoto.BackColor = System.Drawing.Color.Transparent;
-            this.lblMoto.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoto.ForeColor = System.Drawing.Color.Black;
-            this.lblMoto.Location = new System.Drawing.Point(6, 139);
+            this.lblMoto.Location = new System.Drawing.Point(18, 142);
             this.lblMoto.Name = "lblMoto";
-            this.lblMoto.Size = new System.Drawing.Size(189, 38);
+            this.lblMoto.Size = new System.Drawing.Size(154, 34);
             this.lblMoto.TabIndex = 5;
             this.lblMoto.Text = "One Stop\r\nElectronics Solution\r\n";
             // 
@@ -337,11 +346,11 @@
             // 
             this.lblSiliconSource.AutoSize = true;
             this.lblSiliconSource.BackColor = System.Drawing.Color.Transparent;
-            this.lblSiliconSource.Font = new System.Drawing.Font("JetBrains Mono", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSiliconSource.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSiliconSource.ForeColor = System.Drawing.Color.Black;
-            this.lblSiliconSource.Location = new System.Drawing.Point(4, 104);
+            this.lblSiliconSource.Location = new System.Drawing.Point(17, 109);
             this.lblSiliconSource.Name = "lblSiliconSource";
-            this.lblSiliconSource.Size = new System.Drawing.Size(194, 27);
+            this.lblSiliconSource.Size = new System.Drawing.Size(158, 24);
             this.lblSiliconSource.TabIndex = 3;
             this.lblSiliconSource.Text = "Silicon Source";
             // 
@@ -368,16 +377,16 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2pnlLogo);
-            this.Controls.Add(this.guna2Body);
-            this.Controls.Add(this.guna2Menu);
+            this.Controls.Add(this.guna2pnlBody);
+            this.Controls.Add(this.guna2pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminDashboard";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.guna2Menu.ResumeLayout(false);
-            this.guna2Body.ResumeLayout(false);
+            this.guna2pnlMenu.ResumeLayout(false);
+            this.guna2pnlBody.ResumeLayout(false);
             this.guna2pnlLogo.ResumeLayout(false);
             this.guna2pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2Logo)).EndInit();
@@ -388,8 +397,8 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm gunaAdminDashboard;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2Menu;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2Body;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2pnlMenu;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2pnlBody;
         private Guna.UI2.WinForms.Guna2ControlBox guna2btnExit;
         private Guna.UI2.WinForms.Guna2Panel guna2pnlLogo;
         private System.Windows.Forms.Label lblMoto;
