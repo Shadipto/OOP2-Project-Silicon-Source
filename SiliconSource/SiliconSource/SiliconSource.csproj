@@ -52,46 +52,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddInventory.cs">
+    <Compile Include="Admin\AddInventory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddInventory.Designer.cs">
+    <Compile Include="Admin\AddInventory.Designer.cs">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminDashboard.cs">
+    <Compile Include="Admin\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminDashboard.Designer.cs">
+    <Compile Include="Admin\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEmployeeControlAdmin.cs">
+    <Compile Include="ManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDashboard.Designer.cs">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ucEmployeeControlAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucEmployeeControlAdmin.Designer.cs">
+    <Compile Include="Admin\ucEmployeeControlAdmin.Designer.cs">
       <DependentUpon>ucEmployeeControlAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeDashboard.cs">
+    <Compile Include="Employee\EmployeeDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeDashboard.Designer.cs">
+    <Compile Include="Employee\EmployeeDashboard.Designer.cs">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucInventoryControlAdmin.cs">
+    <Compile Include="ucEmployeeControlManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucInventoryControlAdmin.Designer.cs">
+    <Compile Include="ucEmployeeControlManager.Designer.cs">
+      <DependentUpon>ucEmployeeControlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ucInventoryControlAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\ucInventoryControlAdmin.Designer.cs">
       <DependentUpon>ucInventoryControlAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginControl.cs">
+    <Compile Include="Login\LoginControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LoginControl.Designer.cs">
+    <Compile Include="Login\LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -102,55 +114,61 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucAnslyticsControl.cs">
+    <Compile Include="Admin\ucAnslyticsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucAnslyticsControl.Designer.cs">
+    <Compile Include="Admin\ucAnslyticsControl.Designer.cs">
       <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucCart.cs">
+    <Compile Include="Employee\ucCart.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucCart.Designer.cs">
+    <Compile Include="Employee\ucCart.Designer.cs">
       <DependentUpon>ucCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucInventoryControlEmployee.cs">
+    <Compile Include="Employee\ucInventoryControlEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucInventoryControlEmployee.Designer.cs">
+    <Compile Include="Employee\ucInventoryControlEmployee.Designer.cs">
       <DependentUpon>ucInventoryControlEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucSalesControl.cs">
+    <Compile Include="Admin\ucSalesControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucSalesControl.Designer.cs">
+    <Compile Include="Admin\ucSalesControl.Designer.cs">
       <DependentUpon>ucSalesControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateInventory.cs">
+    <Compile Include="Admin\UpdateInventory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateInventory.Designer.cs">
+    <Compile Include="Admin\UpdateInventory.Designer.cs">
       <DependentUpon>UpdateInventory.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddInventory.resx">
+    <EmbeddedResource Include="Admin\AddInventory.resx">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminDashboard.resx">
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucEmployeeControlAdmin.resx">
+    <EmbeddedResource Include="ManagerDashboard.resx">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ucEmployeeControlAdmin.resx">
       <DependentUpon>ucEmployeeControlAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeDashboard.resx">
+    <EmbeddedResource Include="Employee\EmployeeDashboard.resx">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucInventoryControlAdmin.resx">
+    <EmbeddedResource Include="ucEmployeeControlManager.resx">
+      <DependentUpon>ucEmployeeControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ucInventoryControlAdmin.resx">
       <DependentUpon>ucInventoryControlAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginControl.resx">
+    <EmbeddedResource Include="Login\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -165,19 +183,19 @@
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucAnslyticsControl.resx">
+    <EmbeddedResource Include="Admin\ucAnslyticsControl.resx">
       <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucCart.resx">
+    <EmbeddedResource Include="Employee\ucCart.resx">
       <DependentUpon>ucCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucInventoryControlEmployee.resx">
+    <EmbeddedResource Include="Employee\ucInventoryControlEmployee.resx">
       <DependentUpon>ucInventoryControlEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucSalesControl.resx">
+    <EmbeddedResource Include="Admin\ucSalesControl.resx">
       <DependentUpon>ucSalesControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateInventory.resx">
+    <EmbeddedResource Include="Admin\UpdateInventory.resx">
       <DependentUpon>UpdateInventory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
