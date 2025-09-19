@@ -35,7 +35,7 @@
             this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
             this.lblRole = new System.Windows.Forms.Label();
-            this.pboxAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblAdminName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -50,14 +50,14 @@
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
-            this.pboxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
             pnlBody.SuspendLayout();
             this.pnlHeading.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdmin)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBody
@@ -96,7 +96,7 @@
             this.pnlHeading.BorderThickness = 2;
             this.pnlHeading.Controls.Add(this.gunaSeperator);
             this.pnlHeading.Controls.Add(this.lblRole);
-            this.pnlHeading.Controls.Add(this.pboxAdmin);
+            this.pnlHeading.Controls.Add(this.pbAdmin);
             this.pnlHeading.Controls.Add(this.lblAdminName);
             this.pnlHeading.Controls.Add(this.lblTitle);
             this.pnlHeading.Controls.Add(this.btnExit);
@@ -131,21 +131,21 @@
             this.lblRole.Text = "Admin";
             this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pboxAdmin
+            // pbAdmin
             // 
-            this.pboxAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.pboxAdmin.BorderRadius = 10;
-            this.pboxAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.ErrorImage")));
-            this.pboxAdmin.FillColor = System.Drawing.Color.Transparent;
-            this.pboxAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.Image")));
-            this.pboxAdmin.ImageRotate = 0F;
-            this.pboxAdmin.Location = new System.Drawing.Point(807, 30);
-            this.pboxAdmin.Name = "pboxAdmin";
-            this.pboxAdmin.Size = new System.Drawing.Size(73, 50);
-            this.pboxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pboxAdmin.TabIndex = 5;
-            this.pboxAdmin.TabStop = false;
-            this.pboxAdmin.UseTransparentBackground = true;
+            this.pbAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.pbAdmin.BorderRadius = 10;
+            this.pbAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbAdmin.ErrorImage")));
+            this.pbAdmin.FillColor = System.Drawing.Color.Transparent;
+            this.pbAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pbAdmin.Image")));
+            this.pbAdmin.ImageRotate = 0F;
+            this.pbAdmin.Location = new System.Drawing.Point(807, 30);
+            this.pbAdmin.Name = "pbAdmin";
+            this.pbAdmin.Size = new System.Drawing.Size(73, 50);
+            this.pbAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAdmin.TabIndex = 5;
+            this.pbAdmin.TabStop = false;
+            this.pbAdmin.UseTransparentBackground = true;
             // 
             // lblAdminName
             // 
@@ -395,7 +395,7 @@
             this.pnlLogo.BackColor = System.Drawing.Color.Transparent;
             this.pnlLogo.Controls.Add(this.lblMoto);
             this.pnlLogo.Controls.Add(this.lblSiliconSource);
-            this.pnlLogo.Controls.Add(this.pboxLogo);
+            this.pnlLogo.Controls.Add(this.pbLogo);
             this.pnlLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.pnlLogo.Location = new System.Drawing.Point(10, 28);
             this.pnlLogo.Name = "pnlLogo";
@@ -426,21 +426,21 @@
             this.lblSiliconSource.TabIndex = 3;
             this.lblSiliconSource.Text = "Silicon Source";
             // 
-            // pboxLogo
+            // pbLogo
             // 
-            this.pboxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pboxLogo.BorderRadius = 10;
-            this.pboxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pboxLogo.ErrorImage")));
-            this.pboxLogo.FillColor = System.Drawing.Color.Transparent;
-            this.pboxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pboxLogo.Image")));
-            this.pboxLogo.ImageRotate = 0F;
-            this.pboxLogo.Location = new System.Drawing.Point(46, 8);
-            this.pboxLogo.Name = "pboxLogo";
-            this.pboxLogo.Size = new System.Drawing.Size(102, 99);
-            this.pboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pboxLogo.TabIndex = 4;
-            this.pboxLogo.TabStop = false;
-            this.pboxLogo.UseTransparentBackground = true;
+            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogo.BorderRadius = 10;
+            this.pbLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.ErrorImage")));
+            this.pbLogo.FillColor = System.Drawing.Color.Transparent;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(46, 8);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(102, 99);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 4;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.UseTransparentBackground = true;
             // 
             // AdminDashboard
             // 
@@ -460,11 +460,11 @@
             pnlBody.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdmin)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,7 +476,7 @@
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
         private System.Windows.Forms.Label lblMoto;
         private System.Windows.Forms.Label lblSiliconSource;
-        private Guna.UI2.WinForms.Guna2PictureBox pboxLogo;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2Button rbtnHome;
         private Guna.UI2.WinForms.Guna2Button rbtnInventory;
         private Guna.UI2.WinForms.Guna2Button rbtnEmplyee;
@@ -487,7 +487,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblRole;
-        private Guna.UI2.WinForms.Guna2PictureBox pboxAdmin;
+        private Guna.UI2.WinForms.Guna2PictureBox pbAdmin;
         private System.Windows.Forms.Label lblAdminName;
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;

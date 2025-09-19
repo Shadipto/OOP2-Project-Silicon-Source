@@ -35,18 +35,18 @@
             this.pnlLoginLeft = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblSiliconSource = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblWelcome = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Logo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Cloud = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbCloud = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblRadiant = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginRight = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.lblSignin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucLoginPassword = new SiliconSource.LoginControl();
             this.ucLoginID = new SiliconSource.LoginControl();
+            this.lblSignin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cloud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
             this.pnlLoginRight.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,8 +83,8 @@
             this.pnlLoginLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlLoginLeft.Controls.Add(this.lblSiliconSource);
             this.pnlLoginLeft.Controls.Add(this.lblWelcome);
-            this.pnlLoginLeft.Controls.Add(this.Logo);
-            this.pnlLoginLeft.Controls.Add(this.Cloud);
+            this.pnlLoginLeft.Controls.Add(this.pbLogo);
+            this.pnlLoginLeft.Controls.Add(this.pbCloud);
             this.pnlLoginLeft.Controls.Add(this.lblRadiant);
             this.pnlLoginLeft.Controls.Add(this.lblDevelopedBy);
             this.pnlLoginLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -118,27 +118,27 @@
             this.lblWelcome.TabIndex = 3;
             this.lblWelcome.Text = "WELCOME TO";
             // 
-            // Logo
+            // pbLogo
             // 
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.ImageRotate = 0F;
-            this.Logo.Location = new System.Drawing.Point(101, 193);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(200, 200);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Logo.TabIndex = 7;
-            this.Logo.TabStop = false;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(101, 193);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(200, 200);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 7;
+            this.pbLogo.TabStop = false;
             // 
-            // Cloud
+            // pbCloud
             // 
-            this.Cloud.Image = ((System.Drawing.Image)(resources.GetObject("Cloud.Image")));
-            this.Cloud.ImageRotate = 0F;
-            this.Cloud.Location = new System.Drawing.Point(307, 0);
-            this.Cloud.Name = "Cloud";
-            this.Cloud.Size = new System.Drawing.Size(255, 600);
-            this.Cloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Cloud.TabIndex = 6;
-            this.Cloud.TabStop = false;
+            this.pbCloud.Image = ((System.Drawing.Image)(resources.GetObject("pbCloud.Image")));
+            this.pbCloud.ImageRotate = 0F;
+            this.pbCloud.Location = new System.Drawing.Point(307, 0);
+            this.pbCloud.Name = "pbCloud";
+            this.pbCloud.Size = new System.Drawing.Size(255, 600);
+            this.pbCloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCloud.TabIndex = 6;
+            this.pbCloud.TabStop = false;
             // 
             // lblRadiant
             // 
@@ -194,18 +194,6 @@
             this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "Login";
             // 
-            // lblSignin
-            // 
-            this.lblSignin.BackColor = System.Drawing.Color.Transparent;
-            this.lblSignin.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSignin.Location = new System.Drawing.Point(168, 100);
-            this.lblSignin.Margin = new System.Windows.Forms.Padding(2);
-            this.lblSignin.Name = "lblSignin";
-            this.lblSignin.Size = new System.Drawing.Size(108, 38);
-            this.lblSignin.TabIndex = 9;
-            this.lblSignin.Text = "SIGN IN";
-            // 
             // ucLoginPassword
             // 
             this.ucLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
@@ -228,6 +216,18 @@
             this.ucLoginID.Size = new System.Drawing.Size(349, 71);
             this.ucLoginID.TabIndex = 10;
             // 
+            // lblSignin
+            // 
+            this.lblSignin.BackColor = System.Drawing.Color.Transparent;
+            this.lblSignin.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSignin.Location = new System.Drawing.Point(168, 100);
+            this.lblSignin.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(108, 38);
+            this.lblSignin.TabIndex = 9;
+            this.lblSignin.Text = "SIGN IN";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,8 +242,8 @@
             this.Text = "Login";
             this.pnlLoginLeft.ResumeLayout(false);
             this.pnlLoginLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cloud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).EndInit();
             this.pnlLoginRight.ResumeLayout(false);
             this.pnlLoginRight.PerformLayout();
             this.ResumeLayout(false);
@@ -258,9 +258,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblWelcome;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblRadiant;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDevelopedBy;
-        private Guna.UI2.WinForms.Guna2PictureBox Cloud;
+        private Guna.UI2.WinForms.Guna2PictureBox pbCloud;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlLoginRight;
-        private Guna.UI2.WinForms.Guna2PictureBox Logo;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSiliconSource;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSignin;
         private LoginControl ucLoginID;

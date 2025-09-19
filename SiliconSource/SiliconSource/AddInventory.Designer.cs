@@ -33,11 +33,11 @@
             this.gunaAddInventory = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlAddInventoryLeft = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.Inventory = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbInventory = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblInventory = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNew = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Cloud = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbCloud = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblRadiant = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlAddInventoryRight = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -54,8 +54,8 @@
             this.ucDescription = new SiliconSource.LoginControl();
             this.ucProductName = new SiliconSource.LoginControl();
             this.pnlAddInventoryLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Inventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cloud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
             this.pnlAddInventoryRight.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,11 +89,11 @@
             // pnlAddInventoryLeft
             // 
             this.pnlAddInventoryLeft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pnlAddInventoryLeft.Controls.Add(this.Inventory);
+            this.pnlAddInventoryLeft.Controls.Add(this.pbInventory);
             this.pnlAddInventoryLeft.Controls.Add(this.lblInventory);
             this.pnlAddInventoryLeft.Controls.Add(this.lblAdd);
             this.pnlAddInventoryLeft.Controls.Add(this.lblNew);
-            this.pnlAddInventoryLeft.Controls.Add(this.Cloud);
+            this.pnlAddInventoryLeft.Controls.Add(this.pbCloud);
             this.pnlAddInventoryLeft.Controls.Add(this.lblRadiant);
             this.pnlAddInventoryLeft.Controls.Add(this.lblDevelopedBy);
             this.pnlAddInventoryLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -103,17 +103,17 @@
             this.pnlAddInventoryLeft.Size = new System.Drawing.Size(369, 763);
             this.pnlAddInventoryLeft.TabIndex = 4;
             // 
-            // Inventory
+            // pbInventory
             // 
-            this.Inventory.Image = ((System.Drawing.Image)(resources.GetObject("Inventory.Image")));
-            this.Inventory.ImageRotate = 0F;
-            this.Inventory.InitialImage = ((System.Drawing.Image)(resources.GetObject("Inventory.InitialImage")));
-            this.Inventory.Location = new System.Drawing.Point(31, 107);
-            this.Inventory.Name = "Inventory";
-            this.Inventory.Size = new System.Drawing.Size(173, 162);
-            this.Inventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Inventory.TabIndex = 18;
-            this.Inventory.TabStop = false;
+            this.pbInventory.Image = ((System.Drawing.Image)(resources.GetObject("pbInventory.Image")));
+            this.pbInventory.ImageRotate = 0F;
+            this.pbInventory.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInventory.InitialImage")));
+            this.pbInventory.Location = new System.Drawing.Point(31, 107);
+            this.pbInventory.Name = "pbInventory";
+            this.pbInventory.Size = new System.Drawing.Size(173, 162);
+            this.pbInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbInventory.TabIndex = 18;
+            this.pbInventory.TabStop = false;
             // 
             // lblInventory
             // 
@@ -152,17 +152,17 @@
             this.lblNew.Text = "NEW";
             this.lblNew.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
-            // Cloud
+            // pbCloud
             // 
-            this.Cloud.Image = ((System.Drawing.Image)(resources.GetObject("Cloud.Image")));
-            this.Cloud.ImageRotate = 0F;
-            this.Cloud.InitialImage = ((System.Drawing.Image)(resources.GetObject("Cloud.InitialImage")));
-            this.Cloud.Location = new System.Drawing.Point(159, -6);
-            this.Cloud.Name = "Cloud";
-            this.Cloud.Size = new System.Drawing.Size(255, 769);
-            this.Cloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Cloud.TabIndex = 6;
-            this.Cloud.TabStop = false;
+            this.pbCloud.Image = ((System.Drawing.Image)(resources.GetObject("pbCloud.Image")));
+            this.pbCloud.ImageRotate = 0F;
+            this.pbCloud.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbCloud.InitialImage")));
+            this.pbCloud.Location = new System.Drawing.Point(159, -6);
+            this.pbCloud.Name = "pbCloud";
+            this.pbCloud.Size = new System.Drawing.Size(255, 769);
+            this.pbCloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCloud.TabIndex = 6;
+            this.pbCloud.TabStop = false;
             // 
             // lblRadiant
             // 
@@ -389,8 +389,8 @@
             this.Text = "AddInventory";
             this.pnlAddInventoryLeft.ResumeLayout(false);
             this.pnlAddInventoryLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Inventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cloud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).EndInit();
             this.pnlAddInventoryRight.ResumeLayout(false);
             this.pnlAddInventoryRight.PerformLayout();
             this.ResumeLayout(false);
@@ -403,7 +403,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlAddInventoryLeft;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNew;
-        private Guna.UI2.WinForms.Guna2PictureBox Cloud;
+        private Guna.UI2.WinForms.Guna2PictureBox pbCloud;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblRadiant;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDevelopedBy;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblInventory;
@@ -421,6 +421,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbSupplierName;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2PictureBox Inventory;
+        private Guna.UI2.WinForms.Guna2PictureBox pbInventory;
     }
 }
