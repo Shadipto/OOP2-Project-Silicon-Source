@@ -50,6 +50,7 @@
             this.lblAdminName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.pnlMenu.SuspendLayout();
@@ -74,7 +75,7 @@
             this.pnlLogo.Controls.Add(this.lblSiliconSource);
             this.pnlLogo.Controls.Add(this.Logo);
             this.pnlLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.pnlLogo.Location = new System.Drawing.Point(10, 49);
+            this.pnlLogo.Location = new System.Drawing.Point(10, 28);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(200, 190);
             this.pnlLogo.TabIndex = 3;
@@ -188,7 +189,7 @@
             this.rbtnAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("rbtnAnalytics.Image")));
             this.rbtnAnalytics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnAnalytics.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnAnalytics.Location = new System.Drawing.Point(9, 528);
+            this.rbtnAnalytics.Location = new System.Drawing.Point(9, 545);
             this.rbtnAnalytics.Name = "rbtnAnalytics";
             this.rbtnAnalytics.Size = new System.Drawing.Size(180, 45);
             this.rbtnAnalytics.TabIndex = 4;
@@ -216,7 +217,7 @@
             this.rbtnSales.Image = ((System.Drawing.Image)(resources.GetObject("rbtnSales.Image")));
             this.rbtnSales.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnSales.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnSales.Location = new System.Drawing.Point(9, 468);
+            this.rbtnSales.Location = new System.Drawing.Point(9, 480);
             this.rbtnSales.Name = "rbtnSales";
             this.rbtnSales.Size = new System.Drawing.Size(180, 45);
             this.rbtnSales.TabIndex = 3;
@@ -245,7 +246,7 @@
             this.rbtnEmplyee.Image = ((System.Drawing.Image)(resources.GetObject("rbtnEmplyee.Image")));
             this.rbtnEmplyee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnEmplyee.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnEmplyee.Location = new System.Drawing.Point(9, 408);
+            this.rbtnEmplyee.Location = new System.Drawing.Point(9, 415);
             this.rbtnEmplyee.Name = "rbtnEmplyee";
             this.rbtnEmplyee.Size = new System.Drawing.Size(180, 45);
             this.rbtnEmplyee.TabIndex = 2;
@@ -272,7 +273,7 @@
             this.rbtnInventory.Image = ((System.Drawing.Image)(resources.GetObject("rbtnInventory.Image")));
             this.rbtnInventory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnInventory.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnInventory.Location = new System.Drawing.Point(9, 348);
+            this.rbtnInventory.Location = new System.Drawing.Point(9, 350);
             this.rbtnInventory.Name = "rbtnInventory";
             this.rbtnInventory.Size = new System.Drawing.Size(180, 45);
             this.rbtnInventory.TabIndex = 2;
@@ -301,7 +302,7 @@
             this.guna2rbtnHome.Image = ((System.Drawing.Image)(resources.GetObject("guna2rbtnHome.Image")));
             this.guna2rbtnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2rbtnHome.ImageOffset = new System.Drawing.Point(20, 0);
-            this.guna2rbtnHome.Location = new System.Drawing.Point(9, 288);
+            this.guna2rbtnHome.Location = new System.Drawing.Point(9, 285);
             this.guna2rbtnHome.Name = "guna2rbtnHome";
             this.guna2rbtnHome.Size = new System.Drawing.Size(180, 45);
             this.guna2rbtnHome.TabIndex = 1;
@@ -339,16 +340,17 @@
             this.pnlHeading.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.pnlHeading.BorderRadius = 10;
             this.pnlHeading.BorderThickness = 2;
+            this.pnlHeading.Controls.Add(this.gunaSeperator);
             this.pnlHeading.Controls.Add(this.lblRole);
             this.pnlHeading.Controls.Add(this.guna2PictureBox1);
             this.pnlHeading.Controls.Add(this.lblAdminName);
             this.pnlHeading.Controls.Add(this.lblTitle);
             this.pnlHeading.Controls.Add(this.btnExit);
             this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeading.FillColor = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor2 = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor3 = System.Drawing.Color.Transparent;
-            this.pnlHeading.FillColor4 = System.Drawing.Color.Transparent;
+            this.pnlHeading.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor3 = System.Drawing.Color.WhiteSmoke;
+            this.pnlHeading.FillColor4 = System.Drawing.Color.WhiteSmoke;
             this.pnlHeading.Location = new System.Drawing.Point(2, 0);
             this.pnlHeading.Name = "pnlHeading";
             this.pnlHeading.Padding = new System.Windows.Forms.Padding(10);
@@ -422,6 +424,14 @@
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 1;
             // 
+            // gunaSeperator
+            // 
+            this.gunaSeperator.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.gunaSeperator.Location = new System.Drawing.Point(815, 82);
+            this.gunaSeperator.Name = "gunaSeperator";
+            this.gunaSeperator.Size = new System.Drawing.Size(130, 10);
+            this.gunaSeperator.TabIndex = 7;
+            // 
             // EmployeeDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,5 +480,6 @@
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
+        private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
     }
 }

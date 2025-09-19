@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace SiliconSource
 {
-    public partial class InventoryControl : UserControl
+    public partial class ucCart : UserControl
     {
-        
-        public InventoryControl()
+        public ucCart()
         {
             InitializeComponent();
-        }
-
-        private void InventoryControl_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
     }
 }

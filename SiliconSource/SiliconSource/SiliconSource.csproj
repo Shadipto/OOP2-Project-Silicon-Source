@@ -108,6 +108,18 @@
     <Compile Include="ucAnslyticsControl.Designer.cs">
       <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCart.Designer.cs">
+      <DependentUpon>ucCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInventoryControlEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInventoryControlEmployee.Designer.cs">
+      <DependentUpon>ucInventoryControlEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucSalesControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +167,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAnslyticsControl.resx">
       <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCart.resx">
+      <DependentUpon>ucCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInventoryControlEmployee.resx">
+      <DependentUpon>ucInventoryControlEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSalesControl.resx">
       <DependentUpon>ucSalesControl.cs</DependentUpon>

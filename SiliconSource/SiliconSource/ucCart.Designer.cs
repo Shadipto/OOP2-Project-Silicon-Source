@@ -1,6 +1,6 @@
 ﻿namespace SiliconSource
 {
-    partial class EmployeeControl
+    partial class ucCart
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,29 +29,27 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Guna2TextBox txtSearch;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucCart));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).BeginInit();
             this.pnlGridViewOperations.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
@@ -102,7 +100,98 @@
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlSearch.Name = "pnlSearch";
             this.pnlSearch.Size = new System.Drawing.Size(1053, 100);
-            this.pnlSearch.TabIndex = 8;
+            this.pnlSearch.TabIndex = 9;
+            // 
+            // pnlGridViewOperations
+            // 
+            this.pnlGridViewOperations.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGridViewOperations.BorderRadius = 10;
+            this.pnlGridViewOperations.Controls.Add(this.btnRemove);
+            this.pnlGridViewOperations.Controls.Add(this.btnCheckOut);
+            this.pnlGridViewOperations.Controls.Add(this.cmbSort);
+            this.pnlGridViewOperations.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlGridViewOperations.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlGridViewOperations.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.pnlGridViewOperations.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.pnlGridViewOperations.Location = new System.Drawing.Point(785, 100);
+            this.pnlGridViewOperations.Name = "pnlGridViewOperations";
+            this.pnlGridViewOperations.Size = new System.Drawing.Size(268, 490);
+            this.pnlGridViewOperations.TabIndex = 11;
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Animated = true;
+            this.btnRemove.AnimatedGIF = true;
+            this.btnRemove.AutoRoundedCorners = true;
+            this.btnRemove.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemove.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnRemove.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRemove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRemove.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnRemove.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnRemove.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnRemove.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btnRemove.Location = new System.Drawing.Point(50, 248);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(158, 45);
+            this.btnRemove.TabIndex = 3;
+            this.btnRemove.Text = "Remove";
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Animated = true;
+            this.btnCheckOut.AnimatedGIF = true;
+            this.btnCheckOut.AutoRoundedCorners = true;
+            this.btnCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckOut.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnCheckOut.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckOut.FillColor = System.Drawing.Color.Green;
+            this.btnCheckOut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnCheckOut.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCheckOut.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btnCheckOut.Location = new System.Drawing.Point(50, 197);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(158, 45);
+            this.btnCheckOut.TabIndex = 2;
+            this.btnCheckOut.Text = "Checkout";
+            // 
+            // cmbSort
+            // 
+            this.cmbSort.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSort.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.cmbSort.BorderRadius = 20;
+            this.cmbSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSort.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbSort.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.cmbSort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.cmbSort.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.cmbSort.ItemHeight = 30;
+            this.cmbSort.Items.AddRange(new object[] {
+            "$ Low - High",
+            "$ High - Low"});
+            this.cmbSort.ItemsAppearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
+            this.cmbSort.Location = new System.Drawing.Point(50, 25);
+            this.cmbSort.Name = "cmbSort";
+            this.cmbSort.Size = new System.Drawing.Size(158, 36);
+            this.cmbSort.StartIndex = 1;
+            this.cmbSort.TabIndex = 0;
+            this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gdvInventory
             // 
@@ -127,9 +216,9 @@
             this.gdvInventory.ColumnHeadersHeight = 15;
             this.gdvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gdvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.employeeID,
-            this.employeeName,
-            this.role,
+            this.productID,
+            this.productName,
+            this.category,
             this.price,
             this.cost,
             this.stock});
@@ -157,8 +246,8 @@
             this.gdvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gdvInventory.RowHeadersVisible = false;
             this.gdvInventory.RowTemplate.Height = 25;
-            this.gdvInventory.Size = new System.Drawing.Size(786, 490);
-            this.gdvInventory.TabIndex = 9;
+            this.gdvInventory.Size = new System.Drawing.Size(785, 490);
+            this.gdvInventory.TabIndex = 12;
             this.gdvInventory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Silver;
             this.gdvInventory.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gdvInventory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -181,35 +270,35 @@
             this.gdvInventory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gdvInventory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // employeeID
+            // productID
             // 
-            this.employeeID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.employeeID.FillWeight = 126.9036F;
-            this.employeeID.Frozen = true;
-            this.employeeID.HeaderText = "Employee ID";
-            this.employeeID.Name = "employeeID";
-            this.employeeID.ReadOnly = true;
-            this.employeeID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.employeeID.Width = 90;
+            this.productID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.productID.FillWeight = 126.9036F;
+            this.productID.Frozen = true;
+            this.productID.HeaderText = "Product ID";
+            this.productID.Name = "productID";
+            this.productID.ReadOnly = true;
+            this.productID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.productID.Width = 90;
             // 
-            // employeeName
+            // productName
             // 
-            this.employeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.employeeName.FillWeight = 329.0299F;
-            this.employeeName.HeaderText = "Employee Name";
-            this.employeeName.Name = "employeeName";
-            this.employeeName.ReadOnly = true;
-            this.employeeName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.productName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.productName.FillWeight = 329.0299F;
+            this.productName.HeaderText = "Product Name";
+            this.productName.Name = "productName";
+            this.productName.ReadOnly = true;
+            this.productName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // role
+            // category
             // 
-            this.role.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.role.FillWeight = 14.68883F;
-            this.role.HeaderText = "Role";
-            this.role.Name = "role";
-            this.role.ReadOnly = true;
-            this.role.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.role.Width = 110;
+            this.category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.category.FillWeight = 14.68883F;
+            this.category.HeaderText = "Category";
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
+            this.category.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.category.Width = 110;
             // 
             // price
             // 
@@ -236,162 +325,18 @@
             this.stock.ReadOnly = true;
             this.stock.Width = 50;
             // 
-            // pnlGridViewOperations
-            // 
-            this.pnlGridViewOperations.BackColor = System.Drawing.Color.Transparent;
-            this.pnlGridViewOperations.BorderRadius = 10;
-            this.pnlGridViewOperations.Controls.Add(this.cmbSort);
-            this.pnlGridViewOperations.Controls.Add(this.btnPrint);
-            this.pnlGridViewOperations.Controls.Add(this.btnUpdate);
-            this.pnlGridViewOperations.Controls.Add(this.btnDelete);
-            this.pnlGridViewOperations.Controls.Add(this.btnAdd);
-            this.pnlGridViewOperations.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlGridViewOperations.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGridViewOperations.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.pnlGridViewOperations.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.pnlGridViewOperations.Location = new System.Drawing.Point(786, 100);
-            this.pnlGridViewOperations.Name = "pnlGridViewOperations";
-            this.pnlGridViewOperations.Size = new System.Drawing.Size(267, 490);
-            this.pnlGridViewOperations.TabIndex = 10;
-            // 
-            // cmbSort
-            // 
-            this.cmbSort.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSort.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.cmbSort.BorderRadius = 20;
-            this.cmbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSort.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbSort.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.ItemHeight = 30;
-            this.cmbSort.Items.AddRange(new object[] {
-            "Newest",
-            "Oldest"});
-            this.cmbSort.ItemsAppearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
-            this.cmbSort.Location = new System.Drawing.Point(50, 25);
-            this.cmbSort.Name = "cmbSort";
-            this.cmbSort.Size = new System.Drawing.Size(158, 36);
-            this.cmbSort.StartIndex = 0;
-            this.cmbSort.TabIndex = 6;
-            this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Animated = true;
-            this.btnPrint.AnimatedGIF = true;
-            this.btnPrint.AutoRoundedCorners = true;
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnPrint.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPrint.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnPrint.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnPrint.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnPrint.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPrint.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnPrint.Location = new System.Drawing.Point(50, 355);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(158, 45);
-            this.btnPrint.TabIndex = 5;
-            this.btnPrint.Text = "Print Details";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Animated = true;
-            this.btnUpdate.AnimatedGIF = true;
-            this.btnUpdate.AutoRoundedCorners = true;
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUpdate.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnUpdate.Location = new System.Drawing.Point(50, 215);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(158, 45);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AnimatedGIF = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDelete.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnDelete.Location = new System.Drawing.Point(50, 285);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(158, 45);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Remove ";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Animated = true;
-            this.btnAdd.AnimatedGIF = true;
-            this.btnAdd.AutoRoundedCorners = true;
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnAdd.Location = new System.Drawing.Point(50, 145);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(158, 45);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add Employee";
-            // 
-            // EmployeeControl
+            // ucCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pnlGridViewOperations);
             this.Controls.Add(this.gdvInventory);
+            this.Controls.Add(this.pnlGridViewOperations);
             this.Controls.Add(this.pnlSearch);
-            this.Name = "EmployeeControl";
+            this.Name = "ucCart";
             this.Size = new System.Drawing.Size(1053, 590);
             this.pnlSearch.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).EndInit();
             this.pnlGridViewOperations.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -399,16 +344,14 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlSearch;
-        private Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGridViewOperations;
-        private Guna.UI2.WinForms.Guna2Button btnPrint;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2Button btnRemove;
+        private Guna.UI2.WinForms.Guna2Button btnCheckOut;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employeeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn role;
+        private Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn cost;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock;

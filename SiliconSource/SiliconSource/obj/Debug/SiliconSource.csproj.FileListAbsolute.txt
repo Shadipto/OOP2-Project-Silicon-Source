@@ -35,9 +35,50 @@ C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\Sili
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeControl.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.InventoryControl.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Testing.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
+E:\OOP2-Project-Silicon-Source-main (1)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeControl.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.InventoryControl.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Testing.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
