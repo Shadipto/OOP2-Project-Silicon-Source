@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\siliconsource\\siliconsource\\ucanslyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\siliconsource\\siliconsource\\ucsalescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\ucsalescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\siliconsource\\ucinventorycontrolemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\ucinventorycontrolemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\siliconsource\\ucanslyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\ucanslyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\siliconsource\\siliconsource\\ucanslyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\ucanslyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\siliconsource\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\siliconsource\\siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\siliconsource\\uccart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\uccart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,39 +51,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ucSalesControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucSalesControl.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\ucSalesControl.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucSalesControl.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\ucSalesControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T20:18:04.687Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ucAnslyticsControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucAnslyticsControl.cs",
               "RelativeDocumentMoniker": "SiliconSource\\ucAnslyticsControl.cs",
               "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucAnslyticsControl.cs [Design]",
               "RelativeToolTip": "SiliconSource\\ucAnslyticsControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T20:06:26.681Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-19T20:17:56.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\EmployeeDashboard.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\EmployeeDashboard.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\EmployeeDashboard.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\EmployeeDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T20:07:32.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ucCart.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucCart.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\ucCart.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucCart.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\ucCart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T20:08:47.445Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ucAnslyticsControl.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucAnslyticsControl.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\ucAnslyticsControl.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucAnslyticsControl.cs",
-              "RelativeToolTip": "SiliconSource\\ucAnslyticsControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ucInventoryControlEmployee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucInventoryControlEmployee.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\ucInventoryControlEmployee.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\ucInventoryControlEmployee.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\ucInventoryControlEmployee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T20:06:22.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\SiliconSource\\SiliconSource\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\AdminDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T20:01:29.242Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-19T20:08:33.993Z"
             }
           ]
         }

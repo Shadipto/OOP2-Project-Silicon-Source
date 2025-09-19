@@ -66,7 +66,6 @@ C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSou
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
-C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeControl.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.InventoryControl.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
@@ -82,3 +81,5 @@ C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconS.0
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlAdmin.resources
+C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnslyticsControl.resources

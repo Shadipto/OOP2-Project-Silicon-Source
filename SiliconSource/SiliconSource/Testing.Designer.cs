@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucEmployeeControl = new SiliconSource.EmployeeControl();
+            this.ucEmployeeControl = new SiliconSource.ucEmployeeControlAdmin();
             this.SuspendLayout();
             // 
             // ucEmployeeControl
@@ -53,6 +53,6 @@
 
         #endregion
 
-        private EmployeeControl ucEmployeeControl;
+        private ucEmployeeControlAdmin ucEmployeeControl;
     }
 }

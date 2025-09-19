@@ -64,11 +64,11 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeControl.cs">
+    <Compile Include="ucEmployeeControlAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EmployeeControl.Designer.cs">
-      <DependentUpon>EmployeeControl.cs</DependentUpon>
+    <Compile Include="ucEmployeeControlAdmin.Designer.cs">
+      <DependentUpon>ucEmployeeControlAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeDashboard.cs">
       <SubType>Form</SubType>
@@ -76,11 +76,11 @@
     <Compile Include="EmployeeDashboard.Designer.cs">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="InventoryControl.cs">
+    <Compile Include="ucInventoryControlAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InventoryControl.Designer.cs">
-      <DependentUpon>InventoryControl.cs</DependentUpon>
+    <Compile Include="ucInventoryControlAdmin.Designer.cs">
+      <DependentUpon>ucInventoryControlAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -138,14 +138,14 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeControl.resx">
-      <DependentUpon>EmployeeControl.cs</DependentUpon>
+    <EmbeddedResource Include="ucEmployeeControlAdmin.resx">
+      <DependentUpon>ucEmployeeControlAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeDashboard.resx">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InventoryControl.resx">
-      <DependentUpon>InventoryControl.cs</DependentUpon>
+    <EmbeddedResource Include="ucInventoryControlAdmin.resx">
+      <DependentUpon>ucInventoryControlAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
