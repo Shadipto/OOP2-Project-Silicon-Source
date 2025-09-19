@@ -35,3 +35,9 @@ C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\Sili
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources

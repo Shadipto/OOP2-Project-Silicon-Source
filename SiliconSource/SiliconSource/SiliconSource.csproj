@@ -102,6 +102,18 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucAnslyticsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAnslyticsControl.Designer.cs">
+      <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesControl.Designer.cs">
+      <DependentUpon>ucSalesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateInventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </Compile>
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAnslyticsControl.resx">
+      <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesControl.resx">
+      <DependentUpon>ucSalesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateInventory.resx">
       <DependentUpon>UpdateInventory.cs</DependentUpon>

@@ -43,21 +43,19 @@
             this.rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lblRole = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblAdminName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.employeeControl = new SiliconSource.EmployeeControl();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlBody.SuspendLayout();
             this.pnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.pnlGrid.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaEmployeeDashboard
@@ -329,6 +327,13 @@
             this.pnlBody.Size = new System.Drawing.Size(1060, 700);
             this.pnlBody.TabIndex = 4;
             // 
+            // pnlGrid
+            // 
+            this.pnlGrid.Location = new System.Drawing.Point(7, 106);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
+            this.pnlGrid.TabIndex = 2;
+            // 
             // pnlHeading
             // 
             this.pnlHeading.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -393,7 +398,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(20, 25);
+            this.lblTitle.Location = new System.Drawing.Point(35, 47);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(98, 33);
             this.lblTitle.TabIndex = 2;
@@ -417,22 +422,6 @@
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 1;
             // 
-            // pnlGrid
-            // 
-            this.pnlGrid.Controls.Add(this.employeeControl);
-            this.pnlGrid.Location = new System.Drawing.Point(7, 106);
-            this.pnlGrid.Name = "pnlGrid";
-            this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
-            this.pnlGrid.TabIndex = 2;
-            // 
-            // employeeControl
-            // 
-            this.employeeControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeControl.Location = new System.Drawing.Point(0, 0);
-            this.employeeControl.Name = "employeeControl";
-            this.employeeControl.Size = new System.Drawing.Size(1053, 590);
-            this.employeeControl.TabIndex = 0;
-            // 
             // EmployeeDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,7 +444,6 @@
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.pnlGrid.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -482,6 +470,5 @@
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
-        private EmployeeControl employeeControl;
     }
 }

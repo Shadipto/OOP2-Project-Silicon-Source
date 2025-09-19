@@ -52,10 +52,8 @@
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
             this.pboxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ucInventoryControl = new SiliconSource.InventoryControl();
             pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
             pnlBody.SuspendLayout();
-            this.pnlGrid.SuspendLayout();
             this.pnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).BeginInit();
             this.pnlMenu.SuspendLayout();
@@ -87,7 +85,6 @@
             this.pnlGrid.BackColor = System.Drawing.Color.Transparent;
             this.pnlGrid.BorderColor = System.Drawing.Color.Transparent;
             this.pnlGrid.BorderRadius = 10;
-            this.pnlGrid.Controls.Add(this.ucInventoryControl);
             this.pnlGrid.Location = new System.Drawing.Point(5, 106);
             this.pnlGrid.Name = "pnlGrid";
             this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
@@ -143,6 +140,7 @@
             this.pboxAdmin.FillColor = System.Drawing.Color.Transparent;
             this.pboxAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.Image")));
             this.pboxAdmin.ImageRotate = 0F;
+            this.pboxAdmin.InitialImage = ((System.Drawing.Image)(resources.GetObject("pboxAdmin.InitialImage")));
             this.pboxAdmin.Location = new System.Drawing.Point(807, 30);
             this.pboxAdmin.Name = "pboxAdmin";
             this.pboxAdmin.Size = new System.Drawing.Size(73, 50);
@@ -476,16 +474,6 @@
             this.pboxLogo.TabStop = false;
             this.pboxLogo.UseTransparentBackground = true;
             // 
-            // ucInventoryControl
-            // 
-            this.ucInventoryControl.BackColor = System.Drawing.Color.White;
-            this.ucInventoryControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucInventoryControl.Location = new System.Drawing.Point(0, 0);
-            this.ucInventoryControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.ucInventoryControl.Name = "ucInventoryControl";
-            this.ucInventoryControl.Size = new System.Drawing.Size(1053, 590);
-            this.ucInventoryControl.TabIndex = 1;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,7 +490,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             pnlBody.ResumeLayout(false);
-            this.pnlGrid.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).EndInit();
@@ -537,7 +524,6 @@
         private System.Windows.Forms.Label lblAdminName;
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
-        private InventoryControl ucInventoryControl;
     }
 }
 
