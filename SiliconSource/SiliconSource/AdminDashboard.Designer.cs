@@ -52,7 +52,7 @@
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
             this.pboxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.inventoryControl = new SiliconSource.InventoryControl();
+            this.ucInventoryControl = new SiliconSource.InventoryControl();
             pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
             pnlBody.SuspendLayout();
             this.pnlGrid.SuspendLayout();
@@ -87,7 +87,7 @@
             this.pnlGrid.BackColor = System.Drawing.Color.Transparent;
             this.pnlGrid.BorderColor = System.Drawing.Color.Transparent;
             this.pnlGrid.BorderRadius = 10;
-            this.pnlGrid.Controls.Add(this.inventoryControl);
+            this.pnlGrid.Controls.Add(this.ucInventoryControl);
             this.pnlGrid.Location = new System.Drawing.Point(5, 106);
             this.pnlGrid.Name = "pnlGrid";
             this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
@@ -476,15 +476,15 @@
             this.pboxLogo.TabStop = false;
             this.pboxLogo.UseTransparentBackground = true;
             // 
-            // inventoryControl
+            // ucInventoryControl
             // 
-            this.inventoryControl.BackColor = System.Drawing.Color.White;
-            this.inventoryControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryControl.Location = new System.Drawing.Point(0, 0);
-            this.inventoryControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.inventoryControl.Name = "inventoryControl";
-            this.inventoryControl.Size = new System.Drawing.Size(1053, 590);
-            this.inventoryControl.TabIndex = 1;
+            this.ucInventoryControl.BackColor = System.Drawing.Color.White;
+            this.ucInventoryControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucInventoryControl.Location = new System.Drawing.Point(0, 0);
+            this.ucInventoryControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.ucInventoryControl.Name = "ucInventoryControl";
+            this.ucInventoryControl.Size = new System.Drawing.Size(1053, 590);
+            this.ucInventoryControl.TabIndex = 1;
             // 
             // AdminDashboard
             // 
@@ -537,7 +537,7 @@
         private System.Windows.Forms.Label lblAdminName;
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
-        private InventoryControl inventoryControl;
+        private InventoryControl ucInventoryControl;
     }
 }
 

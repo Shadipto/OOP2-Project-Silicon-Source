@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.employeeControl1 = new SiliconSource.EmployeeControl();
+            this.ucEmployeeControl = new SiliconSource.EmployeeControl();
             this.SuspendLayout();
             // 
-            // employeeControl1
+            // ucEmployeeControl
             // 
-            this.employeeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeControl1.Location = new System.Drawing.Point(0, 0);
-            this.employeeControl1.Name = "employeeControl1";
-            this.employeeControl1.Size = new System.Drawing.Size(1037, 551);
-            this.employeeControl1.TabIndex = 0;
+            this.ucEmployeeControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucEmployeeControl.Location = new System.Drawing.Point(0, 0);
+            this.ucEmployeeControl.Name = "ucEmployeeControl";
+            this.ucEmployeeControl.Size = new System.Drawing.Size(1037, 551);
+            this.ucEmployeeControl.TabIndex = 0;
             // 
             // Testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 551);
-            this.Controls.Add(this.employeeControl1);
+            this.Controls.Add(this.ucEmployeeControl);
             this.Name = "Testing";
             this.Text = "Testing";
             this.ResumeLayout(false);
@@ -53,6 +53,6 @@
 
         #endregion
 
-        private EmployeeControl employeeControl1;
+        private EmployeeControl ucEmployeeControl;
     }
 }

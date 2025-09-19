@@ -1,26 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\",
+  "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\employeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\merge\\siliconsource\\siliconsource\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\merge\\siliconsource\\siliconsource\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\merge\\siliconsource\\siliconsource\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\employeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\inventorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\siliconsource\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,58 +54,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\AdminDashboard.cs [Design]",
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Login.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Login.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Login.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:16:29.8Z",
+              "WhenOpened": "2025-09-19T14:44:22.116Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InventoryControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\InventoryControl.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\InventoryControl.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\InventoryControl.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\InventoryControl.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "UpdateInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\UpdateInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\UpdateInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\UpdateInventory.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\UpdateInventory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T10:50:08.719Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-09-19T15:56:01.185Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Testing.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Testing.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Testing.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Testing.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\Testing.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "UpdateInventory.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\UpdateInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\UpdateInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\UpdateInventory.cs",
+              "RelativeToolTip": "SiliconSource\\UpdateInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T11:41:10.116Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Program.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Program.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Program.cs*",
-              "RelativeToolTip": "SiliconSource\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T11:39:56.311Z",
+              "WhenOpened": "2025-09-19T15:55:56.56Z",
               "EditorCaption": ""
             },
             {
@@ -102,15 +112,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AddInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\AddInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AddInventory.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\AddInventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T15:40:54.169Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddInventory.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AddInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\AddInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AddInventory.cs",
+              "RelativeToolTip": "SiliconSource\\AddInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T15:40:49.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Testing.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Testing.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Testing.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Testing.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Testing.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T15:22:53.16Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\AdminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T02:16:29.8Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Program.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Program.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\Program.cs*",
+              "RelativeToolTip": "SiliconSource\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:39:56.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\EmployeeDashboard.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\EmployeeDashboard.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\EmployeeDashboard.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\EmployeeDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T13:27:05.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EmployeeControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\EmployeeControl.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\EmployeeControl.cs",
               "RelativeDocumentMoniker": "SiliconSource\\EmployeeControl.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\EmployeeControl.cs [Design]",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\EmployeeControl.cs [Design]",
               "RelativeToolTip": "SiliconSource\\EmployeeControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T11:20:57.174Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-19T14:21:31.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\InventoryControl.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\InventoryControl.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\Merge\\SiliconSource\\SiliconSource\\InventoryControl.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\InventoryControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T14:21:19.751Z"
             }
           ]
         }
