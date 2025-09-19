@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Guna2GradientPanel pnlBody;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
+            this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
             this.lblRole = new System.Windows.Forms.Label();
@@ -51,16 +52,15 @@
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
             this.pboxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.inventoryControl = new SiliconSource.InventoryControl();
             pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
             pnlBody.SuspendLayout();
+            this.pnlGrid.SuspendLayout();
             this.pnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
-            this.pnlGrid.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBody
@@ -81,6 +81,17 @@
             pnlBody.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
             pnlBody.Size = new System.Drawing.Size(1060, 700);
             pnlBody.TabIndex = 1;
+            // 
+            // pnlGrid
+            // 
+            this.pnlGrid.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGrid.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlGrid.BorderRadius = 10;
+            this.pnlGrid.Controls.Add(this.inventoryControl);
+            this.pnlGrid.Location = new System.Drawing.Point(5, 106);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
+            this.pnlGrid.TabIndex = 4;
             // 
             // pnlHeading
             // 
@@ -465,26 +476,15 @@
             this.pboxLogo.TabStop = false;
             this.pboxLogo.UseTransparentBackground = true;
             // 
-            // pnlGrid
-            // 
-            this.pnlGrid.BackColor = System.Drawing.Color.Transparent;
-            this.pnlGrid.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlGrid.BorderRadius = 10;
-            this.pnlGrid.Controls.Add(this.inventoryControl);
-            this.pnlGrid.Location = new System.Drawing.Point(5, 106);
-            this.pnlGrid.Name = "pnlGrid";
-            this.pnlGrid.Size = new System.Drawing.Size(1053, 590);
-            this.pnlGrid.TabIndex = 4;
-            // 
             // inventoryControl
             // 
             this.inventoryControl.BackColor = System.Drawing.Color.White;
             this.inventoryControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inventoryControl.Location = new System.Drawing.Point(0, 0);
-            this.inventoryControl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.inventoryControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.inventoryControl.Name = "inventoryControl";
             this.inventoryControl.Size = new System.Drawing.Size(1053, 590);
-            this.inventoryControl.TabIndex = 0;
+            this.inventoryControl.TabIndex = 1;
             // 
             // AdminDashboard
             // 
@@ -502,6 +502,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             pnlBody.ResumeLayout(false);
+            this.pnlGrid.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAdmin)).EndInit();
@@ -509,7 +510,6 @@
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
-            this.pnlGrid.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

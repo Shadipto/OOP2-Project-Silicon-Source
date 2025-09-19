@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace SiliconSource
 {
-    public partial class InventoryControl : UserControl
+    public partial class Testing : Form
     {
-        public InventoryControl()
+        public Testing()
         {
             InitializeComponent();
         }
-
     }
 }
