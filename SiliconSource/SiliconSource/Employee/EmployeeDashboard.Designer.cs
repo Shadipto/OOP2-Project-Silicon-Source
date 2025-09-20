@@ -85,7 +85,7 @@
             this.lblMoto.BackColor = System.Drawing.Color.Transparent;
             this.lblMoto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoto.ForeColor = System.Drawing.Color.Black;
-            this.lblMoto.Location = new System.Drawing.Point(20, 146);
+            this.lblMoto.Location = new System.Drawing.Point(20, 153);
             this.lblMoto.Name = "lblMoto";
             this.lblMoto.Size = new System.Drawing.Size(154, 34);
             this.lblMoto.TabIndex = 5;

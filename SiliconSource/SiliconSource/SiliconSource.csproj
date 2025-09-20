@@ -114,11 +114,11 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ucAnslyticsControl.cs">
+    <Compile Include="Admin\ucAnalyticsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\ucAnslyticsControl.Designer.cs">
-      <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
+    <Compile Include="Admin\ucAnalyticsControl.Designer.cs">
+      <DependentUpon>ucAnalyticsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee\ucCart.cs">
       <SubType>UserControl</SubType>
@@ -183,8 +183,8 @@
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ucAnslyticsControl.resx">
-      <DependentUpon>ucAnslyticsControl.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\ucAnalyticsControl.resx">
+      <DependentUpon>ucAnalyticsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee\ucCart.resx">
       <DependentUpon>ucCart.cs</DependentUpon>

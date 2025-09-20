@@ -3,7 +3,6 @@ C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
@@ -87,7 +86,6 @@ C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnslyticsControl.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
@@ -119,3 +117,7 @@ C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj
 C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
 C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
 C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ManagerDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Employee.AdminDashboard.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources

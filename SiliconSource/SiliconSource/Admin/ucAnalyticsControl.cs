@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SiliconSource
 {
-    public partial class ucAnslyticsControl : UserControl
+    public partial class ucAnalyticsControl : UserControl
     {
-        public ucAnslyticsControl()
+        public ucAnalyticsControl()
         {
             InitializeComponent();
         }
