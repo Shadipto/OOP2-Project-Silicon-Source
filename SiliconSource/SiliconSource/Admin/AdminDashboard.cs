@@ -33,6 +33,7 @@ namespace SiliconSource.Employee
 
             
 
+
             rbtnInventory.CheckedChanged += RadioButton_CheckedChanged;
             rbtnEmployee.CheckedChanged += RadioButton_CheckedChanged;
             rbtnSales.CheckedChanged += RadioButton_CheckedChanged;
