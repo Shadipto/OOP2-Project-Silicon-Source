@@ -120,3 +120,29 @@ C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ManagerDashboard.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlAdmin.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+D:\SSSS\HOOP2-Project-Silicon-Source-main\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date

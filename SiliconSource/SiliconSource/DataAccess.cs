@@ -15,7 +15,7 @@ namespace SiliconSource
         private SqlDataAdapter sqlda;
         private DataSet ds;
 
-        private readonly static string connectionString = "Data Source=SHADIPTO_PRANTO\\DIPTOSQLSERVER;Initial Catalog=SiliconSource;Integrated Security=True;";
+        //private readonly static string connectionString = "Data Source=siliconsource.database.windows.net;Initial Catalog=SiliconSource;User ID=SiliconSource;Password=OOP2Project;Encrypt=False";
 
         internal SqlConnection Sqlcon
         {
@@ -43,7 +43,7 @@ namespace SiliconSource
 
         internal DataAccess()
         { 
-           this.Sqlcon = new SqlConnection(connectionString);
+           this.Sqlcon = new SqlConnection("Data Source=siliconsource.database.windows.net;Initial Catalog=SiliconSource;User ID=SiliconSource;Password=OOP2Project;Encrypt=False");
            Sqlcon.Open();
         }
 
@@ -54,6 +54,14 @@ namespace SiliconSource
             this.Ds = new DataSet();
             this.Sqlda.Fill(this.Ds);
             return this.Ds;
+        }
+        internal DataTable ExecuteQueryTable(string query)
+        {
+            this.Sqlcmd = new SqlCommand(query,Sqlcon);
+            this.Sqlda = new SqlDataAdapter(this.Sqlcmd);
+            this.Ds = new DataSet();
+            this.Sqlda.Fill(this.Ds);
+            return Ds.Tables[0];
         }
     }
 }

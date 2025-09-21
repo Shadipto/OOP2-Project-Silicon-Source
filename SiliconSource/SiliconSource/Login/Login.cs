@@ -25,19 +25,55 @@ namespace SiliconSource
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            AdminDashboard adminDashboard = new AdminDashboard(this);
-            EmployeeDashboard employeeDashboard = new EmployeeDashboard(this);
-            adminDashboard.Show();
-            //employeeDashboard.Show();
-            this.Hide();
-
-            // For testing purpose only [Dipto]
+            var da = new DataAccess();
             string userID = ucLoginID.TextboxText;
-            string password = ucLoginPassword.TextboxText;
-            MessageBox.Show($"{userID}: {GenerateSHA256Hash(password)}");
+            string passwordHash = this.GenerateSHA256Hash(ucLoginPassword.TextboxText);
+            string query = $"SELECT [Role] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;"; 
+            var dst = da.ExecuteQueryTable(query);
+            if (dst.Rows.Count == 1)
+            {
+                if (dst.Rows[0][0].ToString() == "Owner")
+                {
+                    this.Hide();
+                    MessageBox.Show("Login Successful");
+                    var adminDashboard = new AdminDashboard(this);
+                    adminDashboard.Show();
+                   
+
+                    
+                }
+                else if (dst.Rows[0][0].ToString() == "Manager")
+                {
+                    this.Hide();
+                    MessageBox.Show("Manager");
+                    var managerDashboard = new ManagerDashboard();
+                    managerDashboard.Show();
+                }
+                else if (dst.Rows[0][0].ToString() == "SalesRepresentative")
+                {
+                    this.Hide();
+                    MessageBox.Show("SalesRepresentative");
+                    var employeeDashboard = new EmployeeDashboard(this);
+                    employeeDashboard.Show();
+
+                }
+                else
+                {
+                    this.Hide();
+                    MessageBox.Show("Error");
+                    this.Close();
+                }
+                    
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Password");
+            }
+
+            
         }
 
-        private static string GenerateSHA256Hash(string password)
+        private string GenerateSHA256Hash(string password)
         {
             using (SHA256 sha256 = SHA256.Create())
             {

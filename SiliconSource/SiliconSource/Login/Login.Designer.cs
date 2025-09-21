@@ -89,7 +89,7 @@
             this.pnlLoginLeft.Controls.Add(this.lblDevelopedBy);
             this.pnlLoginLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLoginLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlLoginLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLoginLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlLoginLeft.Name = "pnlLoginLeft";
             this.pnlLoginLeft.Size = new System.Drawing.Size(515, 600);
             this.pnlLoginLeft.TabIndex = 3;
@@ -99,8 +99,8 @@
             this.lblSiliconSource.BackColor = System.Drawing.Color.Transparent;
             this.lblSiliconSource.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSiliconSource.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSiliconSource.Location = new System.Drawing.Point(95, 380);
-            this.lblSiliconSource.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSiliconSource.Location = new System.Drawing.Point(101, 395);
+            this.lblSiliconSource.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblSiliconSource.Name = "lblSiliconSource";
             this.lblSiliconSource.Size = new System.Drawing.Size(227, 39);
             this.lblSiliconSource.TabIndex = 8;
@@ -111,8 +111,8 @@
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblWelcome.Location = new System.Drawing.Point(110, 150);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2);
+            this.lblWelcome.Location = new System.Drawing.Point(110, 159);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(202, 35);
             this.lblWelcome.TabIndex = 3;
@@ -146,7 +146,7 @@
             this.lblRadiant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRadiant.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblRadiant.Location = new System.Drawing.Point(8, 571);
-            this.lblRadiant.Margin = new System.Windows.Forms.Padding(2);
+            this.lblRadiant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblRadiant.Name = "lblRadiant";
             this.lblRadiant.Size = new System.Drawing.Size(46, 14);
             this.lblRadiant.TabIndex = 5;
@@ -158,7 +158,7 @@
             this.lblDevelopedBy.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevelopedBy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDevelopedBy.Location = new System.Drawing.Point(8, 557);
-            this.lblDevelopedBy.Margin = new System.Windows.Forms.Padding(2);
+            this.lblDevelopedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblDevelopedBy.Name = "lblDevelopedBy";
             this.lblDevelopedBy.Size = new System.Drawing.Size(79, 14);
             this.lblDevelopedBy.TabIndex = 4;
@@ -202,6 +202,7 @@
             this.ucLoginPassword.IsReadOnly = false;
             this.ucLoginPassword.Label = "Password";
             this.ucLoginPassword.Location = new System.Drawing.Point(53, 270);
+            this.ucLoginPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ucLoginPassword.Name = "ucLoginPassword";
             this.ucLoginPassword.Size = new System.Drawing.Size(349, 71);
             this.ucLoginPassword.TabIndex = 11;
@@ -213,6 +214,7 @@
             this.ucLoginID.IsReadOnly = false;
             this.ucLoginID.Label = "UserID";
             this.ucLoginID.Location = new System.Drawing.Point(53, 193);
+            this.ucLoginID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ucLoginID.Name = "ucLoginID";
             this.ucLoginID.Size = new System.Drawing.Size(349, 71);
             this.ucLoginID.TabIndex = 10;
@@ -223,7 +225,7 @@
             this.lblSignin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSignin.Location = new System.Drawing.Point(168, 100);
-            this.lblSignin.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSignin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblSignin.Name = "lblSignin";
             this.lblSignin.Size = new System.Drawing.Size(125, 39);
             this.lblSignin.TabIndex = 9;
@@ -239,7 +241,7 @@
             this.Controls.Add(this.pnlLoginLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
