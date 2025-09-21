@@ -5,7 +5,7 @@ CREATE TABLE [User] (
     LastName VARCHAR(50) NOT NULL,
     UserName VARCHAR(50) NOT NULL UNIQUE,
     PasswordHash VARCHAR(255) NOT NULL,
-    Role VARCHAR(20) NOT NULL CHECK (Role IN ('Manager', 'SalesRepresentative')),
+    Role VARCHAR(20) NOT NULL CHECK (Role IN ('Manager', 'SalesRepresentative', 'Owner')),
     Salary DECIMAL(10, 2) NOT NULL
 );
 
