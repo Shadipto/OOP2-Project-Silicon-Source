@@ -52,19 +52,20 @@
             // txtInfo
             // 
             this.txtInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInfo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInfo.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtInfo.Location = new System.Drawing.Point(3, 39);
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(333, 13);
+            this.txtInfo.Size = new System.Drawing.Size(333, 18);
             this.txtInfo.TabIndex = 3;
             // 
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
             this.lblText.Location = new System.Drawing.Point(-1, 14);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(50, 22);
+            this.lblText.Size = new System.Drawing.Size(52, 17);
             this.lblText.TabIndex = 2;
             this.lblText.Text = "label1";
             // 

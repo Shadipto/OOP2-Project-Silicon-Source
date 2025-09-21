@@ -37,8 +37,8 @@
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.rbtnAnalytics = new Guna.UI2.WinForms.Guna2Button();
-            this.rbtnEmplyee = new Guna.UI2.WinForms.Guna2Button();
+            this.rbtnRecord = new Guna.UI2.WinForms.Guna2Button();
+            this.rbtnCart = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.guna2rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBody = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -126,8 +126,8 @@
             this.pnlMenu.BorderRadius = 10;
             this.pnlMenu.BorderThickness = 1;
             this.pnlMenu.Controls.Add(this.btnLogout);
-            this.pnlMenu.Controls.Add(this.rbtnAnalytics);
-            this.pnlMenu.Controls.Add(this.rbtnEmplyee);
+            this.pnlMenu.Controls.Add(this.rbtnRecord);
+            this.pnlMenu.Controls.Add(this.rbtnCart);
             this.pnlMenu.Controls.Add(this.rbtnInventory);
             this.pnlMenu.Controls.Add(this.guna2rbtnHome);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -165,61 +165,62 @@
             this.btnLogout.Size = new System.Drawing.Size(180, 45);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // rbtnAnalytics
+            // rbtnRecord
             // 
-            this.rbtnAnalytics.Animated = true;
-            this.rbtnAnalytics.AnimatedGIF = true;
-            this.rbtnAnalytics.AutoRoundedCorners = true;
-            this.rbtnAnalytics.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnAnalytics.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.rbtnAnalytics.CheckedState.FillColor = System.Drawing.Color.White;
-            this.rbtnAnalytics.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnAnalytics.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnAnalytics.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnAnalytics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.rbtnAnalytics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.rbtnAnalytics.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.rbtnAnalytics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnAnalytics.ForeColor = System.Drawing.Color.White;
-            this.rbtnAnalytics.HoverState.FillColor = System.Drawing.Color.White;
-            this.rbtnAnalytics.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("rbtnAnalytics.Image")));
-            this.rbtnAnalytics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.rbtnAnalytics.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnAnalytics.Location = new System.Drawing.Point(9, 480);
-            this.rbtnAnalytics.Name = "rbtnAnalytics";
-            this.rbtnAnalytics.Size = new System.Drawing.Size(180, 45);
-            this.rbtnAnalytics.TabIndex = 4;
-            this.rbtnAnalytics.Text = "Record";
-            this.rbtnAnalytics.TextOffset = new System.Drawing.Point(6, 0);
+            this.rbtnRecord.Animated = true;
+            this.rbtnRecord.AnimatedGIF = true;
+            this.rbtnRecord.AutoRoundedCorners = true;
+            this.rbtnRecord.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnRecord.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.rbtnRecord.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbtnRecord.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnRecord.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnRecord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnRecord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.rbtnRecord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.rbtnRecord.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.rbtnRecord.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnRecord.ForeColor = System.Drawing.Color.White;
+            this.rbtnRecord.HoverState.FillColor = System.Drawing.Color.White;
+            this.rbtnRecord.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnRecord.Image = ((System.Drawing.Image)(resources.GetObject("rbtnRecord.Image")));
+            this.rbtnRecord.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbtnRecord.ImageOffset = new System.Drawing.Point(20, 0);
+            this.rbtnRecord.Location = new System.Drawing.Point(9, 480);
+            this.rbtnRecord.Name = "rbtnRecord";
+            this.rbtnRecord.Size = new System.Drawing.Size(180, 45);
+            this.rbtnRecord.TabIndex = 4;
+            this.rbtnRecord.Text = "Record";
+            this.rbtnRecord.TextOffset = new System.Drawing.Point(6, 0);
             // 
-            // rbtnEmplyee
+            // rbtnCart
             // 
-            this.rbtnEmplyee.Animated = true;
-            this.rbtnEmplyee.AnimatedGIF = true;
-            this.rbtnEmplyee.AutoRoundedCorners = true;
-            this.rbtnEmplyee.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnEmplyee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.rbtnEmplyee.CheckedState.FillColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnEmplyee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnEmplyee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnEmplyee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.rbtnEmplyee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.rbtnEmplyee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.rbtnEmplyee.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnEmplyee.ForeColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.HoverState.FillColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnEmplyee.Image = ((System.Drawing.Image)(resources.GetObject("rbtnEmplyee.Image")));
-            this.rbtnEmplyee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.rbtnEmplyee.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnEmplyee.Location = new System.Drawing.Point(9, 415);
-            this.rbtnEmplyee.Name = "rbtnEmplyee";
-            this.rbtnEmplyee.Size = new System.Drawing.Size(180, 45);
-            this.rbtnEmplyee.TabIndex = 2;
-            this.rbtnEmplyee.Text = "Cart";
+            this.rbtnCart.Animated = true;
+            this.rbtnCart.AnimatedGIF = true;
+            this.rbtnCart.AutoRoundedCorners = true;
+            this.rbtnCart.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnCart.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.rbtnCart.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbtnCart.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.rbtnCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.rbtnCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.rbtnCart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnCart.ForeColor = System.Drawing.Color.White;
+            this.rbtnCart.HoverState.FillColor = System.Drawing.Color.White;
+            this.rbtnCart.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnCart.Image = ((System.Drawing.Image)(resources.GetObject("rbtnCart.Image")));
+            this.rbtnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbtnCart.ImageOffset = new System.Drawing.Point(20, 0);
+            this.rbtnCart.Location = new System.Drawing.Point(9, 415);
+            this.rbtnCart.Name = "rbtnCart";
+            this.rbtnCart.Size = new System.Drawing.Size(180, 45);
+            this.rbtnCart.TabIndex = 2;
+            this.rbtnCart.Text = "Cart";
             // 
             // rbtnInventory
             // 
@@ -401,6 +402,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 1;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // EmployeeDashboard
             // 
@@ -437,8 +439,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMenu;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
-        private Guna.UI2.WinForms.Guna2Button rbtnAnalytics;
-        private Guna.UI2.WinForms.Guna2Button rbtnEmplyee;
+        private Guna.UI2.WinForms.Guna2Button rbtnRecord;
+        private Guna.UI2.WinForms.Guna2Button rbtnCart;
         private Guna.UI2.WinForms.Guna2Button rbtnInventory;
         private Guna.UI2.WinForms.Guna2Button guna2rbtnHome;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlBody;

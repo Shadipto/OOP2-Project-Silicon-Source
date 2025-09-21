@@ -20,6 +20,7 @@ namespace SiliconSource.Employee
         private ucSalesControl sales;
         private ucAnalyticsControl analytics;
 
+
         public AdminDashboard(Form loginForm) // loginForm parameter (association) [Dipto]
         {
             
@@ -31,21 +32,20 @@ namespace SiliconSource.Employee
 
             InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
 
-            
-
 
             rbtnInventory.CheckedChanged += RadioButton_CheckedChanged;
             rbtnEmployee.CheckedChanged += RadioButton_CheckedChanged;
             rbtnSales.CheckedChanged += RadioButton_CheckedChanged;
             rbtnAnalytics.CheckedChanged += RadioButton_CheckedChanged;
+
         }
 
         private void InitializeUserControls()
         {
-            inventory = new ucInventoryControlAdmin { Dock = DockStyle.Fill };
-            employee = new ucEmployeeControlAdmin { Dock = DockStyle.Fill };
-            sales = new ucSalesControl { Dock = DockStyle.Fill };
-            analytics = new ucAnalyticsControl { Dock = DockStyle.Fill };
+            this.inventory = new ucInventoryControlAdmin { Dock = DockStyle.Fill };
+            this.employee = new ucEmployeeControlAdmin { Dock = DockStyle.Fill };
+            this.sales = new ucSalesControl { Dock = DockStyle.Fill };
+            this.analytics = new ucAnalyticsControl { Dock = DockStyle.Fill };
 
             
             pnlGrid.Controls.Add(inventory);

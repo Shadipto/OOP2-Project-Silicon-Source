@@ -23,7 +23,9 @@ namespace SiliconSource
         private void btnLogin_Click(object sender, EventArgs e)
         {
             AdminDashboard adminDashboard = new AdminDashboard(this);
-            adminDashboard.Show();
+            EmployeeDashboard employeeDashboard = new EmployeeDashboard(this);
+            //adminDashboard.Show();
+            employeeDashboard.Show();
             this.Hide();
         }
     }
