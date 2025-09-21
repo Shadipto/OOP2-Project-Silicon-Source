@@ -26,6 +26,7 @@ namespace SiliconSource
         public string TextboxText
         {
             get { return this.txtInfo.Text; }
+            set { this.txtInfo.Text = value; }
         }
 
         private void pnlLoginTextbox_Paint(object sender, PaintEventArgs e)

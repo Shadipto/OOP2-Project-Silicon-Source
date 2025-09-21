@@ -63,5 +63,10 @@ namespace SiliconSource
             this.Sqlda.Fill(this.Ds);
             return Ds.Tables[0];
         }
+        internal int ExecuteDMLQuery(string query)
+        {
+            this.Sqlcmd = new SqlCommand(query, Sqlcon);
+            return Sqlcmd.ExecuteNonQuery();
+        }
     }
 }

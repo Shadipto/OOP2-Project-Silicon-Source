@@ -223,6 +223,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(189, 49);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblSupplierName
             // 
@@ -247,8 +248,21 @@
             this.cmbSupplierName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbSupplierName.ItemHeight = 30;
             this.cmbSupplierName.Items.AddRange(new object[] {
+            "AMD",
+            "ASUS",
+            "Cooler Master",
+            "Corsair",
+            "Gigabyte",
+            "Global Brand Pvt Ltd",
             "HP",
-            "Lenovo"});
+            "Intel",
+            "Lenovo",
+            "MSI",
+            "NVIDIA",
+            "Smart Technologies BD Ltd",
+            "Star Tech & Engineering Ltd",
+            "TechLand BD",
+            "UCC"});
             this.cmbSupplierName.Location = new System.Drawing.Point(51, 605);
             this.cmbSupplierName.Name = "cmbSupplierName";
             this.cmbSupplierName.Size = new System.Drawing.Size(349, 36);

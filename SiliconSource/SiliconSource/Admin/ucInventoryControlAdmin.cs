@@ -18,9 +18,21 @@ namespace SiliconSource
             InitializeComponent();
         }
 
-        private void InventoryControl_Paint(object sender, PaintEventArgs e)
+        private void gdvInventory_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            
+            gdvInventory.ClearSelection();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if(gdvInventory.SelectedRows.Count > 0)
+            {
+                int productID = int.Parse(gdvInventory.SelectedRows[0].Cells["ProductID"].Value?.ToString());
+                this.Hide();
+                var updateInventory = new UpdateInventory(productID);
+                updateInventory.Show();
+
+            }
         }
     }
 }
