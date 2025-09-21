@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,19 +11,27 @@
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\login\\logincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\logincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\employee\\uccart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\employee\\uccart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\uccart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\employee\\ucinventorycontrolemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\employee\\ucinventorycontrolemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\ucinventorycontrolemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,11 +39,7 @@
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\login\\logincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\logincontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "LoginControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\LoginControl.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Login\\LoginControl.cs",
@@ -82,27 +82,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ucInventoryControlEmployee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Employee\\ucInventoryControlEmployee.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Employee\\ucInventoryControlEmployee.cs",
               "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Employee\\ucInventoryControlEmployee.cs [Design]",
               "RelativeToolTip": "SiliconSource\\Employee\\ucInventoryControlEmployee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T07:20:34.929Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-21T07:20:34.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ucCart.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Employee\\ucCart.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Employee\\ucCart.cs",
               "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Employee\\ucCart.cs [Design]",
               "RelativeToolTip": "SiliconSource\\Employee\\ucCart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T07:19:29.106Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-21T07:19:29.106Z"
             },
             {
               "$type": "Document",
@@ -119,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EmployeeDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Employee\\EmployeeDashboard.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Employee\\EmployeeDashboard.cs",
@@ -131,32 +129,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs*",
-              "RelativeToolTip": "SiliconSource\\Login\\Login.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs",
+              "RelativeToolTip": "SiliconSource\\Login\\Login.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T21:06:56.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs [Design]*",
-              "RelativeToolTip": "SiliconSource\\Login\\Login.cs [Design]*",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Login\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T21:06:53.107Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
@@ -169,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
@@ -189,8 +187,7 @@
               "RelativeToolTip": "SiliconSource\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T20:39:52.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T20:39:52.775Z"
             }
           ]
         }

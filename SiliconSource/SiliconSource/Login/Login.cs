@@ -10,6 +10,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace SiliconSource
 {
@@ -27,6 +28,25 @@ namespace SiliconSource
             //adminDashboard.Show();
             employeeDashboard.Show();
             this.Hide();
+
+            string userID = ucLoginID.TextboxText;
+            string password = ucLoginPassword.TextboxText;
+            
+            MessageBox.Show(GenerateSHA256Hash(password));
+        }
+
+        private static string GenerateSHA256Hash(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
     }
 }
