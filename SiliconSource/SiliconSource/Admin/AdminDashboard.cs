@@ -17,7 +17,7 @@ namespace SiliconSource
         private DataAccess Da { get; set; } // DataAccess reference (composition) [Dipto]
 
 
-        private Form loginForm; // loninForm reference (association) [Dipto]
+        private Form LoginForm { get; set; } // loninForm reference (association) [Dipto]
 
         // UserControl references (aggregation) [Dipto]
         private ucHomeAdmin homeAdmin;
@@ -35,7 +35,7 @@ namespace SiliconSource
             lblAdminName.Text = adminName; // Set admin name label [Dipto]
             rbtnHome.Checked = true; // default [Dipto]
 
-            this.loginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
+            this.LoginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
 
             this.Da = new DataAccess();
 
@@ -188,7 +188,14 @@ namespace SiliconSource
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginForm.Show();
+            LoginForm.Show();
+        }
+
+        internal void RefreshInventoryTab()
+        {
+            // Force trigger CheckedChanged
+            rbtnInventory.Checked = false;
+            rbtnInventory.Checked = true;
         }
     }
 }

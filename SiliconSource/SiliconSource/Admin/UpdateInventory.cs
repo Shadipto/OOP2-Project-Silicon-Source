@@ -12,14 +12,17 @@ namespace SiliconSource
 {
     public partial class UpdateInventory : Form
     {
-        internal int ProductID {  get; set; }
-        internal int SupplierID {  get; set; }
-        DataAccess da;
-        public UpdateInventory(int productID)
+        private Form AdminDashboardform { get; set; } // Reference to the calling UserControl
+        private int ProductID {  get; set; }
+        private int SupplierID {  get; set; }
+
+        private DataAccess Da { set; get; }
+        public UpdateInventory(int productID, Form adminDashboardForm)
         {
             InitializeComponent();
             this.ProductID = productID;
-            this.da = new DataAccess();
+            this.AdminDashboardform = adminDashboardForm;
+            this.Da = new DataAccess();
 
             string productToUpdate = $@"SELECT
                                            [ProductName]
@@ -32,7 +35,8 @@ namespace SiliconSource
                                           ,[SupplierID]
                                       FROM [dbo].[Product]
                                       WHERE [ProductID] = {ProductID};";
-            DataTable dstUpdate = da.ExecuteQueryTable(productToUpdate);
+
+            DataTable dstUpdate = Da.ExecuteQueryTable(productToUpdate);
 
             ucProductName.TextboxText = dstUpdate.Rows[0][0].ToString();
             cmbCategory.Text = dstUpdate.Rows[0][1].ToString();
@@ -44,7 +48,7 @@ namespace SiliconSource
             this.SupplierID = int.Parse(dstUpdate.Rows[0][7].ToString());
 
             string queryToFindSuppilerName = $"SELECT [SupplierName] FROM [dbo].[Supplier] WHERE [SupplierID] = {this.SupplierID};";
-            DataTable dstSup = da.ExecuteQueryTable(queryToFindSuppilerName);
+            DataTable dstSup = Da.ExecuteQueryTable(queryToFindSuppilerName);
 
             cmbSupplierName.Text = dstSup.Rows[0][0].ToString();
 
@@ -104,8 +108,47 @@ namespace SiliconSource
                                     WHERE [ProductID] = {this.ProductID};
                                     ";
 
-            int didItWork = da.ExecuteDMLQuery(insertQuary);
-            MessageBox.Show(didItWork.ToString());
+            int didItWork = Da.ExecuteDMLQuery(insertQuary);
+            if (didItWork > 0)
+            {
+                MessageBox.Show("Update Successful");
+            }
+            else
+            {
+                MessageBox.Show("Update Failed");
+            }
+
+        }
+
+        private void ClearForm()
+        {
+            ucProductName.TextboxText = string.Empty;
+            cmbCategory.SelectedIndex = -1;  // clears selection
+            ucDescription.TextboxText = string.Empty;
+            ucPrice.TextboxText = string.Empty;
+            ucCost.TextboxText = string.Empty;
+            ucStockQuantity.TextboxText = string.Empty;
+            ucSKU.TextboxText = string.Empty;
+            cmbSupplierName.SelectedIndex = -1;  // clears supplier selection
+
+            this.ProductID = 0;
+            this.SupplierID = 0;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.ClearForm();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminDashboardform.Show();
+            
+            if (AdminDashboardform is AdminDashboard dashboard)
+            {
+                dashboard.RefreshInventoryTab();
+            }
         }
     }
 }

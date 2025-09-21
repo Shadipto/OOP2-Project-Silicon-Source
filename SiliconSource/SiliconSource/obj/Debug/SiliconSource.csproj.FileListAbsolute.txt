@@ -174,3 +174,4 @@ C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSou
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucHomeAdmin.resources

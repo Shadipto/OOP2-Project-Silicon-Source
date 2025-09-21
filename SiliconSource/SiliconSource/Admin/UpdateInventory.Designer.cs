@@ -46,13 +46,13 @@
             this.cmbSupplierName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ucSKU = new SiliconSource.LoginControl();
             this.ucStockQuantity = new SiliconSource.LoginControl();
             this.ucCost = new SiliconSource.LoginControl();
             this.ucPrice = new SiliconSource.LoginControl();
             this.ucDescription = new SiliconSource.LoginControl();
             this.ucProductName = new SiliconSource.LoginControl();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlUpdateInventoryLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -62,7 +62,6 @@
             // gunaUpdateInventory
             // 
             this.gunaUpdateInventory.AnimateWindow = true;
-            this.gunaUpdateInventory.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_POSITIVE;
             this.gunaUpdateInventory.ContainerControl = this;
             this.gunaUpdateInventory.DockIndicatorTransparencyValue = 0.6D;
             this.gunaUpdateInventory.DragForm = false;
@@ -101,36 +100,36 @@
             // lblInventory
             // 
             this.lblInventory.BackColor = System.Drawing.Color.Transparent;
-            this.lblInventory.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInventory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F);
             this.lblInventory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblInventory.Location = new System.Drawing.Point(8, 394);
+            this.lblInventory.Location = new System.Drawing.Point(24, 394);
             this.lblInventory.Margin = new System.Windows.Forms.Padding(2);
             this.lblInventory.Name = "lblInventory";
-            this.lblInventory.Size = new System.Drawing.Size(159, 38);
+            this.lblInventory.Size = new System.Drawing.Size(175, 35);
             this.lblInventory.TabIndex = 8;
             this.lblInventory.Text = "INVENTORY";
             // 
             // lblUpdate
             // 
             this.lblUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.lblUpdate.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F);
             this.lblUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblUpdate.Location = new System.Drawing.Point(8, 310);
+            this.lblUpdate.Location = new System.Drawing.Point(24, 310);
             this.lblUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.lblUpdate.Name = "lblUpdate";
-            this.lblUpdate.Size = new System.Drawing.Size(106, 38);
+            this.lblUpdate.Size = new System.Drawing.Size(123, 35);
             this.lblUpdate.TabIndex = 7;
             this.lblUpdate.Text = "UPDATE";
             // 
             // lblExisting
             // 
             this.lblExisting.BackColor = System.Drawing.Color.Transparent;
-            this.lblExisting.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExisting.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F);
             this.lblExisting.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblExisting.Location = new System.Drawing.Point(8, 352);
+            this.lblExisting.Location = new System.Drawing.Point(24, 352);
             this.lblExisting.Margin = new System.Windows.Forms.Padding(2);
             this.lblExisting.Name = "lblExisting";
-            this.lblExisting.Size = new System.Drawing.Size(126, 38);
+            this.lblExisting.Size = new System.Drawing.Size(140, 35);
             this.lblExisting.TabIndex = 3;
             this.lblExisting.Text = "EXISTING";
             // 
@@ -149,24 +148,24 @@
             // lblRadiant
             // 
             this.lblRadiant.BackColor = System.Drawing.Color.Transparent;
-            this.lblRadiant.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRadiant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRadiant.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblRadiant.Location = new System.Drawing.Point(8, 734);
             this.lblRadiant.Margin = new System.Windows.Forms.Padding(2);
             this.lblRadiant.Name = "lblRadiant";
-            this.lblRadiant.Size = new System.Drawing.Size(47, 18);
+            this.lblRadiant.Size = new System.Drawing.Size(46, 14);
             this.lblRadiant.TabIndex = 5;
             this.lblRadiant.Text = "Radiant";
             // 
             // lblDevelopedBy
             // 
             this.lblDevelopedBy.BackColor = System.Drawing.Color.Transparent;
-            this.lblDevelopedBy.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevelopedBy.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevelopedBy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDevelopedBy.Location = new System.Drawing.Point(8, 720);
             this.lblDevelopedBy.Margin = new System.Windows.Forms.Padding(2);
             this.lblDevelopedBy.Name = "lblDevelopedBy";
-            this.lblDevelopedBy.Size = new System.Drawing.Size(80, 18);
+            this.lblDevelopedBy.Size = new System.Drawing.Size(79, 14);
             this.lblDevelopedBy.TabIndex = 4;
             this.lblDevelopedBy.Text = "Developed By";
             // 
@@ -200,13 +199,14 @@
             this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(245, 672);
+            this.btnClear.Location = new System.Drawing.Point(245, 682);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(189, 49);
             this.btnClear.TabIndex = 17;
             this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -216,9 +216,9 @@
             this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(30, 672);
+            this.btnUpdate.Location = new System.Drawing.Point(30, 682);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(189, 49);
             this.btnUpdate.TabIndex = 16;
@@ -228,10 +228,10 @@
             // lblSupplierName
             // 
             this.lblSupplierName.AutoSize = true;
-            this.lblSupplierName.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplierName.Location = new System.Drawing.Point(47, 580);
+            this.lblSupplierName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupplierName.Location = new System.Drawing.Point(49, 586);
             this.lblSupplierName.Name = "lblSupplierName";
-            this.lblSupplierName.Size = new System.Drawing.Size(109, 22);
+            this.lblSupplierName.Size = new System.Drawing.Size(111, 17);
             this.lblSupplierName.TabIndex = 15;
             this.lblSupplierName.Text = "SupplierName";
             // 
@@ -263,7 +263,7 @@
             "Star Tech & Engineering Ltd",
             "TechLand BD",
             "UCC"});
-            this.cmbSupplierName.Location = new System.Drawing.Point(51, 605);
+            this.cmbSupplierName.Location = new System.Drawing.Point(51, 616);
             this.cmbSupplierName.Name = "cmbSupplierName";
             this.cmbSupplierName.Size = new System.Drawing.Size(349, 36);
             this.cmbSupplierName.TabIndex = 14;
@@ -299,78 +299,12 @@
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(47, 131);
+            this.lblCategory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Location = new System.Drawing.Point(51, 131);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(73, 22);
+            this.lblCategory.Size = new System.Drawing.Size(75, 17);
             this.lblCategory.TabIndex = 12;
             this.lblCategory.Text = "Category";
-            // 
-            // ucSKU
-            // 
-            this.ucSKU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucSKU.IsPassword = false;
-            this.ucSKU.IsReadOnly = false;
-            this.ucSKU.Label = "SKU";
-            this.ucSKU.Location = new System.Drawing.Point(51, 506);
-            this.ucSKU.Name = "ucSKU";
-            this.ucSKU.Size = new System.Drawing.Size(349, 71);
-            this.ucSKU.TabIndex = 11;
-            // 
-            // ucStockQuantity
-            // 
-            this.ucStockQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucStockQuantity.IsPassword = false;
-            this.ucStockQuantity.IsReadOnly = false;
-            this.ucStockQuantity.Label = "Stock Quantity";
-            this.ucStockQuantity.Location = new System.Drawing.Point(51, 429);
-            this.ucStockQuantity.Name = "ucStockQuantity";
-            this.ucStockQuantity.Size = new System.Drawing.Size(349, 71);
-            this.ucStockQuantity.TabIndex = 10;
-            // 
-            // ucCost
-            // 
-            this.ucCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucCost.IsPassword = false;
-            this.ucCost.IsReadOnly = false;
-            this.ucCost.Label = "Cost";
-            this.ucCost.Location = new System.Drawing.Point(51, 352);
-            this.ucCost.Name = "ucCost";
-            this.ucCost.Size = new System.Drawing.Size(349, 71);
-            this.ucCost.TabIndex = 9;
-            // 
-            // ucPrice
-            // 
-            this.ucPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucPrice.IsPassword = false;
-            this.ucPrice.IsReadOnly = false;
-            this.ucPrice.Label = "Price";
-            this.ucPrice.Location = new System.Drawing.Point(51, 275);
-            this.ucPrice.Name = "ucPrice";
-            this.ucPrice.Size = new System.Drawing.Size(349, 71);
-            this.ucPrice.TabIndex = 8;
-            // 
-            // ucDescription
-            // 
-            this.ucDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucDescription.IsPassword = false;
-            this.ucDescription.IsReadOnly = false;
-            this.ucDescription.Label = "Description";
-            this.ucDescription.Location = new System.Drawing.Point(51, 198);
-            this.ucDescription.Name = "ucDescription";
-            this.ucDescription.Size = new System.Drawing.Size(349, 71);
-            this.ucDescription.TabIndex = 7;
-            // 
-            // ucProductName
-            // 
-            this.ucProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucProductName.IsPassword = false;
-            this.ucProductName.IsReadOnly = false;
-            this.ucProductName.Label = "ProductName";
-            this.ucProductName.Location = new System.Drawing.Point(51, 53);
-            this.ucProductName.Name = "ucProductName";
-            this.ucProductName.Size = new System.Drawing.Size(349, 71);
-            this.ucProductName.TabIndex = 5;
             // 
             // btnExit
             // 
@@ -388,6 +322,79 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 3;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // ucSKU
+            // 
+            this.ucSKU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucSKU.IsPassword = false;
+            this.ucSKU.IsReadOnly = false;
+            this.ucSKU.Label = "SKU";
+            this.ucSKU.Location = new System.Drawing.Point(51, 506);
+            this.ucSKU.Name = "ucSKU";
+            this.ucSKU.Size = new System.Drawing.Size(349, 71);
+            this.ucSKU.TabIndex = 11;
+            this.ucSKU.TextboxText = "";
+            // 
+            // ucStockQuantity
+            // 
+            this.ucStockQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucStockQuantity.IsPassword = false;
+            this.ucStockQuantity.IsReadOnly = false;
+            this.ucStockQuantity.Label = "Stock Quantity";
+            this.ucStockQuantity.Location = new System.Drawing.Point(51, 429);
+            this.ucStockQuantity.Name = "ucStockQuantity";
+            this.ucStockQuantity.Size = new System.Drawing.Size(349, 71);
+            this.ucStockQuantity.TabIndex = 10;
+            this.ucStockQuantity.TextboxText = "";
+            // 
+            // ucCost
+            // 
+            this.ucCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucCost.IsPassword = false;
+            this.ucCost.IsReadOnly = false;
+            this.ucCost.Label = "Cost";
+            this.ucCost.Location = new System.Drawing.Point(51, 352);
+            this.ucCost.Name = "ucCost";
+            this.ucCost.Size = new System.Drawing.Size(349, 71);
+            this.ucCost.TabIndex = 9;
+            this.ucCost.TextboxText = "";
+            // 
+            // ucPrice
+            // 
+            this.ucPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucPrice.IsPassword = false;
+            this.ucPrice.IsReadOnly = false;
+            this.ucPrice.Label = "Price";
+            this.ucPrice.Location = new System.Drawing.Point(51, 275);
+            this.ucPrice.Name = "ucPrice";
+            this.ucPrice.Size = new System.Drawing.Size(349, 71);
+            this.ucPrice.TabIndex = 8;
+            this.ucPrice.TextboxText = "";
+            // 
+            // ucDescription
+            // 
+            this.ucDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucDescription.IsPassword = false;
+            this.ucDescription.IsReadOnly = false;
+            this.ucDescription.Label = "Description";
+            this.ucDescription.Location = new System.Drawing.Point(51, 198);
+            this.ucDescription.Name = "ucDescription";
+            this.ucDescription.Size = new System.Drawing.Size(349, 71);
+            this.ucDescription.TabIndex = 7;
+            this.ucDescription.TextboxText = "";
+            // 
+            // ucProductName
+            // 
+            this.ucProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucProductName.IsPassword = false;
+            this.ucProductName.IsReadOnly = false;
+            this.ucProductName.Label = "ProductName";
+            this.ucProductName.Location = new System.Drawing.Point(51, 53);
+            this.ucProductName.Name = "ucProductName";
+            this.ucProductName.Size = new System.Drawing.Size(349, 71);
+            this.ucProductName.TabIndex = 5;
+            this.ucProductName.TextboxText = "";
             // 
             // UpdateInventory
             // 
