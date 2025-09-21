@@ -4,13 +4,13 @@ Given your updated plan, here is a refined and finalized entity list, along with
 
 ### Finalized Entities List (for Initial Build)
 
-### 1. User
+### 1. AppUser
 * **`UserID`**: Primary Key
 * **`FirstName`**: User's first name
 * **`LastName`**: User's last name
 * **`UserName`**: For login
 * **`PasswordHash`**: Secure password storage
-* **`Role`**: (e.g., 'Manager', 'Sales Representative')
+* **`Role`**: (e.g. 'Owner', 'Manager', 'SalesRepresentative')
 
 ### 2. Customer
 * **`CustomerID`**: Primary Key
