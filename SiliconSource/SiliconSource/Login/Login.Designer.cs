@@ -41,9 +41,9 @@
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginRight = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.lblSignin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucLoginPassword = new SiliconSource.LoginControl();
             this.ucLoginID = new SiliconSource.LoginControl();
+            this.lblSignin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -195,18 +195,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblSignin
-            // 
-            this.lblSignin.BackColor = System.Drawing.Color.Transparent;
-            this.lblSignin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSignin.Location = new System.Drawing.Point(168, 100);
-            this.lblSignin.Margin = new System.Windows.Forms.Padding(2);
-            this.lblSignin.Name = "lblSignin";
-            this.lblSignin.Size = new System.Drawing.Size(125, 39);
-            this.lblSignin.TabIndex = 9;
-            this.lblSignin.Text = "SIGN IN";
-            // 
             // ucLoginPassword
             // 
             this.ucLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
@@ -229,8 +217,21 @@
             this.ucLoginID.Size = new System.Drawing.Size(349, 71);
             this.ucLoginID.TabIndex = 10;
             // 
+            // lblSignin
+            // 
+            this.lblSignin.BackColor = System.Drawing.Color.Transparent;
+            this.lblSignin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSignin.Location = new System.Drawing.Point(168, 100);
+            this.lblSignin.Margin = new System.Windows.Forms.Padding(2);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(125, 39);
+            this.lblSignin.TabIndex = 9;
+            this.lblSignin.Text = "SIGN IN";
+            // 
             // Login
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 600);

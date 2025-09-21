@@ -32,7 +32,8 @@ namespace SiliconSource
             string userID = ucLoginID.TextboxText;
             string password = ucLoginPassword.TextboxText;
             
-            MessageBox.Show(GenerateSHA256Hash(password));
+            
+            MessageBox.Show($"{userID}: {GenerateSHA256Hash(password)}");
         }
 
         private static string GenerateSHA256Hash(string password)
