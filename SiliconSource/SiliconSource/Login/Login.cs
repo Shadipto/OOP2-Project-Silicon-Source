@@ -28,7 +28,7 @@ namespace SiliconSource
             var da = new DataAccess();
             string userID = ucLoginID.TextboxText;
             string passwordHash = this.GenerateSHA256Hash(ucLoginPassword.TextboxText);
-            string query = $"SELECT [Role] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;"; 
+            string query = $"SELECT [Role], [FirstName] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;"; 
             var dst = da.ExecuteQueryTable(query);
             if (dst.Rows.Count == 1)
             {
@@ -36,7 +36,7 @@ namespace SiliconSource
                 {
                     this.Hide();
                     MessageBox.Show("Login Successful");
-                    var adminDashboard = new AdminDashboard(this);
+                    var adminDashboard = new AdminDashboard(this, dst.Rows[0][1].ToString());
                     adminDashboard.Show();
                    
 

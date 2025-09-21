@@ -36,18 +36,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).BeginInit();
@@ -130,9 +128,7 @@
             this.employeeID,
             this.employeeName,
             this.role,
-            this.price,
-            this.cost,
-            this.stock});
+            this.salary});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,61 +176,6 @@
             this.gdvInventory.ThemeStyle.RowsStyle.Height = 25;
             this.gdvInventory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gdvInventory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // employeeID
-            // 
-            this.employeeID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.employeeID.FillWeight = 126.9036F;
-            this.employeeID.Frozen = true;
-            this.employeeID.HeaderText = "Employee ID";
-            this.employeeID.Name = "employeeID";
-            this.employeeID.ReadOnly = true;
-            this.employeeID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.employeeID.Width = 90;
-            // 
-            // employeeName
-            // 
-            this.employeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.employeeName.FillWeight = 329.0299F;
-            this.employeeName.HeaderText = "Employee Name";
-            this.employeeName.Name = "employeeName";
-            this.employeeName.ReadOnly = true;
-            this.employeeName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // role
-            // 
-            this.role.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.role.FillWeight = 14.68883F;
-            this.role.HeaderText = "Role";
-            this.role.Name = "role";
-            this.role.ReadOnly = true;
-            this.role.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.role.Width = 110;
-            // 
-            // price
-            // 
-            this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.price.FillWeight = 14.68883F;
-            this.price.HeaderText = "Price";
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
-            this.price.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.price.Width = 90;
-            // 
-            // cost
-            // 
-            this.cost.HeaderText = "Cost";
-            this.cost.Name = "cost";
-            this.cost.ReadOnly = true;
-            // 
-            // stock
-            // 
-            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.stock.FillWeight = 14.68883F;
-            this.stock.HeaderText = "Stock";
-            this.stock.Name = "stock";
-            this.stock.ReadOnly = true;
-            this.stock.Width = 50;
             // 
             // pnlGridViewOperations
             // 
@@ -380,6 +321,46 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add Employee";
             // 
+            // employeeID
+            // 
+            this.employeeID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.employeeID.FillWeight = 126.9036F;
+            this.employeeID.Frozen = true;
+            this.employeeID.HeaderText = "Employee ID";
+            this.employeeID.Name = "employeeID";
+            this.employeeID.ReadOnly = true;
+            this.employeeID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.employeeID.Width = 90;
+            // 
+            // employeeName
+            // 
+            this.employeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.employeeName.FillWeight = 329.0299F;
+            this.employeeName.HeaderText = "Employee Name";
+            this.employeeName.Name = "employeeName";
+            this.employeeName.ReadOnly = true;
+            this.employeeName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // role
+            // 
+            this.role.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.role.FillWeight = 14.68883F;
+            this.role.HeaderText = "Role";
+            this.role.Name = "role";
+            this.role.ReadOnly = true;
+            this.role.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.role.Width = 110;
+            // 
+            // salary
+            // 
+            this.salary.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.salary.FillWeight = 14.68883F;
+            this.salary.HeaderText = "Salary";
+            this.salary.Name = "salary";
+            this.salary.ReadOnly = true;
+            this.salary.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.salary.Width = 90;
+            // 
             // ucEmployeeControlAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,18 +380,16 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlSearch;
-        private Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGridViewOperations;
         private Guna.UI2.WinForms.Guna2Button btnPrint;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
+        internal Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn role;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cost;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salary;
     }
 }

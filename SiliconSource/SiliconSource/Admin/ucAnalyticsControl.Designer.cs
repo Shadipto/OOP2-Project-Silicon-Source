@@ -37,17 +37,18 @@
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gdvSalesAnalytics = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lblTargetAmout = new System.Windows.Forms.Label();
-            this.lblTarget = new System.Windows.Forms.Label();
-            this.prgTarget = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.btnAnalytics = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTotalSales = new System.Windows.Forms.Label();
             this.lblSales = new System.Windows.Forms.Label();
-            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnAnalytics = new Guna.UI2.WinForms.Guna2Button();
+            this.prgTarget = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.lblTargetAmout = new System.Windows.Forms.Label();
+            this.lblTarget = new System.Windows.Forms.Label();
             this.salesRepID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesRepName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesDetails = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalSalesCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalSales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsSold = new System.Windows.Forms.DataGridViewTextBoxColumn();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdvSalesAnalytics)).BeginInit();
@@ -129,8 +130,9 @@
             this.gdvSalesAnalytics.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.salesRepID,
             this.salesRepName,
-            this.salesDetails,
-            this.totalSales});
+            this.totalSalesCount,
+            this.totalSales,
+            this.productsSold});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -199,58 +201,30 @@
             this.pnlGridViewOperations.Size = new System.Drawing.Size(391, 490);
             this.pnlGridViewOperations.TabIndex = 11;
             // 
-            // lblTargetAmout
+            // btnAnalytics
             // 
-            this.lblTargetAmout.AutoSize = true;
-            this.lblTargetAmout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTargetAmout.Location = new System.Drawing.Point(18, 145);
-            this.lblTargetAmout.Name = "lblTargetAmout";
-            this.lblTargetAmout.Size = new System.Drawing.Size(115, 32);
-            this.lblTargetAmout.TabIndex = 1;
-            this.lblTargetAmout.Text = "Amount";
-            // 
-            // lblTarget
-            // 
-            this.lblTarget.AutoSize = true;
-            this.lblTarget.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTarget.Location = new System.Drawing.Point(18, 99);
-            this.lblTarget.Name = "lblTarget";
-            this.lblTarget.Size = new System.Drawing.Size(211, 32);
-            this.lblTarget.TabIndex = 0;
-            this.lblTarget.Text = "Monthly Target";
-            // 
-            // prgTarget
-            // 
-            this.prgTarget.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.prgTarget.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.prgTarget.ForeColor = System.Drawing.Color.White;
-            this.prgTarget.Location = new System.Drawing.Point(235, 87);
-            this.prgTarget.Minimum = 0;
-            this.prgTarget.Name = "prgTarget";
-            this.prgTarget.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.prgTarget.Size = new System.Drawing.Size(130, 130);
-            this.prgTarget.TabIndex = 2;
-            this.prgTarget.Text = "guna2CircleProgressBar1";
-            // 
-            // lblTotalSales
-            // 
-            this.lblTotalSales.AutoSize = true;
-            this.lblTotalSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalSales.Location = new System.Drawing.Point(18, 284);
-            this.lblTotalSales.Name = "lblTotalSales";
-            this.lblTotalSales.Size = new System.Drawing.Size(115, 32);
-            this.lblTotalSales.TabIndex = 4;
-            this.lblTotalSales.Text = "Amount";
-            // 
-            // lblSales
-            // 
-            this.lblSales.AutoSize = true;
-            this.lblSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSales.Location = new System.Drawing.Point(18, 238);
-            this.lblSales.Name = "lblSales";
-            this.lblSales.Size = new System.Drawing.Size(159, 32);
-            this.lblSales.TabIndex = 3;
-            this.lblSales.Text = "Total Sales";
+            this.btnAnalytics.Animated = true;
+            this.btnAnalytics.AnimatedGIF = true;
+            this.btnAnalytics.AutoRoundedCorners = true;
+            this.btnAnalytics.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnalytics.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnAnalytics.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnAnalytics.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAnalytics.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAnalytics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAnalytics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAnalytics.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAnalytics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalytics.ForeColor = System.Drawing.Color.White;
+            this.btnAnalytics.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnAnalytics.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnAnalytics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAnalytics.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btnAnalytics.Location = new System.Drawing.Point(115, 389);
+            this.btnAnalytics.Name = "btnAnalytics";
+            this.btnAnalytics.Size = new System.Drawing.Size(158, 45);
+            this.btnAnalytics.TabIndex = 8;
+            this.btnAnalytics.Text = "Print Summary";
             // 
             // cmbSort
             // 
@@ -277,30 +251,58 @@
             this.cmbSort.TabIndex = 7;
             this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnAnalytics
+            // lblTotalSales
             // 
-            this.btnAnalytics.Animated = true;
-            this.btnAnalytics.AnimatedGIF = true;
-            this.btnAnalytics.AutoRoundedCorners = true;
-            this.btnAnalytics.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnalytics.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnAnalytics.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnAnalytics.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAnalytics.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAnalytics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAnalytics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAnalytics.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAnalytics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalytics.ForeColor = System.Drawing.Color.White;
-            this.btnAnalytics.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnAnalytics.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnAnalytics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAnalytics.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnAnalytics.Location = new System.Drawing.Point(115, 389);
-            this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(158, 45);
-            this.btnAnalytics.TabIndex = 8;
-            this.btnAnalytics.Text = "Print Summary";
+            this.lblTotalSales.AutoSize = true;
+            this.lblTotalSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalSales.Location = new System.Drawing.Point(18, 284);
+            this.lblTotalSales.Name = "lblTotalSales";
+            this.lblTotalSales.Size = new System.Drawing.Size(115, 32);
+            this.lblTotalSales.TabIndex = 4;
+            this.lblTotalSales.Text = "Amount";
+            // 
+            // lblSales
+            // 
+            this.lblSales.AutoSize = true;
+            this.lblSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSales.Location = new System.Drawing.Point(18, 238);
+            this.lblSales.Name = "lblSales";
+            this.lblSales.Size = new System.Drawing.Size(159, 32);
+            this.lblSales.TabIndex = 3;
+            this.lblSales.Text = "Total Sales";
+            // 
+            // prgTarget
+            // 
+            this.prgTarget.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.prgTarget.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.prgTarget.ForeColor = System.Drawing.Color.White;
+            this.prgTarget.Location = new System.Drawing.Point(235, 87);
+            this.prgTarget.Minimum = 0;
+            this.prgTarget.Name = "prgTarget";
+            this.prgTarget.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.prgTarget.Size = new System.Drawing.Size(130, 130);
+            this.prgTarget.TabIndex = 2;
+            this.prgTarget.Text = "guna2CircleProgressBar1";
+            // 
+            // lblTargetAmout
+            // 
+            this.lblTargetAmout.AutoSize = true;
+            this.lblTargetAmout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTargetAmout.Location = new System.Drawing.Point(18, 145);
+            this.lblTargetAmout.Name = "lblTargetAmout";
+            this.lblTargetAmout.Size = new System.Drawing.Size(115, 32);
+            this.lblTargetAmout.TabIndex = 1;
+            this.lblTargetAmout.Text = "Amount";
+            // 
+            // lblTarget
+            // 
+            this.lblTarget.AutoSize = true;
+            this.lblTarget.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTarget.Location = new System.Drawing.Point(18, 99);
+            this.lblTarget.Name = "lblTarget";
+            this.lblTarget.Size = new System.Drawing.Size(211, 32);
+            this.lblTarget.TabIndex = 0;
+            this.lblTarget.Text = "Monthly Target";
             // 
             // salesRepID
             // 
@@ -317,13 +319,15 @@
             this.salesRepName.Name = "salesRepName";
             this.salesRepName.ReadOnly = true;
             this.salesRepName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesRepName.Width = 190;
+            this.salesRepName.Width = 130;
             // 
-            // salesDetails
+            // totalSalesCount
             // 
-            this.salesDetails.HeaderText = "SaleID";
-            this.salesDetails.Name = "salesDetails";
-            this.salesDetails.ReadOnly = true;
+            this.totalSalesCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.totalSalesCount.HeaderText = "Total Sales Count";
+            this.totalSalesCount.Name = "totalSalesCount";
+            this.totalSalesCount.ReadOnly = true;
+            this.totalSalesCount.Width = 80;
             // 
             // totalSales
             // 
@@ -331,14 +335,22 @@
             this.totalSales.Name = "totalSales";
             this.totalSales.ReadOnly = true;
             // 
-            // ucAnslyticsControl
+            // productsSold
+            // 
+            this.productsSold.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.productsSold.HeaderText = "Products Sold";
+            this.productsSold.Name = "productsSold";
+            this.productsSold.ReadOnly = true;
+            this.productsSold.Width = 200;
+            // 
+            // ucAnalyticsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlGridViewOperations);
             this.Controls.Add(this.gdvSalesAnalytics);
             this.Controls.Add(this.pnlSearch);
-            this.Name = "ucAnslyticsControl";
+            this.Name = "ucAnalyticsControl";
             this.Size = new System.Drawing.Size(1053, 590);
             this.pnlSearch.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gdvSalesAnalytics)).EndInit();
@@ -351,7 +363,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlSearch;
-        private Guna.UI2.WinForms.Guna2DataGridView gdvSalesAnalytics;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGridViewOperations;
         private System.Windows.Forms.Label lblTarget;
         private System.Windows.Forms.Label lblTargetAmout;
@@ -360,9 +371,11 @@
         private Guna.UI2.WinForms.Guna2CircleProgressBar prgTarget;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
         private Guna.UI2.WinForms.Guna2Button btnAnalytics;
+        internal Guna.UI2.WinForms.Guna2DataGridView gdvSalesAnalytics;
         private System.Windows.Forms.DataGridViewTextBoxColumn salesRepID;
         private System.Windows.Forms.DataGridViewTextBoxColumn salesRepName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalSalesCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalSales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productsSold;
     }
 }

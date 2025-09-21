@@ -65,10 +65,10 @@
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
-    <Compile Include="ManagerDashboard.cs">
+    <Compile Include="Manager\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerDashboard.Designer.cs">
+    <Compile Include="Manager\ManagerDashboard.Designer.cs">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\ucEmployeeControlAdmin.cs">
@@ -83,10 +83,10 @@
     <Compile Include="Employee\EmployeeDashboard.Designer.cs">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEmployeeControlManager.cs">
+    <Compile Include="Manager\ucEmployeeControlManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucEmployeeControlManager.Designer.cs">
+    <Compile Include="Manager\ucEmployeeControlManager.Designer.cs">
       <DependentUpon>ucEmployeeControlManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\ucInventoryControlAdmin.cs">
@@ -145,7 +145,7 @@
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerDashboard.resx">
+    <EmbeddedResource Include="Manager\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ucEmployeeControlAdmin.resx">
@@ -154,7 +154,7 @@
     <EmbeddedResource Include="Employee\EmployeeDashboard.resx">
       <DependentUpon>EmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucEmployeeControlManager.resx">
+    <EmbeddedResource Include="Manager\ucEmployeeControlManager.resx">
       <DependentUpon>ucEmployeeControlManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ucInventoryControlAdmin.resx">

@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\",
+  "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\hoop2-project-silicon-source-main\\oop2-project-silicon-source-main\\siliconsource\\siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\hoop2-project-silicon-source-main\\oop2-project-silicon-source-main\\siliconsource\\siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\employee\\employeedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\hoop2-project-silicon-source-main\\oop2-project-silicon-source-main\\siliconsource\\siliconsource\\managerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\managerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\hoop2-project-silicon-source-main\\oop2-project-silicon-source-main\\siliconsource\\siliconsource\\managerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\managerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\hoop2-project-silicon-source-main\\oop2-project-silicon-source-main\\siliconsource\\siliconsource\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\admin\\ucsalescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucsalescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\admin\\ucemployeecontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucemployeecontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\ucanalyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucanalyticscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,135 +54,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "RelativeToolTip": "SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowEMAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\AdminDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T14:20:51.71Z",
+              "WhenOpened": "2025-09-21T16:15:46.398Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ucAnalyticsControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucAnalyticsControl.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucAnalyticsControl.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucAnalyticsControl.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\ucAnalyticsControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:09:14.482Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucSalesControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucSalesControl.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucSalesControl.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucSalesControl.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\ucSalesControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:07:35.841Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ucEmployeeControlAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucEmployeeControlAdmin.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucEmployeeControlAdmin.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucEmployeeControlAdmin.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\ucEmployeeControlAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T15:04:42.753Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Login\\Login.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Login\\Login.cs",
+              "RelativeToolTip": "SiliconSource\\Login\\Login.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T09:23:21.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeeDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Employee\\EmployeeDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Employee\\EmployeeDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\Employee\\EmployeeDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T14:20:50.41Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\ManagerDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\ManagerDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\ManagerDashboard.cs",
-              "RelativeToolTip": "SiliconSource\\ManagerDashboard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T14:20:43.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManagerDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\ManagerDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\ManagerDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\ManagerDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\ManagerDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T14:20:40.627Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Program.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Program.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Program.cs",
-              "RelativeToolTip": "SiliconSource\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T12:58:20.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ucInventoryControlAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "ToolTip": "D:\\SSSS\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:32:28.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\DataAccess.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\DataAccess.cs",
-              "RelativeToolTip": "SiliconSource\\DataAccess.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwBUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:24:15.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Login\\Login.cs",
-              "RelativeToolTip": "SiliconSource\\Login\\Login.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:23:21.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Login\\Login.cs",
-              "ToolTip": "D:\\SSSS\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Login\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:23:18.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AdminDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
               "RelativeToolTip": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwCMAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCEAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:21:05.476Z",
+              "WhenOpened": "2025-09-21T14:53:19.442Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\HOOP2-Project-Silicon-Source-main\\OOP2-Project-Silicon-Source-main\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\Admin\\AdminDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:21:03.116Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
