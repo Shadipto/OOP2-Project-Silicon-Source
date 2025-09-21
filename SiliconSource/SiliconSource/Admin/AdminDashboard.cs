@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Windows.Forms.VisualStyles;
 
-namespace SiliconSource.Employee
+namespace SiliconSource
 {
     public partial class AdminDashboard : Form
     {
+        private DataAccess Da { get; set; } // DataAccess reference (composition) [Dipto]
+
+
         private Form loginForm; // loninForm reference (association) [Dipto]
 
         // UserControl references (aggregation) [Dipto]
@@ -25,12 +30,14 @@ namespace SiliconSource.Employee
         {
             
             InitializeComponent();
+            InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
             rbtnInventory.Checked = true; // default [Dipto]
 
             this.loginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
 
-
-            InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
+            this.Da = new DataAccess();
+            
+            this.PopulateGridView("SELECT ProductID, ProductName, Category, Price, Cost, StockQuantity FROM Product;");
 
 
             rbtnInventory.CheckedChanged += RadioButton_CheckedChanged;
@@ -40,6 +47,25 @@ namespace SiliconSource.Employee
 
         }
 
+        // Method to fill DataGridView from DB [Dipto]
+        internal void PopulateGridView(string query)
+        {
+            var ds = this.Da.GetDataSet(query);
+
+            this.inventory.gdvInventory.AutoGenerateColumns = false;
+
+            this.inventory.gdvInventory.Columns["productID"].DataPropertyName = "ProductID";
+            this.inventory.gdvInventory.Columns["productName"].DataPropertyName = "ProductName";
+            this.inventory.gdvInventory.Columns["category"].DataPropertyName = "Category";
+            this.inventory.gdvInventory.Columns["price"].DataPropertyName = "Price";
+            this.inventory.gdvInventory.Columns["cost"].DataPropertyName = "Cost";
+            this.inventory.gdvInventory.Columns["stock"].DataPropertyName = "StockQuantity";
+
+            this.inventory.gdvInventory.DataSource = ds.Tables[0];
+        }
+
+
+        // userControl initialization method (aggregation) [Dipto]
         private void InitializeUserControls()
         {
             this.inventory = new ucInventoryControlAdmin { Dock = DockStyle.Fill };

@@ -10,7 +10,6 @@ C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Testing.resources
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
 C:\Users\shadi\OneDrive\Desktop\Merge\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
@@ -119,5 +118,5 @@ C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj
 C:\Users\shadi\OneDrive\Desktop\New folder\Merge\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ManagerDashboard.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
-C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Employee.AdminDashboard.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources

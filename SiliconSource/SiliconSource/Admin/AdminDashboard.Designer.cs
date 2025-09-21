@@ -1,4 +1,4 @@
-﻿namespace SiliconSource.Employee
+﻿namespace SiliconSource
 {
     partial class AdminDashboard
     {
@@ -378,9 +378,9 @@
             this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.lblRole.Location = new System.Drawing.Point(886, 66);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(65, 14);
+            this.lblRole.Size = new System.Drawing.Size(45, 14);
             this.lblRole.TabIndex = 6;
-            this.lblRole.Text = "Employee";
+            this.lblRole.Text = "Admin";
             this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbEmployee

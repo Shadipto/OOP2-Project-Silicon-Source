@@ -1,5 +1,4 @@
-﻿using SiliconSource.Employee;
-using System;
+﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Windows.Forms.VisualStyles;
 
 namespace SiliconSource
 {
@@ -19,20 +19,21 @@ namespace SiliconSource
         public Login()
         {
             InitializeComponent();
+            
         }
+
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             AdminDashboard adminDashboard = new AdminDashboard(this);
             EmployeeDashboard employeeDashboard = new EmployeeDashboard(this);
-            //adminDashboard.Show();
-            employeeDashboard.Show();
+            adminDashboard.Show();
+            //employeeDashboard.Show();
             this.Hide();
 
+            // For testing purpose only [Dipto]
             string userID = ucLoginID.TextboxText;
             string password = ucLoginPassword.TextboxText;
-            
-            
             MessageBox.Show($"{userID}: {GenerateSHA256Hash(password)}");
         }
 
