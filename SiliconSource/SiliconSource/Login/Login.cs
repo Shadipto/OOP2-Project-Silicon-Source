@@ -22,12 +22,11 @@ namespace SiliconSource
             
         }
 
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var da = new DataAccess();
             string userID = ucLoginID.TextboxText;
-            string passwordHash = this.GenerateSHA256Hash(ucLoginPassword.TextboxText);
+            string passwordHash = PasswordHasher.GenerateSHA256Hash(ucLoginPassword.TextboxText);
             string query = $"SELECT [Role], [FirstName] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;"; 
             var dst = da.ExecuteQueryTable(query);
             if (dst.Rows.Count == 1)
@@ -35,24 +34,21 @@ namespace SiliconSource
                 if (dst.Rows[0][0].ToString() == "Owner")
                 {
                     this.Hide();
-                    MessageBox.Show("Login Successful");
+                    MessageBox.Show("Login Successfully!", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     var adminDashboard = new AdminDashboard(this, dst.Rows[0][1].ToString());
                     adminDashboard.Show();
-                   
-
-                    
                 }
                 else if (dst.Rows[0][0].ToString() == "Manager")
                 {
                     this.Hide();
-                    MessageBox.Show("Manager");
+                    MessageBox.Show("Manager", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     var managerDashboard = new ManagerDashboard();
                     managerDashboard.Show();
                 }
                 else if (dst.Rows[0][0].ToString() == "SalesRepresentative")
                 {
                     this.Hide();
-                    MessageBox.Show("SalesRepresentative");
+                    MessageBox.Show("Sales Representative", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     var employeeDashboard = new EmployeeDashboard(this);
                     employeeDashboard.Show();
 
@@ -60,31 +56,17 @@ namespace SiliconSource
                 else
                 {
                     this.Hide();
-                    MessageBox.Show("Error");
+                    MessageBox.Show("Error", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                     
             }
             else
             {
-                MessageBox.Show("Incorrect Password");
+                MessageBox.Show("Invalid Information", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             
-        }
-
-        private string GenerateSHA256Hash(string password)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
-                foreach (byte b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-                return builder.ToString();
-            }
         }
     }
 }

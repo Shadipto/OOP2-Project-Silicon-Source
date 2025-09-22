@@ -62,7 +62,6 @@
             // gunaAddInventory
             // 
             this.gunaAddInventory.AnimateWindow = true;
-            this.gunaAddInventory.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_CENTER;
             this.gunaAddInventory.BorderRadius = 10;
             this.gunaAddInventory.ContainerControl = this;
             this.gunaAddInventory.DockIndicatorTransparencyValue = 0.6D;
@@ -406,6 +405,7 @@
             this.Controls.Add(this.pnlAddInventoryRight);
             this.Controls.Add(this.pnlAddInventoryLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddInventory";
