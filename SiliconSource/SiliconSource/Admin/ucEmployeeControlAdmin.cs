@@ -27,5 +27,19 @@ namespace SiliconSource
             parentForm.Hide();
             addEmployee.Show();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (gdvInventory.SelectedRows.Count > 0)
+            {
+                string userID = gdvInventory.SelectedRows[0].Cells["employeeID"].Value?.ToString();
+
+
+                this.Hide();
+                var updateEmployee = new UpdateEmployee(userID);
+                updateEmployee.Show();
+
+            }
+        }
     }
 }

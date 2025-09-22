@@ -180,3 +180,36 @@ C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.xml
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\itextsharp.xml
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddEmployee.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.dll
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\itextsharp.dll
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.xml
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\bin\Debug\itextsharp.xml
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddEmployee.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucHomeAdmin.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ManagerDashboard.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlAdmin.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateEmployee.resources

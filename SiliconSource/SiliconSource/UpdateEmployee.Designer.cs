@@ -1,7 +1,6 @@
-﻿
-namespace SiliconSource
+﻿namespace SiliconSource
 {
-    partial class AddEmployee
+    partial class UpdateEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -30,40 +29,41 @@ namespace SiliconSource
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployee));
-            this.gunaAddEmployee = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateEmployee));
+            this.gunaUpdateEmployee = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnlAddEmployeeLeft = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblRadiant = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbAddEmployee = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblUpdate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblEmployee = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pbCloud = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlAddEmployeeRight = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.lblRole = new System.Windows.Forms.Label();
             this.cmbRole = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ucPassword = new SiliconSource.LoginControl();
             this.ucSalary = new SiliconSource.LoginControl();
             this.ucUserName = new SiliconSource.LoginControl();
             this.ucLastName = new SiliconSource.LoginControl();
             this.ucFirstName = new SiliconSource.LoginControl();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnUpdatePassword = new Guna.UI2.WinForms.Guna2Button();
             this.pnlAddEmployeeLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddEmployee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlAddEmployeeRight.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gunaAddEmployee
+            // gunaUpdateEmployee
             // 
-            this.gunaAddEmployee.AnimateWindow = true;
-            this.gunaAddEmployee.BorderRadius = 10;
-            this.gunaAddEmployee.ContainerControl = this;
-            this.gunaAddEmployee.DockIndicatorTransparencyValue = 0.6D;
-            this.gunaAddEmployee.ResizeForm = false;
-            this.gunaAddEmployee.TransparentWhileDrag = true;
+            this.gunaUpdateEmployee.AnimateWindow = true;
+            this.gunaUpdateEmployee.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_POSITIVE;
+            this.gunaUpdateEmployee.BorderRadius = 10;
+            this.gunaUpdateEmployee.ContainerControl = this;
+            this.gunaUpdateEmployee.DockIndicatorTransparencyValue = 0.6D;
+            this.gunaUpdateEmployee.ResizeForm = false;
+            this.gunaUpdateEmployee.TransparentWhileDrag = true;
             // 
             // pnlAddEmployeeLeft
             // 
@@ -71,15 +71,15 @@ namespace SiliconSource
             this.pnlAddEmployeeLeft.Controls.Add(this.lblRadiant);
             this.pnlAddEmployeeLeft.Controls.Add(this.lblDevelopedBy);
             this.pnlAddEmployeeLeft.Controls.Add(this.pbAddEmployee);
-            this.pnlAddEmployeeLeft.Controls.Add(this.lblAdd);
+            this.pnlAddEmployeeLeft.Controls.Add(this.lblUpdate);
             this.pnlAddEmployeeLeft.Controls.Add(this.lblEmployee);
-            this.pnlAddEmployeeLeft.Controls.Add(this.pbCloud);
+            this.pnlAddEmployeeLeft.Controls.Add(this.guna2PictureBox1);
             this.pnlAddEmployeeLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlAddEmployeeLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlAddEmployeeLeft.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAddEmployeeLeft.Name = "pnlAddEmployeeLeft";
             this.pnlAddEmployeeLeft.Size = new System.Drawing.Size(369, 763);
-            this.pnlAddEmployeeLeft.TabIndex = 5;
+            this.pnlAddEmployeeLeft.TabIndex = 8;
             // 
             // lblRadiant
             // 
@@ -119,48 +119,48 @@ namespace SiliconSource
             this.pbAddEmployee.TabIndex = 18;
             this.pbAddEmployee.TabStop = false;
             // 
-            // lblAdd
+            // lblUpdate
             // 
-            this.lblAdd.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdd.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAdd.Location = new System.Drawing.Point(8, 318);
-            this.lblAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.lblAdd.Name = "lblAdd";
-            this.lblAdd.Size = new System.Drawing.Size(64, 38);
-            this.lblAdd.TabIndex = 7;
-            this.lblAdd.Text = "ADD";
+            this.lblUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblUpdate.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblUpdate.Location = new System.Drawing.Point(8, 326);
+            this.lblUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.lblUpdate.Name = "lblUpdate";
+            this.lblUpdate.Size = new System.Drawing.Size(106, 38);
+            this.lblUpdate.TabIndex = 7;
+            this.lblUpdate.Text = "UPDATE";
             // 
             // lblEmployee
             // 
             this.lblEmployee.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployee.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEmployee.Location = new System.Drawing.Point(8, 360);
+            this.lblEmployee.Location = new System.Drawing.Point(8, 368);
             this.lblEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.lblEmployee.Name = "lblEmployee";
             this.lblEmployee.Size = new System.Drawing.Size(145, 38);
             this.lblEmployee.TabIndex = 3;
             this.lblEmployee.Text = "EMPLOYEE";
             // 
-            // pbCloud
+            // guna2PictureBox1
             // 
-            this.pbCloud.Image = ((System.Drawing.Image)(resources.GetObject("pbCloud.Image")));
-            this.pbCloud.ImageRotate = 0F;
-            this.pbCloud.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbCloud.InitialImage")));
-            this.pbCloud.Location = new System.Drawing.Point(159, -6);
-            this.pbCloud.Name = "pbCloud";
-            this.pbCloud.Size = new System.Drawing.Size(255, 769);
-            this.pbCloud.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCloud.TabIndex = 6;
-            this.pbCloud.TabStop = false;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(159, -6);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(255, 769);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 6;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // pnlAddEmployeeRight
             // 
             this.pnlAddEmployeeRight.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pnlAddEmployeeRight.Controls.Add(this.ucPassword);
+            this.pnlAddEmployeeRight.Controls.Add(this.btnUpdatePassword);
             this.pnlAddEmployeeRight.Controls.Add(this.btnClear);
-            this.pnlAddEmployeeRight.Controls.Add(this.btnSave);
+            this.pnlAddEmployeeRight.Controls.Add(this.btnUpdate);
             this.pnlAddEmployeeRight.Controls.Add(this.lblRole);
             this.pnlAddEmployeeRight.Controls.Add(this.cmbRole);
             this.pnlAddEmployeeRight.Controls.Add(this.ucSalary);
@@ -172,7 +172,7 @@ namespace SiliconSource
             this.pnlAddEmployeeRight.Location = new System.Drawing.Point(369, 0);
             this.pnlAddEmployeeRight.Name = "pnlAddEmployeeRight";
             this.pnlAddEmployeeRight.Size = new System.Drawing.Size(482, 763);
-            this.pnlAddEmployeeRight.TabIndex = 6;
+            this.pnlAddEmployeeRight.TabIndex = 9;
             // 
             // btnClear
             // 
@@ -184,35 +184,34 @@ namespace SiliconSource
             this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(258, 646);
+            this.btnClear.Location = new System.Drawing.Point(267, 555);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(189, 49);
             this.btnClear.TabIndex = 17;
             this.btnClear.Text = "Clear";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnSave
+            // btnUpdate
             // 
-            this.btnSave.Animated = true;
-            this.btnSave.AutoRoundedCorners = true;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(30, 646);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(189, 49);
-            this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnUpdate.Animated = true;
+            this.btnUpdate.AutoRoundedCorners = true;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(39, 555);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(189, 49);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(54, 473);
+            this.lblRole.Location = new System.Drawing.Point(54, 421);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(43, 22);
             this.lblRole.TabIndex = 15;
@@ -234,41 +233,10 @@ namespace SiliconSource
             "Admin",
             "Manager",
             "SalesRepresentative"});
-            this.cmbRole.Location = new System.Drawing.Point(51, 509);
+            this.cmbRole.Location = new System.Drawing.Point(51, 457);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(349, 36);
             this.cmbRole.TabIndex = 14;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 13;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(425, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // ucPassword
-            // 
-            this.ucPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucPassword.IsPassword = true;
-            this.ucPassword.IsReadOnly = false;
-            this.ucPassword.Label = "Password";
-            this.ucPassword.Location = new System.Drawing.Point(52, 306);
-            this.ucPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.ucPassword.Name = "ucPassword";
-            this.ucPassword.Size = new System.Drawing.Size(349, 71);
-            this.ucPassword.TabIndex = 18;
-            this.ucPassword.TextboxText = "";
             // 
             // ucSalary
             // 
@@ -276,7 +244,7 @@ namespace SiliconSource
             this.ucSalary.IsPassword = false;
             this.ucSalary.IsReadOnly = false;
             this.ucSalary.Label = "Salary";
-            this.ucSalary.Location = new System.Drawing.Point(54, 380);
+            this.ucSalary.Location = new System.Drawing.Point(52, 335);
             this.ucSalary.Margin = new System.Windows.Forms.Padding(4);
             this.ucSalary.Name = "ucSalary";
             this.ucSalary.Size = new System.Drawing.Size(349, 71);
@@ -322,7 +290,40 @@ namespace SiliconSource
             this.ucFirstName.TabIndex = 5;
             this.ucFirstName.TextboxText = "";
             // 
-            // AddEmployee
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 13;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(425, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 3;
+            // 
+            // btnUpdatePassword
+            // 
+            this.btnUpdatePassword.Animated = true;
+            this.btnUpdatePassword.AutoRoundedCorners = true;
+            this.btnUpdatePassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdatePassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdatePassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdatePassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdatePassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdatePassword.ForeColor = System.Drawing.Color.White;
+            this.btnUpdatePassword.Location = new System.Drawing.Point(147, 633);
+            this.btnUpdatePassword.Name = "btnUpdatePassword";
+            this.btnUpdatePassword.Size = new System.Drawing.Size(189, 49);
+            this.btnUpdatePassword.TabIndex = 18;
+            this.btnUpdatePassword.Text = "Update Password";
+            // 
+            // UpdateEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -330,14 +331,13 @@ namespace SiliconSource
             this.Controls.Add(this.pnlAddEmployeeRight);
             this.Controls.Add(this.pnlAddEmployeeLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AddEmployee";
+            this.Name = "UpdateEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddEmployee";
+            this.Text = "UpdateEmployee";
             this.pnlAddEmployeeLeft.ResumeLayout(false);
             this.pnlAddEmployeeLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddEmployee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlAddEmployeeRight.ResumeLayout(false);
             this.pnlAddEmployeeRight.PerformLayout();
             this.ResumeLayout(false);
@@ -346,15 +346,17 @@ namespace SiliconSource
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2BorderlessForm gunaAddEmployee;
+        private Guna.UI2.WinForms.Guna2BorderlessForm gunaUpdateEmployee;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlAddEmployeeLeft;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRadiant;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDevelopedBy;
         private Guna.UI2.WinForms.Guna2PictureBox pbAddEmployee;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblAdd;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblUpdate;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblEmployee;
-        private Guna.UI2.WinForms.Guna2PictureBox pbCloud;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlAddEmployeeRight;
         private Guna.UI2.WinForms.Guna2Button btnClear;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private System.Windows.Forms.Label lblRole;
         private Guna.UI2.WinForms.Guna2ComboBox cmbRole;
         private LoginControl ucSalary;
@@ -362,8 +364,6 @@ namespace SiliconSource
         private LoginControl ucLastName;
         private LoginControl ucFirstName;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblRadiant;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDevelopedBy;
-        private LoginControl ucPassword;
+        private Guna.UI2.WinForms.Guna2Button btnUpdatePassword;
     }
 }
