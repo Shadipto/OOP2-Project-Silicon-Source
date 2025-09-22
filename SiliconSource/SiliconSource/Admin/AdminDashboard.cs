@@ -182,7 +182,8 @@ namespace SiliconSource
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            LoginForm.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -196,6 +197,13 @@ namespace SiliconSource
             // Force trigger CheckedChanged
             rbtnInventory.Checked = false;
             rbtnInventory.Checked = true;
+        }
+
+        internal void RefreshHomeTab()
+        {
+            // Force trigger CheckedChanged
+            rbtnHome.Checked = false;
+            rbtnHome.Checked = true;
         }
     }
 }

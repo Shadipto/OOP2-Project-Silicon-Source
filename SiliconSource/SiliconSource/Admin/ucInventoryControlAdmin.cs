@@ -17,6 +17,7 @@ namespace SiliconSource
         private DataAccess Da { set; get; }
 
         private Form AdminDashboardform { get; set; }
+        
 
         public ucInventoryControlAdmin()
         {
@@ -117,5 +118,13 @@ namespace SiliconSource
             }
 
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("InventoryReport.pdf");
+            exporter.Export(gdvInventory);
+        }
+
+        
     }
 }

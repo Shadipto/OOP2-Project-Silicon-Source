@@ -12,10 +12,19 @@ namespace SiliconSource
 {
     public partial class ucHomeAdmin : UserControl
     {
+        private AdminDashboard AdminDashboardform { get; set; }
+
         public ucHomeAdmin()
         {
             InitializeComponent();
         }
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            if (AdminDashboardform is AdminDashboard dashboard)
+            {
+                dashboard.RefreshHomeTab();
+            }
+        }
     }
 }

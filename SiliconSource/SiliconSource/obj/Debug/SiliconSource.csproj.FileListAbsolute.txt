@@ -175,3 +175,7 @@ C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSou
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
 C:\Users\shadi\OneDrive\Desktop\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucHomeAdmin.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\itextsharp.dll
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\itextsharp.xml
