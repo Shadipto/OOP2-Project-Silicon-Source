@@ -544,7 +544,7 @@
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRefresh.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnRefresh.Location = new System.Drawing.Point(36, 444);
+            this.btnRefresh.Location = new System.Drawing.Point(36, 493);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(180, 45);
             this.btnRefresh.TabIndex = 12;

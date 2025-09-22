@@ -12,7 +12,7 @@ namespace SiliconSource
 {
     public partial class AddInventory : Form
     {
-        private Form adminDashboardForm { get; set; } // Reference to the calling UserControl
+        private Form AdminDashboardForm { get; set; } // Reference to the calling UserControl
         
         private DataAccess Da { set; get; }
 
@@ -20,7 +20,7 @@ namespace SiliconSource
         {
             InitializeComponent();
             this.Da = new DataAccess();
-            this.adminDashboardForm = adminDashboardForm;
+            this.AdminDashboardForm = adminDashboardForm;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -85,9 +85,9 @@ namespace SiliconSource
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            adminDashboardForm.Show();
+            AdminDashboardForm.Show();
 
-            if (adminDashboardForm is AdminDashboard dashboard)
+            if (AdminDashboardForm is AdminDashboard dashboard)
             {
                 dashboard.RefreshInventoryTab();
             }

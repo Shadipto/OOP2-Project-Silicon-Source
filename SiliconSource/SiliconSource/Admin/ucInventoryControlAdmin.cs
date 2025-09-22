@@ -16,7 +16,7 @@ namespace SiliconSource
         // DataAccess instance
         private DataAccess Da { set; get; }
 
-        private Form AdminDashboardform { get; set; }
+        private Form AdminDashboardForm { get; set; }
         
 
         public ucInventoryControlAdmin()
@@ -67,50 +67,47 @@ namespace SiliconSource
             {
                 return;
             }
-                
-
-            int productID = int.Parse(gdvInventory.SelectedRows[0].Cells["ProductID"].Value?.ToString());
-
-            // Check if product exists in SaleItem
-            string checkQuery = $"SELECT COUNT(*) FROM SaleItem WHERE ProductID = {productID};";
-            int referenceCount = 0;
-            using (SqlCommand cmd = new SqlCommand(checkQuery, Da.Sqlcon))
-            {
-                var output = cmd.ExecuteScalar();
-                if (output != null && output != DBNull.Value)
-                    referenceCount = Convert.ToInt32(output);
-            }
-
-            if (referenceCount > 0)
-            {
-                // Seting stock to 0 as it is foreign key in SaleItem
-                string updateStockQuery = $"UPDATE Product SET StockQuantity = 0 WHERE ProductID = {productID};";
-                Da.ExecuteDMLQuery(updateStockQuery);
-                MessageBox.Show("Product is associated with existing sales. Stock quantity set to 0 instead of deletion.", "Stock Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
             else
             {
-                // Can delete the product
-                /*DialogResult confirm = MessageBox.Show("Are you sure you want to delete this product?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (confirm != DialogResult.Yes)
-                    return;*/
+                int productID = int.Parse(gdvInventory.SelectedRows[0].Cells["ProductID"].Value?.ToString());
 
-                string deleteSqlQuery = $"DELETE FROM Product WHERE ProductID = {productID};";
-                int affectedRows = Da.ExecuteDMLQuery(deleteSqlQuery);
-
-                if (affectedRows > 0)
+                // Check if product exists in SaleItem
+                string checkQuery = $"SELECT COUNT(*) FROM SaleItem WHERE ProductID = {productID};";
+                int referenceCount = 0;
+                using (SqlCommand cmd = new SqlCommand(checkQuery, Da.Sqlcon))
                 {
-                    MessageBox.Show("Product deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var output = cmd.ExecuteScalar();
+                    if (output != null && output != DBNull.Value)
+                        referenceCount = Convert.ToInt32(output);
+                }
+
+                if (referenceCount > 0)
+                {
+                    // Seting stock to 0 as it is foreign key in SaleItem
+                    string updateStockQuery = $"UPDATE Product SET StockQuantity = 0 WHERE ProductID = {productID};";
+                    Da.ExecuteDMLQuery(updateStockQuery);
+                    MessageBox.Show("Product is associated with existing sales. Stock quantity set to 0 instead of deletion.", "Stock Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Failed to delete product.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Can delete the product
+                    
+                    string deleteSqlQuery = $"DELETE FROM Product WHERE ProductID = {productID};";
+                    int affectedRows = Da.ExecuteDMLQuery(deleteSqlQuery);
+
+                    if (affectedRows > 0)
+                    {
+                        MessageBox.Show("Product deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to delete product.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
 
-
-            AdminDashboardform = this.FindForm();
-            if (AdminDashboardform is AdminDashboard dashboard)
+            AdminDashboardForm = this.FindForm();
+            if (AdminDashboardForm is AdminDashboard dashboard)
             {
                 dashboard.RefreshInventoryTab();
             }

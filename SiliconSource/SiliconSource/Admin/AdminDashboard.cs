@@ -90,12 +90,12 @@ namespace SiliconSource
                     break;
 
                 case "Employee":
-                    employee.gdvInventory.AutoGenerateColumns = false;
-                    employee.gdvInventory.Columns["employeeID"].DataPropertyName = "EmployeeID";
-                    employee.gdvInventory.Columns["employeeName"].DataPropertyName = "EmployeeName";
-                    employee.gdvInventory.Columns["role"].DataPropertyName = "Role";
-                    employee.gdvInventory.Columns["salary"].DataPropertyName = "Salary";
-                    employee.gdvInventory.DataSource = ds.Tables[0];
+                    employee.gdvEmployee.AutoGenerateColumns = false;
+                    employee.gdvEmployee.Columns["employeeID"].DataPropertyName = "EmployeeID";
+                    employee.gdvEmployee.Columns["employeeName"].DataPropertyName = "EmployeeName";
+                    employee.gdvEmployee.Columns["role"].DataPropertyName = "Role";
+                    employee.gdvEmployee.Columns["salary"].DataPropertyName = "Salary";
+                    employee.gdvEmployee.DataSource = ds.Tables[0];
                     break;
 
                 case "Sales":
@@ -212,5 +212,21 @@ namespace SiliconSource
             rbtnHome.Checked = false;
             rbtnHome.Checked = true;
         }
+
+        internal void RefreshSalesTab()
+        {
+            // Force trigger CheckedChanged
+            rbtnSales.Checked = false;
+            rbtnSales.Checked = true;
+        }
+
+        internal void RefreshAnalyticsTab()
+        {
+            // Force trigger CheckedChanged
+            rbtnAnalytics.Checked = false;
+            rbtnAnalytics.Checked = true;
+        }
+
+        
     }
 }

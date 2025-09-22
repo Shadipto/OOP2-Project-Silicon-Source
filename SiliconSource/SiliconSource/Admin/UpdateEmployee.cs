@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms.Suite;
+using SiliconSource.Admin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,13 +14,17 @@ namespace SiliconSource
 {
     public partial class UpdateEmployee : Form
     {
-        internal string UserID {  get; set; }
-        DataAccess da;
-        public UpdateEmployee(string userID)
+        private Form AdminDashboardForm { get; set; }
+        private string UserID {  get; set; }
+        private DataAccess Da { set; get; }
+
+        public UpdateEmployee(string userID, Form adminDashboardForm)
         {
             InitializeComponent();
-            da = new DataAccess();
+            Da = new DataAccess();
             this.UserID = userID;
+            this.AdminDashboardForm = adminDashboardForm;
+
             string userToUpdate = $@"SELECT 
                                            [FirstName]
                                           ,[LastName]
@@ -28,7 +33,7 @@ namespace SiliconSource
                                           ,[Salary]
                                       FROM [dbo].[AppUser]
                                       WHERE [UserID] = '{this.UserID}' ;";
-            DataTable dt = da.ExecuteQueryTable(userToUpdate);
+            DataTable dt = Da.ExecuteQueryTable(userToUpdate);
             this.ucFirstName.TextboxText = dt.Rows[0][0].ToString();
             this.ucLastName.TextboxText = dt.Rows[0][1].ToString();
             this.ucUserName.TextboxText = dt.Rows[0][2].ToString();
@@ -59,7 +64,7 @@ namespace SiliconSource
                                         [Salary] = {salary}
                                     WHERE [UserID] = '{this.UserID}'; ";
 
-            int didItWork = da.ExecuteDMLQuery(insertQuary);
+            int didItWork = Da.ExecuteDMLQuery(insertQuary);
             if (didItWork > 0)
             {
                 MessageBox.Show("Update Successful");
@@ -69,5 +74,40 @@ namespace SiliconSource
                 MessageBox.Show("Update Failed");
             }
         }
+
+        private void ClearForm()
+        {
+            ucFirstName.TextboxText = string.Empty;
+            ucLastName.TextboxText = string.Empty;
+            ucUserName.TextboxText = string.Empty;
+            cmbRole.SelectedIndex = -1;  // clears selection
+            ucSalary.TextboxText = string.Empty;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.ClearForm();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminDashboardForm.Show();
+
+            if (AdminDashboardForm is AdminDashboard dashboard)
+            {
+                dashboard.RefreshEmployeeTab();
+            }
+        }
+
+        private void btnUpdatePassword_Click(object sender, EventArgs e)
+        {
+            
+            var passwordUpdate = new PasswordUpdate(this, this.UserID);
+            this.Hide();
+            passwordUpdate.Show();
+        }
+
+        
     }
 }

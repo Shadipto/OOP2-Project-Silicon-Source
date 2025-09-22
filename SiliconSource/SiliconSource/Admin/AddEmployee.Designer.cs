@@ -40,16 +40,16 @@ namespace SiliconSource
             this.lblEmployee = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbCloud = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlAddEmployeeRight = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ucPassword = new SiliconSource.LoginControl();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.lblRole = new System.Windows.Forms.Label();
             this.cmbRole = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ucPassword = new SiliconSource.LoginControl();
             this.ucSalary = new SiliconSource.LoginControl();
             this.ucUserName = new SiliconSource.LoginControl();
             this.ucLastName = new SiliconSource.LoginControl();
             this.ucFirstName = new SiliconSource.LoginControl();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlAddEmployeeLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -124,7 +124,7 @@ namespace SiliconSource
             this.lblAdd.BackColor = System.Drawing.Color.Transparent;
             this.lblAdd.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAdd.Location = new System.Drawing.Point(8, 318);
+            this.lblAdd.Location = new System.Drawing.Point(34, 318);
             this.lblAdd.Margin = new System.Windows.Forms.Padding(2);
             this.lblAdd.Name = "lblAdd";
             this.lblAdd.Size = new System.Drawing.Size(64, 38);
@@ -136,7 +136,7 @@ namespace SiliconSource
             this.lblEmployee.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployee.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployee.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEmployee.Location = new System.Drawing.Point(8, 360);
+            this.lblEmployee.Location = new System.Drawing.Point(34, 360);
             this.lblEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.lblEmployee.Name = "lblEmployee";
             this.lblEmployee.Size = new System.Drawing.Size(145, 38);
@@ -173,6 +173,19 @@ namespace SiliconSource
             this.pnlAddEmployeeRight.Name = "pnlAddEmployeeRight";
             this.pnlAddEmployeeRight.Size = new System.Drawing.Size(482, 763);
             this.pnlAddEmployeeRight.TabIndex = 6;
+            // 
+            // ucPassword
+            // 
+            this.ucPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
+            this.ucPassword.IsPassword = true;
+            this.ucPassword.IsReadOnly = false;
+            this.ucPassword.Label = "Password";
+            this.ucPassword.Location = new System.Drawing.Point(52, 306);
+            this.ucPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.ucPassword.Name = "ucPassword";
+            this.ucPassword.Size = new System.Drawing.Size(349, 71);
+            this.ucPassword.TabIndex = 18;
+            this.ucPassword.TextboxText = "";
             // 
             // btnClear
             // 
@@ -239,37 +252,6 @@ namespace SiliconSource
             this.cmbRole.Size = new System.Drawing.Size(349, 36);
             this.cmbRole.TabIndex = 14;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 13;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(425, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // ucPassword
-            // 
-            this.ucPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucPassword.IsPassword = true;
-            this.ucPassword.IsReadOnly = false;
-            this.ucPassword.Label = "Password";
-            this.ucPassword.Location = new System.Drawing.Point(52, 306);
-            this.ucPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.ucPassword.Name = "ucPassword";
-            this.ucPassword.Size = new System.Drawing.Size(349, 71);
-            this.ucPassword.TabIndex = 18;
-            this.ucPassword.TextboxText = "";
-            // 
             // ucSalary
             // 
             this.ucSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
@@ -321,6 +303,24 @@ namespace SiliconSource
             this.ucFirstName.Size = new System.Drawing.Size(349, 71);
             this.ucFirstName.TabIndex = 5;
             this.ucFirstName.TextboxText = "";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 13;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(425, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // AddEmployee
             // 

@@ -35,7 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.gdvEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
             this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +48,7 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvEmployee)).BeginInit();
             this.pnlGridViewOperations.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,18 +102,18 @@
             this.pnlSearch.Size = new System.Drawing.Size(1053, 100);
             this.pnlSearch.TabIndex = 8;
             // 
-            // gdvInventory
+            // gdvEmployee
             // 
-            this.gdvInventory.AllowUserToAddRows = false;
-            this.gdvInventory.AllowUserToDeleteRows = false;
-            this.gdvInventory.AllowUserToResizeRows = false;
+            this.gdvEmployee.AllowUserToAddRows = false;
+            this.gdvEmployee.AllowUserToDeleteRows = false;
+            this.gdvEmployee.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gdvInventory.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.gdvEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gdvEmployee.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,10 +121,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gdvInventory.ColumnHeadersHeight = 15;
-            this.gdvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gdvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gdvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gdvEmployee.ColumnHeadersHeight = 15;
+            this.gdvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gdvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.employeeID,
             this.employeeName,
             this.role,
@@ -136,13 +136,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdvInventory.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gdvInventory.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gdvInventory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdvInventory.Location = new System.Drawing.Point(0, 100);
-            this.gdvInventory.Name = "gdvInventory";
-            this.gdvInventory.ReadOnly = true;
-            this.gdvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdvEmployee.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gdvEmployee.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gdvEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdvEmployee.Location = new System.Drawing.Point(0, 100);
+            this.gdvEmployee.Name = "gdvEmployee";
+            this.gdvEmployee.ReadOnly = true;
+            this.gdvEmployee.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,32 +150,32 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.gdvInventory.RowHeadersVisible = false;
-            this.gdvInventory.RowTemplate.Height = 25;
-            this.gdvInventory.Size = new System.Drawing.Size(786, 490);
-            this.gdvInventory.TabIndex = 9;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Silver;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
-            this.gdvInventory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gdvInventory.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gdvInventory.ThemeStyle.HeaderStyle.Height = 15;
-            this.gdvInventory.ThemeStyle.ReadOnly = true;
-            this.gdvInventory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gdvInventory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.ThemeStyle.RowsStyle.Height = 25;
-            this.gdvInventory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvEmployee.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gdvEmployee.RowHeadersVisible = false;
+            this.gdvEmployee.RowTemplate.Height = 25;
+            this.gdvEmployee.Size = new System.Drawing.Size(786, 490);
+            this.gdvEmployee.TabIndex = 9;
+            this.gdvEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Silver;
+            this.gdvEmployee.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvEmployee.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.gdvEmployee.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gdvEmployee.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvEmployee.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gdvEmployee.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdvEmployee.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.gdvEmployee.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdvEmployee.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvEmployee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gdvEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gdvEmployee.ThemeStyle.HeaderStyle.Height = 15;
+            this.gdvEmployee.ThemeStyle.ReadOnly = true;
+            this.gdvEmployee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdvEmployee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdvEmployee.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvEmployee.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvEmployee.ThemeStyle.RowsStyle.Height = 25;
+            this.gdvEmployee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gdvEmployee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // employeeID
             // 
@@ -285,6 +285,7 @@
             this.btnPrint.Size = new System.Drawing.Size(158, 45);
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print Details";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnUpdate
             // 
@@ -336,6 +337,7 @@
             this.btnDelete.Size = new System.Drawing.Size(158, 45);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Remove ";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -368,12 +370,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlGridViewOperations);
-            this.Controls.Add(this.gdvInventory);
+            this.Controls.Add(this.gdvEmployee);
             this.Controls.Add(this.pnlSearch);
             this.Name = "ucEmployeeControlAdmin";
             this.Size = new System.Drawing.Size(1053, 590);
             this.pnlSearch.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvEmployee)).EndInit();
             this.pnlGridViewOperations.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -388,7 +390,7 @@
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
-        internal Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
+        internal Guna.UI2.WinForms.Guna2DataGridView gdvEmployee;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn role;

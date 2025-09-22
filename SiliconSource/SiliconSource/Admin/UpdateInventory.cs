@@ -12,7 +12,7 @@ namespace SiliconSource
 {
     public partial class UpdateInventory : Form
     {
-        private Form AdminDashboardform { get; set; } // Reference to the calling UserControl
+        private Form AdminDashboardForm { get; set; } // Reference to the calling UserControl
         private int ProductID {  get; set; }
         private int SupplierID {  get; set; }
         private DataAccess Da { set; get; }
@@ -22,7 +22,7 @@ namespace SiliconSource
         {
             InitializeComponent();
             this.ProductID = productID;
-            this.AdminDashboardform = adminDashboardForm;
+            this.AdminDashboardForm = adminDashboardForm;
             this.Da = new DataAccess();
 
             string productToUpdate = $@"SELECT
@@ -35,7 +35,7 @@ namespace SiliconSource
                                           ,[SKU]
                                           ,[SupplierID]
                                       FROM [dbo].[Product]
-                                      WHERE [ProductID] = {ProductID};";
+                                      WHERE [ProductID] = {this.ProductID};";
 
             DataTable dstUpdate = Da.ExecuteQueryTable(productToUpdate);
 
@@ -144,9 +144,9 @@ namespace SiliconSource
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            AdminDashboardform.Show();
+            AdminDashboardForm.Show();
             
-            if (AdminDashboardform is AdminDashboard dashboard)
+            if (AdminDashboardForm is AdminDashboard dashboard)
             {
                 dashboard.RefreshInventoryTab();
             }

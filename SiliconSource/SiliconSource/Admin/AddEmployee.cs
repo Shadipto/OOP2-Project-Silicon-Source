@@ -12,15 +12,17 @@ namespace SiliconSource
 {
     public partial class AddEmployee : Form
     {
-        private Form adminDashboardForm { get; set; } // Reference to the calling UserControl
+        private Form AdminDashboardForm { get; set; } // Reference to the calling UserControl
         private DataAccess Da { set; get; }
 
         public AddEmployee(Form adminDashboardForm)
         {
             InitializeComponent();
             this.Da = new DataAccess();
-            this.adminDashboardForm = adminDashboardForm;
+            this.AdminDashboardForm = adminDashboardForm;
         }
+
+
         internal string GetID()
         {
             string quaryToGetLastID = "SELECT COUNT([UserID]) FROM [dbo].[AppUser];";
@@ -69,7 +71,7 @@ namespace SiliconSource
             int didItWork = Da.ExecuteDMLQuery(insertQuery);
             if (didItWork > 0)
             {
-                MessageBox.Show("Update Successful" + "New ID: " + userID);
+                MessageBox.Show("Update Successful" + " New ID: " + userID);
             }
             else
             {
@@ -97,9 +99,9 @@ namespace SiliconSource
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            adminDashboardForm.Show();
+            AdminDashboardForm.Show();
 
-            if (adminDashboardForm is AdminDashboard dashboard)
+            if (AdminDashboardForm is AdminDashboard dashboard)
             {
                 dashboard.RefreshEmployeeTab();
             }

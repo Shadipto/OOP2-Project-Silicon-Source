@@ -76,6 +76,12 @@
     <Compile Include="Admin\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\PasswordUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\PasswordUpdate.Designer.cs">
+      <DependentUpon>PasswordUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ucHomeAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,10 +165,10 @@
     <Compile Include="Admin\UpdateInventory.Designer.cs">
       <DependentUpon>UpdateInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateEmployee.cs">
+    <Compile Include="Admin\UpdateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateEmployee.Designer.cs">
+    <Compile Include="Admin\UpdateEmployee.Designer.cs">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\AddEmployee.resx">
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PasswordUpdate.resx">
+      <DependentUpon>PasswordUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ucHomeAdmin.resx">
       <DependentUpon>ucHomeAdmin.cs</DependentUpon>
@@ -222,7 +231,7 @@
     <EmbeddedResource Include="Admin\UpdateInventory.resx">
       <DependentUpon>UpdateInventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateEmployee.resx">
+    <EmbeddedResource Include="Admin\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

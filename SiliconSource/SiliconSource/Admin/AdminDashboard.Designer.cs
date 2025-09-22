@@ -36,7 +36,6 @@
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
-            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnSales = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
@@ -51,12 +50,13 @@
             this.lblAdminName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlBody.SuspendLayout();
             this.pnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaAdminDashboard
@@ -154,22 +154,6 @@
             this.lblSiliconSource.Size = new System.Drawing.Size(158, 24);
             this.lblSiliconSource.TabIndex = 3;
             this.lblSiliconSource.Text = "Silicon Source";
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbLogo.BorderRadius = 10;
-            this.pbLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.ErrorImage")));
-            this.pbLogo.FillColor = System.Drawing.Color.Transparent;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.ImageRotate = 0F;
-            this.pbLogo.Location = new System.Drawing.Point(46, 8);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(102, 99);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 4;
-            this.pbLogo.TabStop = false;
-            this.pbLogo.UseTransparentBackground = true;
             // 
             // rbtnHome
             // 
@@ -439,6 +423,22 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // pbLogo
+            // 
+            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogo.BorderRadius = 10;
+            this.pbLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.ErrorImage")));
+            this.pbLogo.FillColor = System.Drawing.Color.Transparent;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(46, 8);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(102, 99);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 4;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.UseTransparentBackground = true;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,11 +456,11 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlBody.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -473,7 +473,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
         private System.Windows.Forms.Label lblMoto;
         private System.Windows.Forms.Label lblSiliconSource;
-        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlBody;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlHeading;
@@ -488,5 +487,6 @@
         private Guna.UI2.WinForms.Guna2Button rbtnSales;
         private Guna.UI2.WinForms.Guna2Button rbtnInventory;
         private Guna.UI2.WinForms.Guna2Button rbtnEmployee;
+        private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
     }
 }

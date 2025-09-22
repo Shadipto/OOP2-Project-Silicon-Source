@@ -41,9 +41,9 @@
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginRight = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.lblLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucLoginPassword = new SiliconSource.LoginControl();
             this.ucLoginID = new SiliconSource.LoginControl();
+            this.lblLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlLoginLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -195,18 +195,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblLogin
-            // 
-            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
-            this.lblLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLogin.Location = new System.Drawing.Point(168, 100);
-            this.lblLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(106, 39);
-            this.lblLogin.TabIndex = 9;
-            this.lblLogin.Text = "LOGIN";
-            // 
             // ucLoginPassword
             // 
             this.ucLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
@@ -232,6 +220,18 @@
             this.ucLoginID.Size = new System.Drawing.Size(349, 71);
             this.ucLoginID.TabIndex = 10;
             this.ucLoginID.TextboxText = "";
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblLogin.Location = new System.Drawing.Point(168, 100);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(106, 39);
+            this.lblLogin.TabIndex = 9;
+            this.lblLogin.Text = "LOGIN";
             // 
             // Login
             // 
@@ -270,8 +270,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSiliconSource;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblLogin;
-        private LoginControl ucLoginID;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private LoginControl ucLoginPassword;
+        private LoginControl ucLoginID;
     }
 }
