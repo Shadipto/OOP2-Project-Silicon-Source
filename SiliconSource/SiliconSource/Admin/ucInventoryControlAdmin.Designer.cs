@@ -87,7 +87,6 @@
             txtSearch.Size = new System.Drawing.Size(420, 40);
             txtSearch.TabIndex = 2;
             txtSearch.TextOffset = new System.Drawing.Point(10, 0);
-            
             // 
             // pnlSearch
             // 
@@ -136,7 +135,7 @@
             this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPrint.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPrint.FillColor = System.Drawing.Color.Blue;
             this.btnPrint.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.White;
             this.btnPrint.HoverState.FillColor = System.Drawing.Color.White;
@@ -226,6 +225,7 @@
             this.btnAdd.Size = new System.Drawing.Size(158, 45);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add Inventory";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmbSort
             // 

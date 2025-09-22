@@ -85,6 +85,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 3;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pnlAddInventoryLeft
             // 
@@ -150,7 +151,6 @@
             this.lblNew.Size = new System.Drawing.Size(65, 38);
             this.lblNew.TabIndex = 3;
             this.lblNew.Text = "NEW";
-            this.lblNew.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
             // pbCloud
             // 
@@ -225,6 +225,7 @@
             this.btnClear.Size = new System.Drawing.Size(189, 49);
             this.btnClear.TabIndex = 17;
             this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -334,6 +335,7 @@
             this.ucSKU.Name = "ucSKU";
             this.ucSKU.Size = new System.Drawing.Size(349, 71);
             this.ucSKU.TabIndex = 11;
+            this.ucSKU.TextboxText = "";
             // 
             // ucStockQuantity
             // 
@@ -345,6 +347,7 @@
             this.ucStockQuantity.Name = "ucStockQuantity";
             this.ucStockQuantity.Size = new System.Drawing.Size(349, 71);
             this.ucStockQuantity.TabIndex = 10;
+            this.ucStockQuantity.TextboxText = "";
             // 
             // ucCost
             // 
@@ -356,6 +359,7 @@
             this.ucCost.Name = "ucCost";
             this.ucCost.Size = new System.Drawing.Size(349, 71);
             this.ucCost.TabIndex = 9;
+            this.ucCost.TextboxText = "";
             // 
             // ucPrice
             // 
@@ -367,6 +371,7 @@
             this.ucPrice.Name = "ucPrice";
             this.ucPrice.Size = new System.Drawing.Size(349, 71);
             this.ucPrice.TabIndex = 8;
+            this.ucPrice.TextboxText = "";
             // 
             // ucDescription
             // 
@@ -378,6 +383,7 @@
             this.ucDescription.Name = "ucDescription";
             this.ucDescription.Size = new System.Drawing.Size(349, 71);
             this.ucDescription.TabIndex = 7;
+            this.ucDescription.TextboxText = "";
             // 
             // ucProductName
             // 
@@ -389,6 +395,7 @@
             this.ucProductName.Name = "ucProductName";
             this.ucProductName.Size = new System.Drawing.Size(349, 71);
             this.ucProductName.TabIndex = 5;
+            this.ucProductName.TextboxText = "";
             // 
             // AddInventory
             // 

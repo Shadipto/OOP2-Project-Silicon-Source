@@ -44,8 +44,6 @@ namespace SiliconSource
                 parentForm.Hide();
                 updateInventory.Show();
 
-                
-                
             }
         }
 
@@ -93,9 +91,9 @@ namespace SiliconSource
             else
             {
                 // Can delete the product
-                DialogResult confirm = MessageBox.Show("Are you sure you want to delete this product?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                /*DialogResult confirm = MessageBox.Show("Are you sure you want to delete this product?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (confirm != DialogResult.Yes)
-                    return;
+                    return;*/
 
                 string deleteSqlQuery = $"DELETE FROM Product WHERE ProductID = {productID};";
                 int affectedRows = Da.ExecuteDMLQuery(deleteSqlQuery);
@@ -125,6 +123,15 @@ namespace SiliconSource
             exporter.Export(gdvInventory);
         }
 
-        
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // admin dashboard form
+            Form parentForm = this.FindForm();
+
+            // Only create one updateInventory instance
+            var addInventory = new AddInventory(parentForm);
+            parentForm.Hide();
+            addInventory.Show();
+        }
     }
 }

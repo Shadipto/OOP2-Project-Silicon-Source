@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\ucinventorycontroladmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucinventorycontroladmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\updateinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\addinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\ucinventorycontroladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|c:\\users\\shadi\\onedrive\\desktop\\oop2 project c#\\siliconsource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDE84FC-4024-467A-AF15-9D8044782844}|SiliconSource\\SiliconSource.csproj|solutionrelative:siliconsource\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,79 +54,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ucInventoryControlAdmin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.Designer.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucInventoryControlAdmin.Designer.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.Designer.cs",
-              "RelativeToolTip": "SiliconSource\\Admin\\ucInventoryControlAdmin.Designer.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T00:46:22.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucInventoryControlAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "RelativeToolTip": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAYwH8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T00:30:31.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ucInventoryControlAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
               "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
               "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs [Design]",
               "RelativeToolTip": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T00:30:05.59Z",
+              "WhenOpened": "2025-09-22T10:52:48.524Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "SiliconSource\\Admin\\AdminDashboard.cs [Design]",
+              "Title": "AddInventory.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AddInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AddInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AddInventory.cs",
+              "RelativeToolTip": "SiliconSource\\Admin\\AddInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T00:26:16.267Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-22T10:51:50.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\DataAccess.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\DataAccess.cs",
-              "RelativeToolTip": "SiliconSource\\DataAccess.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwDoAAAAJAAAAAAAAAA==",
+              "Title": "UpdateInventory.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\UpdateInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\UpdateInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\UpdateInventory.cs",
+              "RelativeToolTip": "SiliconSource\\Admin\\UpdateInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T21:54:40.377Z",
+              "WhenOpened": "2025-09-22T10:55:03.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AdminDashboard.cs",
-              "RelativeToolTip": "SiliconSource\\Admin\\AdminDashboard.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAlwM8AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AddInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AddInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\AddInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\AddInventory.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\AddInventory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T21:52:15.648Z",
+              "WhenOpened": "2025-09-22T10:51:46.524Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucInventoryControlAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
+              "RelativeToolTip": "SiliconSource\\Admin\\ucInventoryControlAdmin.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAnwIMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:50:13.037Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateInventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\UpdateInventory.cs",
+              "RelativeDocumentMoniker": "SiliconSource\\Admin\\UpdateInventory.cs",
+              "ToolTip": "C:\\Users\\shadi\\OneDrive\\Desktop\\OOP2 Project C#\\SiliconSource\\SiliconSource\\Admin\\UpdateInventory.cs [Design]",
+              "RelativeToolTip": "SiliconSource\\Admin\\UpdateInventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:52:30.802Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

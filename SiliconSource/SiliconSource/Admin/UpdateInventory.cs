@@ -15,8 +15,9 @@ namespace SiliconSource
         private Form AdminDashboardform { get; set; } // Reference to the calling UserControl
         private int ProductID {  get; set; }
         private int SupplierID {  get; set; }
-
         private DataAccess Da { set; get; }
+
+
         public UpdateInventory(int productID, Form adminDashboardForm)
         {
             InitializeComponent();
