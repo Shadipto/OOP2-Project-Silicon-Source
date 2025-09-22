@@ -199,6 +199,13 @@ namespace SiliconSource
             rbtnInventory.Checked = true;
         }
 
+        internal void RefreshEmployeeTab()
+        {
+            // Force trigger CheckedChanged
+            rbtnEmployee.Checked = false;
+            rbtnEmployee.Checked = true;
+        }
+
         internal void RefreshHomeTab()
         {
             // Force trigger CheckedChanged

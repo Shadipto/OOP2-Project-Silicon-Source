@@ -12,16 +12,15 @@ namespace SiliconSource
 {
     public partial class AddInventory : Form
     {
-        private Form AdminDashboardform { get; set; } // Reference to the calling UserControl
-        private int ProductID { get; set; }
-        private int SupplierID { get; set; }
+        private Form adminDashboardForm { get; set; } // Reference to the calling UserControl
+        
         private DataAccess Da { set; get; }
 
         public AddInventory(Form adminDashboardForm)
         {
             InitializeComponent();
             this.Da = new DataAccess();
-            this.AdminDashboardform = adminDashboardForm;
+            this.adminDashboardForm = adminDashboardForm;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -50,10 +49,10 @@ namespace SiliconSource
 
             int supplierID = Convert.ToInt32(dst.Rows[0][0]);
 
-            string insertQuary = "INSERT INTO Product (ProductName, Category, Description, Price, Cost, StockQuantity, SKU, SupplierID)" +
+            string insertQuery = "INSERT INTO Product (ProductName, Category, Description, Price, Cost, StockQuantity, SKU, SupplierID)" +
                 $"VALUES ('{productName}', '{category}', '{description}', {price}, {cost}, {stockQuantity}, '{SKU}', {supplierID});";
 
-            int didItWork = Da.ExecuteDMLQuery(insertQuary);
+            int didItWork = Da.ExecuteDMLQuery(insertQuery);
             if (didItWork > 0)
             {
                 MessageBox.Show("Update Successful");
@@ -76,8 +75,6 @@ namespace SiliconSource
             ucSKU.TextboxText = string.Empty;
             cmbSupplierName.SelectedIndex = -1;  // clears supplier selection
 
-            this.ProductID = 0;
-            this.SupplierID = 0;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -88,9 +85,9 @@ namespace SiliconSource
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            AdminDashboardform.Show();
+            adminDashboardForm.Show();
 
-            if (AdminDashboardform is AdminDashboard dashboard)
+            if (adminDashboardForm is AdminDashboard dashboard)
             {
                 dashboard.RefreshInventoryTab();
             }

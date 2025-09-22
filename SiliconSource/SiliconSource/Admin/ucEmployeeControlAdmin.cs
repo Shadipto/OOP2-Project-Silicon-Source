@@ -17,6 +17,15 @@ namespace SiliconSource
             InitializeComponent();
         }
 
-       
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // admin dashboard form
+            Form parentForm = this.FindForm();
+
+            // Only create one updateInventory instance
+            var addEmployee = new AddEmployee(parentForm);
+            parentForm.Hide();
+            addEmployee.Show();
+        }
     }
 }
