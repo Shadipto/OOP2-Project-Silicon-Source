@@ -131,6 +131,24 @@
     <Compile Include="Login\LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\ucHomeManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\ucHomeManager.Designer.cs">
+      <DependentUpon>ucHomeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ucInventoryControlManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\ucInventoryControlManager.Designer.cs">
+      <DependentUpon>ucInventoryControlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ucSalesControlManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\ucSalesControlManager.Designer.cs">
+      <DependentUpon>ucSalesControlManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="PasswordHasher.cs" />
     <Compile Include="PDFExporter.cs" />
     <Compile Include="Program.cs" />
@@ -206,6 +224,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ucHomeManager.resx">
+      <DependentUpon>ucHomeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ucInventoryControlManager.resx">
+      <DependentUpon>ucInventoryControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ucSalesControlManager.resx">
+      <DependentUpon>ucSalesControlManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
