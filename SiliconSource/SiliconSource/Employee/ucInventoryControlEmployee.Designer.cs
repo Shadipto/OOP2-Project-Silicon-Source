@@ -145,6 +145,7 @@
             this.btnGoToCart.Size = new System.Drawing.Size(158, 45);
             this.btnGoToCart.TabIndex = 5;
             this.btnGoToCart.Text = "Go To Cart";
+            
             // 
             // btnRemove
             // 
@@ -195,6 +196,7 @@
             this.btnAddToCart.Size = new System.Drawing.Size(158, 45);
             this.btnAddToCart.TabIndex = 2;
             this.btnAddToCart.Text = "Add To Cart";
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // cmbSort
             // 

@@ -58,8 +58,19 @@ namespace SiliconSource
                     inventory.gdvInventory.Columns["stock"].DataPropertyName = "StockQuantity";
                     inventory.gdvInventory.DataSource = ds.Tables[0];
                     break;
-                
+
             }
+        }
+
+        internal void PopulateCartGridView()
+        {
+            cart.gdvCart.AutoGenerateColumns = false;
+            cart.gdvCart.Columns["productID"].DataPropertyName = "productId";      
+            cart.gdvCart.Columns["productName"].DataPropertyName = "productName";
+            cart.gdvCart.Columns["price"].DataPropertyName = "price";
+            cart.gdvCart.Columns["quantity"].DataPropertyName = "quantity";
+            cart.gdvCart.DataSource = null;
+            cart.gdvCart.DataSource = CartSession.CartItems;
         }
 
         private void InitializeUserControls()
@@ -68,11 +79,9 @@ namespace SiliconSource
             this.cart = new ucCart { Dock = DockStyle.Fill };
             
 
-
             pnlGrid.Controls.Add(inventory);
             pnlGrid.Controls.Add(cart);
             
-
 
             inventory.Visible = true;   // default 
             cart.Visible = false;
@@ -88,7 +97,7 @@ namespace SiliconSource
             if (rbtnHome.Checked)
             {
                 this.lblTitle.Text = rbtnHome.Text;
-                PopulateGridView("SELECT TOP 10 P.ProductName AS SoldRecently, SI.ProductID, SI.UnitPrice AS Price FROM SaleItem AS SI INNER JOIN Sale AS S ON SI.SaleID = S.SaleID INNER JOIN Product AS P ON SI.ProductID = P.ProductID ORDER BY S.SaleDate DESC; SELECT TOP 5 P.ProductName AS TopSelling, SUM(SI.Quantity) AS SoldQuantity FROM SaleItem AS SI INNER JOIN Product AS P ON SI.ProductID = P.ProductID GROUP BY P.ProductName ORDER BY SoldQuantity DESC; SELECT ProductName AS LowStockProducts, StockQuantity AS StockLeft FROM Product WHERE StockQuantity <= 10 ORDER BY StockQuantity ASC; SELECT TOP 1 CONCAT(AU.FirstName, ' ', AU.LastName) AS TopPerformer FROM AppUser AS AU INNER JOIN Sale AS S ON AU.UserID = S.SalesRepresentativeID GROUP BY AU.FirstName, AU.LastName ORDER BY SUM(S.TotalAmount) DESC;", "Home");
+                
             }
             else if (rbtnInventory.Checked)
             {
@@ -98,7 +107,8 @@ namespace SiliconSource
             else if (rbtnCart.Checked)
             {
                 this.lblTitle.Text = rbtnCart.Text;
-                PopulateGridView("SELECT S.SaleID, S.SaleDate, COUNT(SI.SaleItemID) AS SaleItems, S.TotalAmount AS Bill, CONCAT(AU.FirstName, ' ', AU.LastName) AS SalesRep FROM Sale AS S JOIN SaleItem AS SI ON S.SaleID = SI.SaleID JOIN AppUser AS AU ON S.SalesRepresentativeID = AU.UserID GROUP BY S.SaleID, S.SaleDate, S.TotalAmount, AU.FirstName, AU.LastName;", "Sales");
+                PopulateCartGridView();
+
             }
             else if (rbtnRecord.Checked)
             {

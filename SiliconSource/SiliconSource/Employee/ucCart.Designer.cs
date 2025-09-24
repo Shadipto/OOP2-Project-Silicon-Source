@@ -39,15 +39,14 @@
             this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
             this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
             this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.gdvCart = new Guna.UI2.WinForms.Guna2DataGridView();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlSearch.SuspendLayout();
             this.pnlGridViewOperations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvCart)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
@@ -191,18 +190,18 @@
             this.cmbSort.TabIndex = 0;
             this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gdvInventory
+            // gdvCart
             // 
-            this.gdvInventory.AllowUserToAddRows = false;
-            this.gdvInventory.AllowUserToDeleteRows = false;
-            this.gdvInventory.AllowUserToResizeRows = false;
+            this.gdvCart.AllowUserToAddRows = false;
+            this.gdvCart.AllowUserToDeleteRows = false;
+            this.gdvCart.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gdvInventory.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.gdvCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gdvCart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,15 +209,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gdvInventory.ColumnHeadersHeight = 15;
-            this.gdvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gdvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gdvCart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gdvCart.ColumnHeadersHeight = 15;
+            this.gdvCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gdvCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productID,
             this.productName,
-            this.category,
             this.price,
-            this.quantity});
+            this.Quantity});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,13 +224,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdvInventory.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gdvInventory.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gdvInventory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdvInventory.Location = new System.Drawing.Point(0, 100);
-            this.gdvInventory.Name = "gdvInventory";
-            this.gdvInventory.ReadOnly = true;
-            this.gdvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdvCart.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gdvCart.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gdvCart.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdvCart.Location = new System.Drawing.Point(0, 100);
+            this.gdvCart.Name = "gdvCart";
+            this.gdvCart.ReadOnly = true;
+            this.gdvCart.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,94 +238,74 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.gdvInventory.RowHeadersVisible = false;
-            this.gdvInventory.RowTemplate.Height = 25;
-            this.gdvInventory.Size = new System.Drawing.Size(785, 490);
-            this.gdvInventory.TabIndex = 12;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Silver;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
-            this.gdvInventory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gdvInventory.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gdvInventory.ThemeStyle.HeaderStyle.Height = 15;
-            this.gdvInventory.ThemeStyle.ReadOnly = true;
-            this.gdvInventory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gdvInventory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gdvInventory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gdvInventory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gdvInventory.ThemeStyle.RowsStyle.Height = 25;
-            this.gdvInventory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gdvInventory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvCart.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gdvCart.RowHeadersVisible = false;
+            this.gdvCart.RowTemplate.Height = 25;
+            this.gdvCart.Size = new System.Drawing.Size(785, 490);
+            this.gdvCart.TabIndex = 12;
+            this.gdvCart.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Silver;
+            this.gdvCart.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvCart.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.gdvCart.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gdvCart.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvCart.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gdvCart.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdvCart.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.gdvCart.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdvCart.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvCart.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gdvCart.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gdvCart.ThemeStyle.HeaderStyle.Height = 15;
+            this.gdvCart.ThemeStyle.ReadOnly = true;
+            this.gdvCart.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdvCart.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdvCart.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gdvCart.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdvCart.ThemeStyle.RowsStyle.Height = 25;
+            this.gdvCart.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gdvCart.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // productID
             // 
             this.productID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.productID.FillWeight = 126.9036F;
-            this.productID.Frozen = true;
             this.productID.HeaderText = "Product ID";
             this.productID.Name = "productID";
             this.productID.ReadOnly = true;
-            this.productID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.productID.Width = 90;
             // 
             // productName
             // 
-            this.productName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productName.FillWeight = 329.0299F;
             this.productName.HeaderText = "Product Name";
             this.productName.Name = "productName";
             this.productName.ReadOnly = true;
-            this.productName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // category
-            // 
-            this.category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.category.FillWeight = 14.68883F;
-            this.category.HeaderText = "Category";
-            this.category.Name = "category";
-            this.category.ReadOnly = true;
-            this.category.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.category.Width = 110;
             // 
             // price
             // 
             this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.price.FillWeight = 14.68883F;
             this.price.HeaderText = "Price";
             this.price.Name = "price";
             this.price.ReadOnly = true;
-            this.price.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.price.Width = 90;
+            this.price.Width = 70;
             // 
-            // quantity
+            // Quantity
             // 
-            this.quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.quantity.FillWeight = 14.68883F;
-            this.quantity.HeaderText = "Quantity";
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
-            this.quantity.Width = 50;
+            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Quantity.HeaderText = "quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            this.Quantity.Width = 70;
             // 
             // ucCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gdvInventory);
+            this.Controls.Add(this.gdvCart);
             this.Controls.Add(this.pnlGridViewOperations);
             this.Controls.Add(this.pnlSearch);
             this.Name = "ucCart";
             this.Size = new System.Drawing.Size(1053, 590);
             this.pnlSearch.ResumeLayout(false);
             this.pnlGridViewOperations.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gdvInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvCart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -339,12 +317,11 @@
         private Guna.UI2.WinForms.Guna2Button btnRemove;
         private Guna.UI2.WinForms.Guna2Button btnCheckOut;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
-        private Guna.UI2.WinForms.Guna2DataGridView gdvInventory;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        internal Guna.UI2.WinForms.Guna2DataGridView gdvCart;
         private System.Windows.Forms.DataGridViewTextBoxColumn productID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn category;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }
