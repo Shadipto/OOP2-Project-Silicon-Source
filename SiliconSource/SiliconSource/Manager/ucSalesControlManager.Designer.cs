@@ -84,6 +84,7 @@
             this.txtSearch.Size = new System.Drawing.Size(420, 40);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pnlSearch
             // 

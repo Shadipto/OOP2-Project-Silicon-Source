@@ -51,6 +51,7 @@
             // 
             // txtInfo
             // 
+            this.txtInfo.AcceptsTab = true;
             this.txtInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInfo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInfo.ForeColor = System.Drawing.SystemColors.WindowFrame;
