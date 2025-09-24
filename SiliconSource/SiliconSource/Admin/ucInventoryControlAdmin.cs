@@ -130,5 +130,24 @@ namespace SiliconSource
             parentForm.Hide();
             addInventory.Show();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (gdvInventory.DataSource == null) return;
+
+            DataTable dt = gdvInventory.DataSource as DataTable;
+            if (dt == null) return;
+
+            string searchValue = txtSearch.Text.Trim().Replace("'", "''"); 
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                (gdvInventory.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+            }
+            else
+            {
+                dt.DefaultView.RowFilter = $"ProductName LIKE '%{searchValue}%'";
+            }
+        }
     }
 }

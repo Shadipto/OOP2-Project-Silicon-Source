@@ -130,5 +130,24 @@ namespace SiliconSource
             PDFExporter exporter = new PDFExporter("EmployeeReport.pdf");
             exporter.Export(gdvEmployee);
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (gdvEmployee.DataSource == null) return;
+
+            DataTable dt = gdvEmployee.DataSource as DataTable;
+            if (dt == null) return;
+
+            string searchValue = txtSearch.Text.Trim().Replace("'", "''"); // escape single quotes
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                (gdvEmployee.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+            }
+            else
+            {
+                dt.DefaultView.RowFilter = $"EmployeeName LIKE '%{searchValue}%'";
+            }
+        }
     }
 }

@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Guna2TextBox txtSearch;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucAnalyticsControl));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gdvSalesAnalytics = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.salesRepID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesRepName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalSalesCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalSales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsSold = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnAnalytics = new Guna.UI2.WinForms.Guna2Button();
             this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -44,12 +49,6 @@
             this.prgTarget = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.lblTargetAmout = new System.Windows.Forms.Label();
             this.lblTarget = new System.Windows.Forms.Label();
-            this.salesRepID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesRepName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalSalesCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalSales = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productsSold = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdvSalesAnalytics)).BeginInit();
             this.pnlGridViewOperations.SuspendLayout();
@@ -57,44 +56,45 @@
             // 
             // txtSearch
             // 
-            txtSearch.Animated = true;
-            txtSearch.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            txtSearch.BackColor = System.Drawing.Color.Transparent;
-            txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.BorderRadius = 20;
-            txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtSearch.DefaultText = "";
-            txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.DisabledState.FillColor = System.Drawing.Color.WhiteSmoke;
-            txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.FillColor = System.Drawing.Color.WhiteSmoke;
-            txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.FocusedState.FillColor = System.Drawing.Color.WhiteSmoke;
-            txtSearch.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            txtSearch.ForeColor = System.Drawing.Color.Black;
-            txtSearch.HideSelection = false;
-            txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            txtSearch.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            txtSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconLeft")));
-            txtSearch.IconLeftOffset = new System.Drawing.Point(15, 0);
-            txtSearch.Location = new System.Drawing.Point(26, 30);
-            txtSearch.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            txtSearch.Name = "txtSearch";
-            txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            txtSearch.PlaceholderText = "Search...........";
-            txtSearch.SelectedText = "";
-            txtSearch.Size = new System.Drawing.Size(420, 40);
-            txtSearch.TabIndex = 2;
-            txtSearch.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtSearch.Animated = true;
+            this.txtSearch.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.BorderRadius = 20;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.FocusedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSearch.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
+            this.txtSearch.HideSelection = false;
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSearch.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconLeft")));
+            this.txtSearch.IconLeftOffset = new System.Drawing.Point(15, 0);
+            this.txtSearch.Location = new System.Drawing.Point(26, 30);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.txtSearch.PlaceholderText = "Search...........";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(420, 40);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pnlSearch
             // 
             this.pnlSearch.BorderColor = System.Drawing.Color.Transparent;
             this.pnlSearch.BorderRadius = 10;
             this.pnlSearch.BorderThickness = 2;
-            this.pnlSearch.Controls.Add(txtSearch);
+            this.pnlSearch.Controls.Add(this.txtSearch);
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSearch.FillColor = System.Drawing.Color.WhiteSmoke;
             this.pnlSearch.FillColor2 = System.Drawing.Color.WhiteSmoke;
@@ -180,6 +180,45 @@
             this.gdvSalesAnalytics.ThemeStyle.RowsStyle.Height = 25;
             this.gdvSalesAnalytics.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gdvSalesAnalytics.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // salesRepID
+            // 
+            this.salesRepID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.salesRepID.HeaderText = "Sales Rep ID";
+            this.salesRepID.Name = "salesRepID";
+            this.salesRepID.ReadOnly = true;
+            // 
+            // salesRepName
+            // 
+            this.salesRepName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.salesRepName.FillWeight = 126.9036F;
+            this.salesRepName.HeaderText = "Sales Rep Name";
+            this.salesRepName.Name = "salesRepName";
+            this.salesRepName.ReadOnly = true;
+            this.salesRepName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.salesRepName.Width = 130;
+            // 
+            // totalSalesCount
+            // 
+            this.totalSalesCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.totalSalesCount.HeaderText = "Total Sales Count";
+            this.totalSalesCount.Name = "totalSalesCount";
+            this.totalSalesCount.ReadOnly = true;
+            this.totalSalesCount.Width = 80;
+            // 
+            // totalSales
+            // 
+            this.totalSales.HeaderText = "Total Sales";
+            this.totalSales.Name = "totalSales";
+            this.totalSales.ReadOnly = true;
+            // 
+            // productsSold
+            // 
+            this.productsSold.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.productsSold.HeaderText = "Products Sold";
+            this.productsSold.Name = "productsSold";
+            this.productsSold.ReadOnly = true;
+            this.productsSold.Width = 200;
             // 
             // pnlGridViewOperations
             // 
@@ -304,45 +343,6 @@
             this.lblTarget.TabIndex = 0;
             this.lblTarget.Text = "Monthly Target";
             // 
-            // salesRepID
-            // 
-            this.salesRepID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.salesRepID.HeaderText = "Sales Rep ID";
-            this.salesRepID.Name = "salesRepID";
-            this.salesRepID.ReadOnly = true;
-            // 
-            // salesRepName
-            // 
-            this.salesRepName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.salesRepName.FillWeight = 126.9036F;
-            this.salesRepName.HeaderText = "Sales Rep Name";
-            this.salesRepName.Name = "salesRepName";
-            this.salesRepName.ReadOnly = true;
-            this.salesRepName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesRepName.Width = 130;
-            // 
-            // totalSalesCount
-            // 
-            this.totalSalesCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.totalSalesCount.HeaderText = "Total Sales Count";
-            this.totalSalesCount.Name = "totalSalesCount";
-            this.totalSalesCount.ReadOnly = true;
-            this.totalSalesCount.Width = 80;
-            // 
-            // totalSales
-            // 
-            this.totalSales.HeaderText = "Total Sales";
-            this.totalSales.Name = "totalSales";
-            this.totalSales.ReadOnly = true;
-            // 
-            // productsSold
-            // 
-            this.productsSold.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.productsSold.HeaderText = "Products Sold";
-            this.productsSold.Name = "productsSold";
-            this.productsSold.ReadOnly = true;
-            this.productsSold.Width = 200;
-            // 
             // ucAnalyticsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,5 +377,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn totalSalesCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalSales;
         private System.Windows.Forms.DataGridViewTextBoxColumn productsSold;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
     }
 }

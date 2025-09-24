@@ -16,5 +16,24 @@ namespace SiliconSource
         {
             InitializeComponent();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (gdvSales.DataSource == null) return;
+
+            DataTable dt = gdvSales.DataSource as DataTable;
+            if (dt == null) return;
+
+            string searchValue = txtSearch.Text.Trim().Replace("'", "''"); // escape single quotes
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                (gdvSales.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+            }
+            else
+            {
+                dt.DefaultView.RowFilter = $"Convert(SaleID, 'System.String') LIKE '%{searchValue}%'";
+            }
+        }
     }
 }
