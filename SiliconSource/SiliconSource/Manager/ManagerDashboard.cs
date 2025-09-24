@@ -158,8 +158,7 @@ namespace SiliconSource
             else if (rbtnEmployee.Checked)
             {
                 this.lblTitle.Text = rbtnEmployee.Text;
-                PopulateGridView("SELECT UserID AS EmployeeID, FirstName || ' ' || LastName AS EmployeeName, Role, Salary FROM AppUser;", "Employee");
-            }
+                PopulateGridView("SELECT UserID AS EmployeeID, FirstName || ' ' || LastName AS EmployeeName, Role, Salary FROM AppUser WHERE Role != 'Owner';", "Employee");            }
             else if (rbtnSales.Checked)
             {
                 this.lblTitle.Text = rbtnSales.Text;

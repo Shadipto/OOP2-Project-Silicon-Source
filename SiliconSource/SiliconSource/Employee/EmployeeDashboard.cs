@@ -12,25 +12,54 @@ namespace SiliconSource
 {
     public partial class EmployeeDashboard : Form
     {
-        private Form loginForm; // loninForm reference (association) [Dipto]
+        private DataAccess Da { get; set; }
+
+        private Form LoginForm { get; set; } // loninForm reference (association) [Dipto]
 
         // UserControl references (aggregation) [Dipto]
         private ucInventoryControlEmployee inventory;
         private ucCart cart;
 
 
-        public EmployeeDashboard(Form loginform)
+        public EmployeeDashboard(Form loginForm, string employeeName)
         {
             InitializeComponent();
+
+            lblName.Text = employeeName;
             rbtnInventory.Checked = true;
 
-            this.loginForm = loginform; // Assign the loginForm for keeping single login instance [Dipto]
+            this.LoginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
+
+            this.Da = new DataAccess(); // Assign the loginForm for keeping single login instance [Dipto]
 
             InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
 
+            this.PopulateGridView("SELECT ProductID, ProductName, Category, Price, Cost, StockQuantity FROM Product;", "Inventory");
+
             rbtnInventory.CheckedChanged += RadioButton_CheckedChanged;
             rbtnCart.CheckedChanged += RadioButton_CheckedChanged;
+        }
 
+        // Method to fill DataGridView from DB [Dipto]
+        internal void PopulateGridView(string query, string controlType)
+        {
+            var ds = this.Da.GetDataSet(query);
+
+            switch (controlType)
+            {
+                
+                case "Inventory":
+                    inventory.gdvInventory.AutoGenerateColumns = false;
+                    inventory.gdvInventory.Columns["productID"].DataPropertyName = "ProductID";
+                    inventory.gdvInventory.Columns["productName"].DataPropertyName = "ProductName";
+                    inventory.gdvInventory.Columns["category"].DataPropertyName = "Category";
+                    inventory.gdvInventory.Columns["price"].DataPropertyName = "Price";
+                    inventory.gdvInventory.Columns["cost"].DataPropertyName = "Cost";
+                    inventory.gdvInventory.Columns["stock"].DataPropertyName = "StockQuantity";
+                    inventory.gdvInventory.DataSource = ds.Tables[0];
+                    break;
+                
+            }
         }
 
         private void InitializeUserControls()
@@ -54,18 +83,40 @@ namespace SiliconSource
         {
             inventory.Visible = rbtnInventory.Checked;
             cart.Visible = rbtnCart.Checked;
-            
+
+
+            if (rbtnHome.Checked)
+            {
+                this.lblTitle.Text = rbtnHome.Text;
+                PopulateGridView("SELECT TOP 10 P.ProductName AS SoldRecently, SI.ProductID, SI.UnitPrice AS Price FROM SaleItem AS SI INNER JOIN Sale AS S ON SI.SaleID = S.SaleID INNER JOIN Product AS P ON SI.ProductID = P.ProductID ORDER BY S.SaleDate DESC; SELECT TOP 5 P.ProductName AS TopSelling, SUM(SI.Quantity) AS SoldQuantity FROM SaleItem AS SI INNER JOIN Product AS P ON SI.ProductID = P.ProductID GROUP BY P.ProductName ORDER BY SoldQuantity DESC; SELECT ProductName AS LowStockProducts, StockQuantity AS StockLeft FROM Product WHERE StockQuantity <= 10 ORDER BY StockQuantity ASC; SELECT TOP 1 CONCAT(AU.FirstName, ' ', AU.LastName) AS TopPerformer FROM AppUser AS AU INNER JOIN Sale AS S ON AU.UserID = S.SalesRepresentativeID GROUP BY AU.FirstName, AU.LastName ORDER BY SUM(S.TotalAmount) DESC;", "Home");
+            }
+            else if (rbtnInventory.Checked)
+            {
+                this.lblTitle.Text = rbtnInventory.Text;
+                PopulateGridView("SELECT ProductID, ProductName, Category, Price, Cost, StockQuantity FROM Product;", "Inventory");
+            }
+            else if (rbtnCart.Checked)
+            {
+                this.lblTitle.Text = rbtnCart.Text;
+                PopulateGridView("SELECT S.SaleID, S.SaleDate, COUNT(SI.SaleItemID) AS SaleItems, S.TotalAmount AS Bill, CONCAT(AU.FirstName, ' ', AU.LastName) AS SalesRep FROM Sale AS S JOIN SaleItem AS SI ON S.SaleID = SI.SaleID JOIN AppUser AS AU ON S.SalesRepresentativeID = AU.UserID GROUP BY S.SaleID, S.SaleDate, S.TotalAmount, AU.FirstName, AU.LastName;", "Sales");
+            }
+            else if (rbtnRecord.Checked)
+            {
+                this.lblTitle.Text = rbtnRecord.Text;
+                PopulateGridView("SELECT AU.UserID AS SalesRepID, CONCAT(AU.FirstName, ' ', AU.LastName) AS SalesRepName, COUNT(S.SaleID) AS TotalSalesCount, SUM(S.TotalAmount) AS TotalSales, ( SELECT STRING_AGG(P.ProductName, ', ') FROM SaleItem AS SI INNER JOIN Product AS P ON SI.ProductID = P.ProductID WHERE SI.SaleID IN ( SELECT SaleID FROM Sale WHERE SalesRepresentativeID = AU.UserID ) ) AS ProductsSold FROM AppUser AS AU INNER JOIN Sale AS S ON AU.UserID = S.SalesRepresentativeID GROUP BY AU.UserID, AU.FirstName, AU.LastName ORDER BY TotalSales DESC;", "Analytics");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            LoginForm.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginForm.Show();
+            LoginForm.Show();
         }
     }
 }

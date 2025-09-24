@@ -46,13 +46,13 @@
             this.cmbSupplierName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ucSKU = new SiliconSource.LoginControl();
             this.ucStockQuantity = new SiliconSource.LoginControl();
             this.ucCost = new SiliconSource.LoginControl();
             this.ucPrice = new SiliconSource.LoginControl();
             this.ucDescription = new SiliconSource.LoginControl();
             this.ucProductName = new SiliconSource.LoginControl();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlUpdateInventoryLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -306,24 +306,6 @@
             this.lblCategory.TabIndex = 12;
             this.lblCategory.Text = "Category";
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 13;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(425, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // ucSKU
             // 
             this.ucSKU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
@@ -396,6 +378,24 @@
             this.ucProductName.TabIndex = 5;
             this.ucProductName.TextboxText = "";
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 13;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(425, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // UpdateInventory
             // 
             this.AcceptButton = this.btnUpdate;
@@ -405,6 +405,7 @@
             this.Controls.Add(this.pnlUpdateInventoryRight);
             this.Controls.Add(this.pnlUpdateInventoryLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateInventory";

@@ -49,7 +49,7 @@ namespace SiliconSource
                 {
                     this.Hide();
                     MessageBox.Show("Sales Representative", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    var employeeDashboard = new EmployeeDashboard(this);
+                    var employeeDashboard = new EmployeeDashboard(this, dst.Rows[0][1].ToString());
                     employeeDashboard.Show();
 
                 }

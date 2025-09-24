@@ -32,7 +32,7 @@ namespace SiliconSource
             }
             else
             {
-                dt.DefaultView.RowFilter = $"SalesRepID LIKE '%{searchValue}%'";
+                dt.DefaultView.RowFilter = $"SalesRepID LIKE '%{searchValue}%' OR SalesRepName LIKE '%{searchValue}%'";
             }
         }
     }

@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordUpdate));
             this.gunaPasswordUpdate = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnlBase = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.ucConfirmPassword = new SiliconSource.LoginControl();
             this.ucNewPassword = new SiliconSource.LoginControl();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlBase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,24 @@
             this.pnlBase.Name = "pnlBase";
             this.pnlBase.Size = new System.Drawing.Size(400, 450);
             this.pnlBase.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 13;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(343, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pbLogo
             // 
@@ -108,7 +126,7 @@
             // ucConfirmPassword
             // 
             this.ucConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucConfirmPassword.IsPassword = false;
+            this.ucConfirmPassword.IsPassword = true;
             this.ucConfirmPassword.IsReadOnly = false;
             this.ucConfirmPassword.Label = "Confirm Password";
             this.ucConfirmPassword.Location = new System.Drawing.Point(12, 229);
@@ -120,7 +138,7 @@
             // ucNewPassword
             // 
             this.ucNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(145)))), ((int)(((byte)(245)))));
-            this.ucNewPassword.IsPassword = false;
+            this.ucNewPassword.IsPassword = true;
             this.ucNewPassword.IsReadOnly = false;
             this.ucNewPassword.Label = "New Password";
             this.ucNewPassword.Location = new System.Drawing.Point(12, 133);
@@ -128,24 +146,6 @@
             this.ucNewPassword.Size = new System.Drawing.Size(349, 71);
             this.ucNewPassword.TabIndex = 0;
             this.ucNewPassword.TextboxText = "";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 13;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Black;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(343, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // PasswordUpdate
             // 
