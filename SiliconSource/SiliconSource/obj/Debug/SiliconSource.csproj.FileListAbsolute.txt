@@ -215,3 +215,6 @@ E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Sour
 E:\New folder (2)\OOP2-Project-Silicon-Source-main (2)\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateEmployee.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateEmployee.resources
 C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Admin.PasswordUpdate.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucHomeManager.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucInventoryControlManager.resources
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucSalesControlManager.resources

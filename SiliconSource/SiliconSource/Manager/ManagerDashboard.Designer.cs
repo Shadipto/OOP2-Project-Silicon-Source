@@ -39,14 +39,14 @@
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnAnalytics = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnSales = new Guna.UI2.WinForms.Guna2Button();
-            this.rbtnEmplyee = new Guna.UI2.WinForms.Guna2Button();
+            this.rbtnEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlHeading = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
             this.lblRole = new System.Windows.Forms.Label();
             this.pboxAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblAdminName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -60,8 +60,6 @@
             // gunaManagerDashboard
             // 
             this.gunaManagerDashboard.AnimateWindow = true;
-            this.gunaManagerDashboard.AnimationInterval = 350;
-            this.gunaManagerDashboard.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_HOR_NEGATIVE;
             this.gunaManagerDashboard.BorderRadius = 10;
             this.gunaManagerDashboard.ContainerControl = this;
             this.gunaManagerDashboard.DockForm = false;
@@ -79,7 +77,7 @@
             this.pnlMenu.Controls.Add(this.btnLogout);
             this.pnlMenu.Controls.Add(this.rbtnAnalytics);
             this.pnlMenu.Controls.Add(this.rbtnSales);
-            this.pnlMenu.Controls.Add(this.rbtnEmplyee);
+            this.pnlMenu.Controls.Add(this.rbtnEmployee);
             this.pnlMenu.Controls.Add(this.rbtnInventory);
             this.pnlMenu.Controls.Add(this.rbtnHome);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -169,6 +167,7 @@
             this.btnLogout.Size = new System.Drawing.Size(180, 45);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // rbtnAnalytics
             // 
@@ -228,34 +227,34 @@
             this.rbtnSales.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.rbtnSales.TextOffset = new System.Drawing.Point(-27, 0);
             // 
-            // rbtnEmplyee
+            // rbtnEmployee
             // 
-            this.rbtnEmplyee.Animated = true;
-            this.rbtnEmplyee.AnimatedGIF = true;
-            this.rbtnEmplyee.AutoRoundedCorners = true;
-            this.rbtnEmplyee.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnEmplyee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.rbtnEmplyee.CheckedState.FillColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnEmplyee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnEmplyee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.rbtnEmplyee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.rbtnEmplyee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.rbtnEmplyee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.rbtnEmplyee.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnEmplyee.ForeColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.HoverState.FillColor = System.Drawing.Color.White;
-            this.rbtnEmplyee.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.rbtnEmplyee.Image = ((System.Drawing.Image)(resources.GetObject("rbtnEmplyee.Image")));
-            this.rbtnEmplyee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.rbtnEmplyee.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnEmplyee.Location = new System.Drawing.Point(9, 415);
-            this.rbtnEmplyee.Name = "rbtnEmplyee";
-            this.rbtnEmplyee.Size = new System.Drawing.Size(180, 45);
-            this.rbtnEmplyee.TabIndex = 2;
-            this.rbtnEmplyee.Text = "Employee";
-            this.rbtnEmplyee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.rbtnEmplyee.TextOffset = new System.Drawing.Point(-11, 0);
+            this.rbtnEmployee.Animated = true;
+            this.rbtnEmployee.AnimatedGIF = true;
+            this.rbtnEmployee.AutoRoundedCorners = true;
+            this.rbtnEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.rbtnEmployee.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbtnEmployee.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.rbtnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.rbtnEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.rbtnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.rbtnEmployee.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnEmployee.ForeColor = System.Drawing.Color.White;
+            this.rbtnEmployee.HoverState.FillColor = System.Drawing.Color.White;
+            this.rbtnEmployee.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.rbtnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("rbtnEmployee.Image")));
+            this.rbtnEmployee.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbtnEmployee.ImageOffset = new System.Drawing.Point(20, 0);
+            this.rbtnEmployee.Location = new System.Drawing.Point(9, 415);
+            this.rbtnEmployee.Name = "rbtnEmployee";
+            this.rbtnEmployee.Size = new System.Drawing.Size(180, 45);
+            this.rbtnEmployee.TabIndex = 2;
+            this.rbtnEmployee.Text = "Employee";
+            this.rbtnEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.rbtnEmployee.TextOffset = new System.Drawing.Point(-11, 0);
             // 
             // rbtnInventory
             // 
@@ -323,7 +322,7 @@
             this.pnlHeading.Controls.Add(this.gunaSeperator);
             this.pnlHeading.Controls.Add(this.lblRole);
             this.pnlHeading.Controls.Add(this.pboxAdmin);
-            this.pnlHeading.Controls.Add(this.lblAdminName);
+            this.pnlHeading.Controls.Add(this.lblName);
             this.pnlHeading.Controls.Add(this.lblTitle);
             this.pnlHeading.Controls.Add(this.btnExit);
             this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
@@ -373,16 +372,16 @@
             this.pboxAdmin.TabStop = false;
             this.pboxAdmin.UseTransparentBackground = true;
             // 
-            // lblAdminName
+            // lblName
             // 
-            this.lblAdminName.AutoSize = true;
-            this.lblAdminName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminName.Location = new System.Drawing.Point(885, 34);
-            this.lblAdminName.Name = "lblAdminName";
-            this.lblAdminName.Size = new System.Drawing.Size(54, 24);
-            this.lblAdminName.TabIndex = 3;
-            this.lblAdminName.Text = "Alex";
-            this.lblAdminName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(885, 34);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(54, 24);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Alex";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitle
             // 
@@ -411,6 +410,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 29);
             this.btnExit.TabIndex = 1;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pnlGrid
             // 
@@ -454,7 +454,7 @@
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2Button rbtnAnalytics;
         private Guna.UI2.WinForms.Guna2Button rbtnSales;
-        private Guna.UI2.WinForms.Guna2Button rbtnEmplyee;
+        private Guna.UI2.WinForms.Guna2Button rbtnEmployee;
         private Guna.UI2.WinForms.Guna2Button rbtnInventory;
         private Guna.UI2.WinForms.Guna2Button rbtnHome;
         private Guna.UI2.WinForms.Guna2Panel pnlLogo;
@@ -465,7 +465,7 @@
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
         private System.Windows.Forms.Label lblRole;
         private Guna.UI2.WinForms.Guna2PictureBox pboxAdmin;
-        private System.Windows.Forms.Label lblAdminName;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGrid;

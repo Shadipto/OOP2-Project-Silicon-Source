@@ -36,6 +36,7 @@
             this.pnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.lblMoto = new System.Windows.Forms.Label();
             this.lblSiliconSource = new System.Windows.Forms.Label();
+            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.rbtnHome = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnSales = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
@@ -47,16 +48,15 @@
             this.gunaSeperator = new Guna.UI2.WinForms.Guna2Separator();
             this.lblRole = new System.Windows.Forms.Label();
             this.pbEmployee = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblAdminName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlBody.SuspendLayout();
             this.pnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaAdminDashboard
@@ -154,6 +154,22 @@
             this.lblSiliconSource.Size = new System.Drawing.Size(158, 24);
             this.lblSiliconSource.TabIndex = 3;
             this.lblSiliconSource.Text = "Silicon Source";
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogo.BorderRadius = 10;
+            this.pbLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.ErrorImage")));
+            this.pbLogo.FillColor = System.Drawing.Color.Transparent;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.ImageRotate = 0F;
+            this.pbLogo.Location = new System.Drawing.Point(46, 8);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(102, 99);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 4;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.UseTransparentBackground = true;
             // 
             // rbtnHome
             // 
@@ -333,7 +349,7 @@
             this.pnlHeading.Controls.Add(this.gunaSeperator);
             this.pnlHeading.Controls.Add(this.lblRole);
             this.pnlHeading.Controls.Add(this.pbEmployee);
-            this.pnlHeading.Controls.Add(this.lblAdminName);
+            this.pnlHeading.Controls.Add(this.lblName);
             this.pnlHeading.Controls.Add(this.lblTitle);
             this.pnlHeading.Controls.Add(this.btnExit);
             this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
@@ -383,16 +399,16 @@
             this.pbEmployee.TabStop = false;
             this.pbEmployee.UseTransparentBackground = true;
             // 
-            // lblAdminName
+            // lblName
             // 
-            this.lblAdminName.AutoSize = true;
-            this.lblAdminName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminName.Location = new System.Drawing.Point(885, 34);
-            this.lblAdminName.Name = "lblAdminName";
-            this.lblAdminName.Size = new System.Drawing.Size(54, 24);
-            this.lblAdminName.TabIndex = 3;
-            this.lblAdminName.Text = "Alex";
-            this.lblAdminName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(885, 34);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(54, 24);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Alex";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitle
             // 
@@ -423,22 +439,6 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pbLogo
-            // 
-            this.pbLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbLogo.BorderRadius = 10;
-            this.pbLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.ErrorImage")));
-            this.pbLogo.FillColor = System.Drawing.Color.Transparent;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.ImageRotate = 0F;
-            this.pbLogo.Location = new System.Drawing.Point(46, 8);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(102, 99);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 4;
-            this.pbLogo.TabStop = false;
-            this.pbLogo.UseTransparentBackground = true;
-            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,11 +456,11 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlBody.ResumeLayout(false);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -479,7 +479,7 @@
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
         private System.Windows.Forms.Label lblRole;
         private Guna.UI2.WinForms.Guna2PictureBox pbEmployee;
-        private System.Windows.Forms.Label lblAdminName;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2Button rbtnAnalytics;

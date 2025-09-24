@@ -42,7 +42,7 @@ namespace SiliconSource
                 {
                     this.Hide();
                     MessageBox.Show("Manager", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    var managerDashboard = new ManagerDashboard();
+                    var managerDashboard = new ManagerDashboard(this, dst.Rows[0][1].ToString());
                     managerDashboard.Show();
                 }
                 else if (dst.Rows[0][0].ToString() == "SalesRepresentative")

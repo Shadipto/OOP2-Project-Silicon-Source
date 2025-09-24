@@ -32,7 +32,7 @@ namespace SiliconSource
             
             InitializeComponent(); // default [Dipto]
             InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
-            lblAdminName.Text = adminName; // Set admin name label [Dipto]
+            lblName.Text = adminName; // Set admin name label [Dipto]
             rbtnHome.Checked = true; // default [Dipto]
 
             this.LoginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]

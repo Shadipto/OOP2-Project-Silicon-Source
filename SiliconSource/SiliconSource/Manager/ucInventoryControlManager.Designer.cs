@@ -37,9 +37,6 @@
             this.pnlSearch = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,9 +105,6 @@
             this.pnlGridViewOperations.BackColor = System.Drawing.Color.Transparent;
             this.pnlGridViewOperations.BorderRadius = 10;
             this.pnlGridViewOperations.Controls.Add(this.btnPrint);
-            this.pnlGridViewOperations.Controls.Add(this.btnUpdate);
-            this.pnlGridViewOperations.Controls.Add(this.btnDelete);
-            this.pnlGridViewOperations.Controls.Add(this.btnAdd);
             this.pnlGridViewOperations.Controls.Add(this.cmbSort);
             this.pnlGridViewOperations.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlGridViewOperations.Dock = System.Windows.Forms.DockStyle.Right;
@@ -141,86 +135,11 @@
             this.btnPrint.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnPrint.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPrint.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnPrint.Location = new System.Drawing.Point(58, 355);
+            this.btnPrint.Location = new System.Drawing.Point(58, 375);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(158, 45);
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print Inventory";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Animated = true;
-            this.btnUpdate.AnimatedGIF = true;
-            this.btnUpdate.AutoRoundedCorners = true;
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUpdate.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnUpdate.Location = new System.Drawing.Point(58, 215);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(158, 45);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AnimatedGIF = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDelete.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnDelete.Location = new System.Drawing.Point(58, 285);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(158, 45);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete Item";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Animated = true;
-            this.btnAdd.AnimatedGIF = true;
-            this.btnAdd.AutoRoundedCorners = true;
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.Green;
-            this.btnAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnAdd.Location = new System.Drawing.Point(58, 145);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(158, 45);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add Inventory";
             // 
             // cmbSort
             // 
@@ -401,9 +320,6 @@
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGridViewOperations;
         private Guna.UI2.WinForms.Guna2Button btnPrint;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
         private System.Windows.Forms.DataGridViewTextBoxColumn productID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productName;
