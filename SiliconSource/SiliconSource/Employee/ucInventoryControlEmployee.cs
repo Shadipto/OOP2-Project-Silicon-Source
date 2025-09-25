@@ -55,7 +55,6 @@ namespace SiliconSource
             {
                 MessageBox.Show("Please select a product first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
         }
 
         

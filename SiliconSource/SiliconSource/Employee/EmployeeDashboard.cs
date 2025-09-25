@@ -69,8 +69,10 @@ namespace SiliconSource
             cart.gdvCart.Columns["productName"].DataPropertyName = "productName";
             cart.gdvCart.Columns["price"].DataPropertyName = "price";
             cart.gdvCart.Columns["quantity"].DataPropertyName = "quantity";
+            cart.gdvCart.Columns["total"].DataPropertyName = "Total";
             cart.gdvCart.DataSource = null;
             cart.gdvCart.DataSource = CartSession.CartItems;
+            
         }
 
         private void InitializeUserControls()
@@ -78,6 +80,7 @@ namespace SiliconSource
             this.inventory = new ucInventoryControlEmployee { Dock = DockStyle.Fill };
             this.cart = new ucCart { Dock = DockStyle.Fill };
             
+
 
             pnlGrid.Controls.Add(inventory);
             pnlGrid.Controls.Add(cart);
@@ -108,6 +111,7 @@ namespace SiliconSource
             {
                 this.lblTitle.Text = rbtnCart.Text;
                 PopulateCartGridView();
+                this.cart.UpdateGrandTotal();
 
             }
             else if (rbtnRecord.Checked)
