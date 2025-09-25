@@ -108,6 +108,9 @@ namespace SiliconSource
             passwordUpdate.Show();
         }
 
-        
+        private void ucSalary_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

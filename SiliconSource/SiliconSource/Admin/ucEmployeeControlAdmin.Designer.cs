@@ -41,7 +41,6 @@
             this.role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
@@ -221,7 +220,6 @@
             // 
             this.pnlGridViewOperations.BackColor = System.Drawing.Color.Transparent;
             this.pnlGridViewOperations.BorderRadius = 10;
-            this.pnlGridViewOperations.Controls.Add(this.cmbSort);
             this.pnlGridViewOperations.Controls.Add(this.btnPrint);
             this.pnlGridViewOperations.Controls.Add(this.btnUpdate);
             this.pnlGridViewOperations.Controls.Add(this.btnDelete);
@@ -234,31 +232,6 @@
             this.pnlGridViewOperations.Name = "pnlGridViewOperations";
             this.pnlGridViewOperations.Size = new System.Drawing.Size(267, 490);
             this.pnlGridViewOperations.TabIndex = 10;
-            // 
-            // cmbSort
-            // 
-            this.cmbSort.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSort.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.cmbSort.BorderRadius = 20;
-            this.cmbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSort.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbSort.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.ItemHeight = 30;
-            this.cmbSort.Items.AddRange(new object[] {
-            "Newest",
-            "Oldest"});
-            this.cmbSort.ItemsAppearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
-            this.cmbSort.Location = new System.Drawing.Point(58, 25);
-            this.cmbSort.Name = "cmbSort";
-            this.cmbSort.Size = new System.Drawing.Size(158, 36);
-            this.cmbSort.StartIndex = 0;
-            this.cmbSort.TabIndex = 6;
-            this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnPrint
             // 
@@ -389,7 +362,6 @@
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
         internal Guna.UI2.WinForms.Guna2DataGridView gdvEmployee;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeName;

@@ -19,21 +19,34 @@ namespace SiliconSource
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            if (gdvSales.DataSource == null) return;
-
-            DataTable dt = gdvSales.DataSource as DataTable;
-            if (dt == null) return;
-
-            string searchValue = txtSearch.Text.Trim().Replace("'", "''"); // escape single quotes
-
-            if (string.IsNullOrEmpty(searchValue))
+            try
             {
-                (gdvSales.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+                if (gdvSales.DataSource == null) return;
+
+                DataTable dt = gdvSales.DataSource as DataTable;
+                if (dt == null) return;
+
+                string searchValue = txtSearch.Text.Trim().Replace("'", "''"); // escape single quotes
+
+                if (string.IsNullOrEmpty(searchValue))
+                {
+                    dt.DefaultView.RowFilter = string.Empty;
+                }
+                else
+                {
+                    dt.DefaultView.RowFilter = $"Convert(SaleID, 'System.String') LIKE '%{searchValue}%'";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                dt.DefaultView.RowFilter = $"Convert(SaleID, 'System.String') LIKE '%{searchValue}%'";
+                MessageBox.Show($"Error while searching: {ex.Message}", "Search Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("InventoryReport.pdf");
+            exporter.Export(gdvSales);
         }
     }
 }

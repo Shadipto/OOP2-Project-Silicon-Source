@@ -24,49 +24,53 @@ namespace SiliconSource
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var da = new DataAccess();
-            string userID = ucLoginID.TextboxText;
-            string passwordHash = PasswordHasher.GenerateSHA256Hash(ucLoginPassword.TextboxText);
-            string query = $"SELECT [Role], [FirstName] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;"; 
-            var dst = da.ExecuteQueryTable(query);
-            if (dst.Rows.Count == 1)
+            try
             {
-                if (dst.Rows[0][0].ToString() == "Owner")
+                var da = new DataAccess();
+                string userID = ucLoginID.TextboxText;
+                string passwordHash = PasswordHasher.GenerateSHA256Hash(ucLoginPassword.TextboxText);
+                string query = $"SELECT [Role], [FirstName] FROM [dbo].[AppUser] WHERE [UserID] = '{userID}' AND [PasswordHash]  = '{passwordHash}' ;";
+                var dst = da.ExecuteQueryTable(query);
+                if (dst.Rows.Count == 1)
                 {
-                    this.Hide();
-                    MessageBox.Show("Login Successfully!", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    var adminDashboard = new AdminDashboard(this, dst.Rows[0][1].ToString());
-                    adminDashboard.Show();
-                }
-                else if (dst.Rows[0][0].ToString() == "Manager")
-                {
-                    this.Hide();
-                    MessageBox.Show("Manager", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    var managerDashboard = new ManagerDashboard(this, dst.Rows[0][1].ToString());
-                    managerDashboard.Show();
-                }
-                else if (dst.Rows[0][0].ToString() == "SalesRepresentative")
-                {
-                    this.Hide();
-                    MessageBox.Show("Sales Representative", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    var employeeDashboard = new EmployeeDashboard(this, dst.Rows[0][1].ToString());
-                    employeeDashboard.Show();
-
+                    if (dst.Rows[0][0].ToString() == "Owner")
+                    {
+                        this.Hide();
+                        MessageBox.Show("Login Successfully!", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var adminDashboard = new AdminDashboard(this, dst.Rows[0][1].ToString());
+                        adminDashboard.Show();
+                    }
+                    else if (dst.Rows[0][0].ToString() == "Manager")
+                    {
+                        this.Hide();
+                        MessageBox.Show("Manager", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var managerDashboard = new ManagerDashboard(this, dst.Rows[0][1].ToString());
+                        managerDashboard.Show();
+                    }
+                    else if (dst.Rows[0][0].ToString() == "SalesRepresentative")
+                    {
+                        this.Hide();
+                        MessageBox.Show("Sales Representative", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var employeeDashboard = new EmployeeDashboard(this, dst.Rows[0][1].ToString(), userID);
+                        employeeDashboard.Show();
+                    }
+                    else
+                    {
+                        this.Hide();
+                        MessageBox.Show("Error", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
                 }
                 else
                 {
-                    this.Hide();
-                    MessageBox.Show("Error", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    MessageBox.Show("Invalid Information", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                    
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid Information", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"An error occurred during login:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            
         }
+
     }
 }

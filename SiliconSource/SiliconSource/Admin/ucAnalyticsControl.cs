@@ -35,5 +35,12 @@ namespace SiliconSource
                 dt.DefaultView.RowFilter = $"SalesRepID LIKE '%{searchValue}%' OR SalesRepName LIKE '%{searchValue}%'";
             }
         }
+
+        private void btnAnalytics_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("Analytics.pdf");
+
+            exporter.Export(gdvSalesAnalytics);
+        }
     }
 }

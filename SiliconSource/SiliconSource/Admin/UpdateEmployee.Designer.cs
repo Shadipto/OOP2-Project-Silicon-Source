@@ -267,6 +267,7 @@
             this.ucSalary.Size = new System.Drawing.Size(349, 71);
             this.ucSalary.TabIndex = 11;
             this.ucSalary.TextboxText = "";
+            
             // 
             // ucUserName
             // 

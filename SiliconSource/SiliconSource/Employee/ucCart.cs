@@ -1,8 +1,12 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using SiliconSource.Employee;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,182 +16,202 @@ namespace SiliconSource
 {
     public partial class ucCart : UserControl
     {
+        private DataAccess Da { set; get; }
+
+        private Form EmployeeDashboardForm { get; set; }
+
+        internal string EmployeeId { get; set; }
+
+        internal decimal GrandTotal { get; set; }
+
+
         public ucCart()
         {
             InitializeComponent();
-            //this.lblAmount.Text = "TK " + Product.GetGrandTotalString(CartSession.CartItems.ToList());
+            this.Da = new DataAccess();
+            
+
+            Form parentForm = this.FindForm();
         }
+
+
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (gdvCart.SelectedRows.Count == 0)
+            try
             {
-                MessageBox.Show("Please select a product to remove.", "Warning",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            
-            var row = gdvCart.SelectedRows[0];
-            string productId = row.Cells["productID"].Value.ToString();
-
-            
-            Product productToRemove = null;
-            foreach (Product p in CartSession.CartItems)
-            {
-                if (p.ProductID == productId)
+                if (gdvCart.SelectedRows.Count == 0)
                 {
-                    productToRemove = p;
-                    break; 
+                    MessageBox.Show("Please select a product to remove.", "Warning",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
+
+                var row = gdvCart.SelectedRows[0];
+                string productId = row.Cells["productID"].Value?.ToString();
+
+                if (string.IsNullOrEmpty(productId)) return;
+
+                Product productToRemove = CartSession.CartItems.FirstOrDefault(p => p.ProductID == productId);
+
+                if (productToRemove != null)
+                    CartSession.CartItems.Remove(productToRemove);
+
+                UpdateGrandTotal();
             }
-            // Remove totally
-            if (productToRemove != null)
+            catch (Exception ex)
             {
-                CartSession.CartItems.Remove(productToRemove);
-            }
+                MessageBox.Show($"An error occurred while removing the product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
             UpdateGrandTotal();
         }
+
+
+
+
+
+
+
+
 
         private void cbtnMinus_Click(object sender, EventArgs e)
         {
-            if (gdvCart.SelectedRows.Count == 0)
+            try
             {
-                MessageBox.Show("Please select a product to remove.", "Warning",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (gdvCart.SelectedRows.Count == 0) return;
+
+                var row = gdvCart.SelectedRows[0];
+                string productId = row.Cells["productID"].Value?.ToString();
+                if (string.IsNullOrEmpty(productId)) return;
+
+                Product existing = CartSession.CartItems.FirstOrDefault(p => p.ProductID == productId);
+
+                if (existing != null)
+                {
+                    if (existing.Quantity > 1)
+                    {
+                        existing.Quantity--;
+                        gdvCart.InvalidateRow(row.Index);
+                    }
+                    else
+                    {
+                        CartSession.CartItems.Remove(existing);
+                    }
+                }
+                UpdateGrandTotal();
             }
-
-            var row = gdvCart.SelectedRows[0];
-            string productId = row.Cells["productID"].Value.ToString();
-
-            Product existing = null;
-            foreach (Product p in CartSession.CartItems)
+            catch (Exception ex)
             {
-                if (p.ProductID == productId)
-                {
-                    existing = p;
-                    break;
-                }
-            }
-
-            
-            if (existing != null)
-            {
-                if (existing.Quantity > 1)
-                {
-                    existing.Quantity -= 1; // decrease quantity
-
-                    int rowIndex = row.Index;
-                    gdvCart.InvalidateRow(rowIndex);
-                }
-                else
-                {
-                    CartSession.CartItems.Remove(existing); 
-                }
+                MessageBox.Show($"An error occurred while decreasing the quantity: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             UpdateGrandTotal();
         }
+
+
+
+
+
 
         private void cbtnPlus_Click(object sender, EventArgs e)
         {
-            if (gdvCart.SelectedRows.Count == 0)
+            try
             {
-                MessageBox.Show("Please select a product to increment.", "Warning",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                if (gdvCart.SelectedRows.Count == 0) return;
 
-            
-            var row = gdvCart.SelectedRows[0];
-            string productId = row.Cells["productID"].Value.ToString();
+                var row = gdvCart.SelectedRows[0];
+                string productId = row.Cells["productID"].Value?.ToString();
+                if (string.IsNullOrEmpty(productId)) return;
 
-            
-            Product productToIncrement = null;
-            foreach (Product p in CartSession.CartItems)
-            {
-                if (p.ProductID == productId)
+                Product productToIncrement = CartSession.CartItems.FirstOrDefault(p => p.ProductID == productId);
+
+                if (productToIncrement != null)
                 {
-                    productToIncrement = p;
-                    break; 
+                    if (productToIncrement.Quantity < productToIncrement.Stock)
+                    {
+                        productToIncrement.Quantity++;
+                        gdvCart.InvalidateRow(row.Index);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cannot add more. Stock limit reached.", "Stock Limit", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
+                UpdateGrandTotal();
             }
-
-            // Increment
-            if (productToIncrement != null)
+            catch (Exception ex)
             {
-                productToIncrement.Quantity += 1;
-                
-                int rowIndex = row.Index;
-                gdvCart.InvalidateRow(rowIndex);
-
+                MessageBox.Show($"An error occurred while increasing the quantity: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             UpdateGrandTotal();
         }
+
+
+
+
 
         private void btnClearCart_Click(object sender, EventArgs e)
         {
-            if (CartSession.CartItems.Count == 0)
+            try
             {
-                MessageBox.Show("Cart is already empty.", "Info",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                if (CartSession.CartItems.Count == 0)
+                {
+                    MessageBox.Show("Cart is already empty.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                CartSession.CartItems.Clear();
+                MessageBox.Show("All products have been removed from the cart.", "Cart Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdateGrandTotal();
             }
-
-            // Clear all products
-            CartSession.CartItems.Clear();
-
-            MessageBox.Show("All products have been removed from the cart.", "Cart Cleared",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while clearing the cart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             UpdateGrandTotal();
         }
+
+
+
+
 
         // Refresh
         public void UpdateGrandTotal()
         {
-            decimal grandTotal = 0;
+            this.GrandTotal = 0;
 
             foreach (Product p in CartSession.CartItems)
             {
-                grandTotal += p.Total; 
+                this.GrandTotal += p.Total; 
             }
 
-            lblAmount.Text = "TK " + grandTotal.ToString(); 
+            lblAmount.Text = "TK " + this.GrandTotal.ToString(); 
         }
 
 
 
 
-        /*
-        public void RefreshCart()
-        {
-            MessageBox.Show($"Cart count: {CartSession.CartItems.Count}");
-            foreach (var item in CartSession.CartItems)
-            {
-                MessageBox.Show($"{item.ProductID} | {item.ProductName} | {item.Quantity}");
-            }
-            this.gdvCart.AutoGenerateColumns = true;
-            this.gdvCart.DataSource = CartSession.CartItems;
-        }
-        private void ucCart_Load(object sender, EventArgs e)
-        {
-            this.gdvCart.AutoGenerateColumns = true;
-            this.gdvCart.DataSource = CartSession.CartItems;
-        }
-
-        private void ucCart_VisibleChanged(object sender, EventArgs e)
-        {
-            if (this.Visible) 
-                 this.RefreshCart();
-        }
-        
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-            CartSession.CartItems.Add(new Product("TEST-001", "Test Product", "TestCat", 99.99m, 1));
-            //RefreshCart();
+            
 
-        }*/
+            if (CartSession.CartItems.Count == 0)
+            {
+                MessageBox.Show("Cart is empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            
+
+            Form parentForm = this.FindForm();
+
+            var customerDetails = new CustomerDetails(parentForm,this.EmployeeId, this.GrandTotal );
+            parentForm.Hide();
+            customerDetails.Show();
+
+        }
+
 
     }
 }

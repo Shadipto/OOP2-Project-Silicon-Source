@@ -71,50 +71,52 @@ namespace SiliconSource
 
             else
             {
-                
-                var employeeID = gdvEmployee.SelectedRows[0].Cells["employeeID"].Value?.ToString();
 
-                // Check if user exists in Sale
-                string checkQuery = $"SELECT COUNT(*) FROM Sale WHERE SalesRepresentativeID = '{employeeID}';";
-                var referenceCount = 0;
-                using (SqlCommand cmd = new SqlCommand(checkQuery, Da.Sqlcon))
+                try
                 {
-                    var output = cmd.ExecuteScalar();
-                    if (output != null && output != DBNull.Value)
-                        referenceCount = Convert.ToInt32(output);
-                }
+                    var employeeID = gdvEmployee.SelectedRows[0].Cells["employeeID"].Value?.ToString();
 
-                string checkQuery2 = $"SELECT COUNT(*) FROM Expense WHERE UserID = '{employeeID}';";
-                int expenseCount = 0;
-                using (SqlCommand cmd = new SqlCommand(checkQuery2, Da.Sqlcon))
-                {
-                    var output = cmd.ExecuteScalar();
-                    if (output != null && output != DBNull.Value)
-                        expenseCount = Convert.ToInt32(output);
-                }
-
-                if (referenceCount > 0 || expenseCount > 0)
-                {
-                    // Seting salary to 0 as it is foreign key in Sale
-                    string updateSalary = $"UPDATE AppUser SET Salary = 0 WHERE UserID = '{employeeID}';";
-                    Da.ExecuteDMLQuery(updateSalary);
-                    MessageBox.Show("User is associated with existing sales. Salary quantity set to 0 instead of deletion.", "Salary Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    // Can delete the user
-
-                    string deleteSqlQuery = $"DELETE FROM AppUser WHERE UserID = '{employeeID}';";
-                    int affectedRows = Da.ExecuteDMLQuery(deleteSqlQuery);
-
-                    if (affectedRows > 0)
+                    // Check if user exists in Sale
+                    string checkQuery = $"SELECT COUNT(*) FROM Sale WHERE SalesRepresentativeID = '{employeeID}';";
+                    int referenceCount = 0;
+                    using (SqlCommand cmd = new SqlCommand(checkQuery, Da.Sqlcon))
                     {
-                        MessageBox.Show("User deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        var output = cmd.ExecuteScalar();
+                        if (output != null && output != DBNull.Value)
+                            referenceCount = Convert.ToInt32(output);
+                    }
+
+                    string checkQuery2 = $"SELECT COUNT(*) FROM Expense WHERE UserID = '{employeeID}';";
+                    int expenseCount = 0;
+                    using (SqlCommand cmd = new SqlCommand(checkQuery2, Da.Sqlcon))
+                    {
+                        var output = cmd.ExecuteScalar();
+                        if (output != null && output != DBNull.Value)
+                            expenseCount = Convert.ToInt32(output);
+                    }
+
+                    if (referenceCount > 0 || expenseCount > 0)
+                    {
+                        // Set salary to 0 instead of deletion
+                        string updateSalary = $"UPDATE AppUser SET Salary = 0 WHERE UserID = '{employeeID}';";
+                        Da.ExecuteDMLQuery(updateSalary);
+                        MessageBox.Show("User is associated with existing sales. Salary quantity set to 0 instead of deletion.", "Salary Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Failed to delete User.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // Can delete the user
+                        string deleteSqlQuery = $"DELETE FROM AppUser WHERE UserID = '{employeeID}';";
+                        int affectedRows = Da.ExecuteDMLQuery(deleteSqlQuery);
+
+                        if (affectedRows > 0)
+                            MessageBox.Show("User deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Failed to delete User.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error deleting user:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

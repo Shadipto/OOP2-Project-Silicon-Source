@@ -292,3 +292,42 @@ C:\Users\shadi\OneDrive\Desktop\OOP2-Project-Silicon-Source-main\SiliconSource\S
 C:\Users\shadi\OneDrive\Desktop\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
 C:\Users\shadi\OneDrive\Desktop\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
 C:\Users\shadi\OneDrive\Desktop\OOP2-Project-Silicon-Source-main\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb
+C:\Users\shadi\OneDrive\Desktop\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Employee.CustomerDetails.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe.config
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.exe
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\SiliconSource.pdb
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.dll
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\Guna.UI2.dll
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\itextsharp.dll
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\BouncyCastle.Cryptography.xml
+E:\OOP2 Project C#\SiliconSource\SiliconSource\bin\Debug\itextsharp.xml
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.AssemblyReference.cache
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe.config
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddEmployee.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AddInventory.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.AdminDashboard.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Admin.PasswordUpdate.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucHomeAdmin.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Employee.CustomerDetails.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ManagerDashboard.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlAdmin.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.EmployeeDashboard.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucEmployeeControlManager.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlAdmin.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Login.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.LoginControl.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucHomeManager.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucInventoryControlManager.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Manager.ucSalesControlManager.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.Properties.Resources.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucAnalyticsControl.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucCart.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucInventoryControlEmployee.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.ucSalesControl.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateInventory.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.UpdateEmployee.resources
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.GenerateResource.cache
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.csproj.CoreCompileInputs.cache
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconS.0A1B5A90.Up2Date
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.exe
+E:\OOP2 Project C#\SiliconSource\SiliconSource\obj\Debug\SiliconSource.pdb

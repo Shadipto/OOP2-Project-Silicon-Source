@@ -35,5 +35,11 @@ namespace SiliconSource
                 dt.DefaultView.RowFilter = $"EmployeeName LIKE '%{searchValue}%'";
             }
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("EmployeeReport.pdf");
+            exporter.Export(gdvEmployee);
+        }
     }
 }

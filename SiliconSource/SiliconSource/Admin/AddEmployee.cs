@@ -43,39 +43,48 @@ namespace SiliconSource
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //var roleCodes = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            //{
-            //    {"Admin" , "OWN" },
-            //    {"Manager" , "MGR" },
-            //    {"SalesRepresentative" , "SRP" }
-            //};
 
-            
-            string userID = this.GetID();
-            
 
-            string firstName = ucFirstName.TextboxText;
-
-            string lastName = ucLastName.TextboxText;
-
-            string userName = ucUserName.TextboxText;
-
-            string password = PasswordHasher.GenerateSHA256Hash(ucPassword.TextboxText);
-
-            string role = cmbRole.Text;
-            
-            double salary = double.Parse(ucSalary.TextboxText);
-
-            string insertQuery = $"INSERT INTO AppUser (UserID, FirstName, LastName, UserName, PasswordHash, Role, Salary)" + $"VALUES ('{userID}', '{firstName}', '{lastName}', '{userName}', '<{password}>', '{role}', {salary});";
-
-            int didItWork = Da.ExecuteDMLQuery(insertQuery);
-            if (didItWork > 0)
+            try
             {
-                MessageBox.Show("Update Successful" + " New ID: " + userID);
+                // Validate inputs
+                if (string.IsNullOrWhiteSpace(ucFirstName.TextboxText) ||
+                    string.IsNullOrWhiteSpace(ucLastName.TextboxText) ||
+                    string.IsNullOrWhiteSpace(ucUserName.TextboxText) ||
+                    string.IsNullOrWhiteSpace(ucPassword.TextboxText) ||
+                    string.IsNullOrWhiteSpace(cmbRole.Text) ||
+                    string.IsNullOrWhiteSpace(ucSalary.TextboxText))
+                {
+                    MessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!double.TryParse(ucSalary.TextboxText, out double salary))
+                {
+                    MessageBox.Show("Please enter a valid numeric salary.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string userID = this.GetID();
+                string passwordHash = PasswordHasher.GenerateSHA256Hash(ucPassword.TextboxText);
+
+                string insertQuery = $"INSERT INTO AppUser (UserID, FirstName, LastName, UserName, PasswordHash, Role, Salary) " +
+                                     $"VALUES ('{userID}', '{ucFirstName.TextboxText}', '{ucLastName.TextboxText}', '{ucUserName.TextboxText}', '{passwordHash}', '{cmbRole.Text}', {salary});";
+
+                int rowsAffected = Da.ExecuteDMLQuery(insertQuery);
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show($"Employee added successfully! New ID: {userID}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add employee.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Update Failed");
+                MessageBox.Show($"An error occurred: {ex.Message}", "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

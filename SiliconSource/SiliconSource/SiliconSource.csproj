@@ -90,6 +90,12 @@
     </Compile>
     <Compile Include="CartSession.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Employee\CustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\CustomerDetails.Designer.cs">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ucHomeAdmin.resx">
       <DependentUpon>ucHomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>

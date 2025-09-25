@@ -25,40 +25,56 @@ namespace SiliconSource
             this.AdminDashboardForm = adminDashboardForm;
             this.Da = new DataAccess();
 
-            string productToUpdate = $@"SELECT
-                                           [ProductName]
-                                          ,[Category]
-                                          ,[Description]
-                                          ,[Price]
-                                          ,[Cost]
-                                          ,[StockQuantity]
-                                          ,[SKU]
-                                          ,[SupplierID]
-                                      FROM [dbo].[Product]
-                                      WHERE [ProductID] = {this.ProductID};";
+            try
+            {
+                string productToUpdate = $@"SELECT
+                                       [ProductName]
+                                      ,[Category]
+                                      ,[Description]
+                                      ,[Price]
+                                      ,[Cost]
+                                      ,[StockQuantity]
+                                      ,[SKU]
+                                      ,[SupplierID]
+                                  FROM [dbo].[Product]
+                                  WHERE [ProductID] = {this.ProductID};";
 
-            DataTable dstUpdate = Da.ExecuteQueryTable(productToUpdate);
+                DataTable dstUpdate = Da.ExecuteQueryTable(productToUpdate);
 
-            ucProductName.TextboxText = dstUpdate.Rows[0][0].ToString();
-            cmbCategory.Text = dstUpdate.Rows[0][1].ToString();
-            ucDescription.TextboxText = dstUpdate.Rows[0][2].ToString();
-            ucPrice.TextboxText = dstUpdate.Rows[0][3].ToString();
-            ucCost.TextboxText = dstUpdate.Rows[0][4].ToString();
-            ucStockQuantity.TextboxText = dstUpdate.Rows[0][5].ToString();
-            ucSKU.TextboxText = dstUpdate.Rows[0][6].ToString();
-            this.SupplierID = int.Parse(dstUpdate.Rows[0][7].ToString());
+                if (dstUpdate.Rows.Count == 0)
+                {
+                    MessageBox.Show("Product not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
+                    return;
+                }
 
-            string queryToFindSuppilerName = $"SELECT [SupplierName] FROM [dbo].[Supplier] WHERE [SupplierID] = {this.SupplierID};";
-            DataTable dstSup = Da.ExecuteQueryTable(queryToFindSuppilerName);
+                ucProductName.TextboxText = dstUpdate.Rows[0][0].ToString();
+                cmbCategory.Text = dstUpdate.Rows[0][1].ToString();
+                ucDescription.TextboxText = dstUpdate.Rows[0][2].ToString();
+                ucPrice.TextboxText = dstUpdate.Rows[0][3].ToString();
+                ucCost.TextboxText = dstUpdate.Rows[0][4].ToString();
+                ucStockQuantity.TextboxText = dstUpdate.Rows[0][5].ToString();
+                ucSKU.TextboxText = dstUpdate.Rows[0][6].ToString();
+                this.SupplierID = int.Parse(dstUpdate.Rows[0][7].ToString());
 
-            cmbSupplierName.Text = dstSup.Rows[0][0].ToString();
+                string queryToFindSupplierName = $"SELECT [SupplierName] FROM [dbo].[Supplier] WHERE [SupplierID] = {this.SupplierID};";
+                DataTable dstSup = Da.ExecuteQueryTable(queryToFindSupplierName);
+
+                if (dstSup.Rows.Count > 0)
+                    cmbSupplierName.Text = dstSup.Rows[0][0].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading product details:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
 
 
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            
+
 
             //string productToUpdate =    $@"SELECT
             //                              ,[ProductName]
@@ -80,7 +96,7 @@ namespace SiliconSource
             //ucCost.TextboxText = dstUpdate.Rows[0][4].ToString();
             //ucStockQuantity.TextboxText = dstUpdate.Rows[0][5].ToString();
             //ucSKU.TextboxText = dstUpdate.Rows[0][6].ToString();
-            
+
             //int supplierID = int.Parse(dstUpdate.Rows[0][7].ToString());
 
             //string queryToFindSuppilerName = $"SELECT [SupplierName] FROM [dbo].[Supplier] WHERE [SupplierID] = '{supplierID}';";
@@ -88,35 +104,42 @@ namespace SiliconSource
 
             //cmbSupplierName.Text = dstSup.Rows[0][0].ToString();
 
-            string productName = ucProductName.TextboxText;
-            string category = cmbCategory.Text;
-            string description = ucDescription.TextboxText;
-            double price = double.Parse(ucPrice.TextboxText);
-            double cost = double.Parse(ucCost.TextboxText);
-            int stockQuantity = int.Parse(ucStockQuantity.TextboxText);
-            string SKU = ucSKU.TextboxText;
-
-            string insertQuary = $@"UPDATE [dbo].[Product]
-                                    SET 
-                                        [ProductName] = '{productName}',
-                                        [Category] = '{category}',
-                                        [Description] = '{description}',
-                                        [Price] = {price},
-                                        [Cost] = {cost},
-                                        [StockQuantity] = {stockQuantity},
-                                        [SKU] = '{SKU}',
-                                        [SupplierID] = {this.SupplierID}
-                                    WHERE [ProductID] = {this.ProductID};
-                                    ";
-
-            int didItWork = Da.ExecuteDMLQuery(insertQuary);
-            if (didItWork > 0)
+            try
             {
-                MessageBox.Show("Update Successful");
+                string productName = ucProductName.TextboxText;
+                string category = cmbCategory.Text;
+                string description = ucDescription.TextboxText;
+                double price = double.Parse(ucPrice.TextboxText);
+                double cost = double.Parse(ucCost.TextboxText);
+                int stockQuantity = int.Parse(ucStockQuantity.TextboxText);
+                string SKU = ucSKU.TextboxText;
+
+                string updateQuery = $@"UPDATE [dbo].[Product]
+                                SET 
+                                    [ProductName] = '{productName}',
+                                    [Category] = '{category}',
+                                    [Description] = '{description}',
+                                    [Price] = {price},
+                                    [Cost] = {cost},
+                                    [StockQuantity] = {stockQuantity},
+                                    [SKU] = '{SKU}',
+                                    [SupplierID] = {this.SupplierID}
+                                WHERE [ProductID] = {this.ProductID};";
+
+                int didItWork = Da.ExecuteDMLQuery(updateQuery);
+
+                if (didItWork > 0)
+                    MessageBox.Show("Update Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Update Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            catch (FormatException fex)
             {
-                MessageBox.Show("Update Failed");
+                MessageBox.Show($"Invalid input format:\n{fex.Message}", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

@@ -32,18 +32,25 @@ namespace SiliconSource
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(gdvInventory.SelectedRows.Count > 0)
+            try
             {
-                int productID = int.Parse(gdvInventory.SelectedRows[0].Cells["ProductID"].Value?.ToString());
+                if (gdvInventory.SelectedRows.Count > 0)
+                {
+                    int productID = int.Parse(gdvInventory.SelectedRows[0].Cells["ProductID"].Value?.ToString());
 
-                // admin dashboard form
-                Form parentForm = this.FindForm();
-
-                // Only create one updateInventory instance
-                var updateInventory = new UpdateInventory(productID, ParentForm);
-                parentForm.Hide();
-                updateInventory.Show();
-
+                    Form parentForm = this.FindForm();
+                    var updateInventory = new UpdateInventory(productID, ParentForm);
+                    parentForm.Hide();
+                    updateInventory.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Please select a product to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -189,6 +189,7 @@
             this.rbtnCart.Size = new System.Drawing.Size(180, 45);
             this.rbtnCart.TabIndex = 2;
             this.rbtnCart.Text = "Cart";
+            
             // 
             // rbtnInventory
             // 

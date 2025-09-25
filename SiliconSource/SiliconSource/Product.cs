@@ -13,33 +13,22 @@ namespace SiliconSource
         public string Category { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
+        public int Stock { get; set; }
         public decimal Total
         {
             get { return Price * Quantity; }
         }
 
 
-        public Product(string id, string name, string category, decimal price, int qty)
+        public Product(string id, string name, string category, decimal price, int qty, int stock)
         {
             this.ProductID = id;
             this.ProductName = name;
             this.Category = category;
             this.Price = price;
             this.Quantity = qty;
+            this.Stock = stock;
         }
-
-        public static string GetGrandTotalString(List<Product> products)
-        {
-            decimal grandTotal = 0;
-
-            foreach (var product in products)
-            {
-                grandTotal += product.Total;
-            }
-
-            return grandTotal.ToString();
-        }
-
 
     }
 }

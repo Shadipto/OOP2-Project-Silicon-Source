@@ -43,10 +43,6 @@
             this.salesRep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlGridViewOperations = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdvSales)).BeginInit();
             this.pnlGridViewOperations.SuspendLayout();
@@ -230,10 +226,6 @@
             this.pnlGridViewOperations.BackColor = System.Drawing.Color.Transparent;
             this.pnlGridViewOperations.BorderRadius = 10;
             this.pnlGridViewOperations.Controls.Add(this.btnPrint);
-            this.pnlGridViewOperations.Controls.Add(this.btnUpdate);
-            this.pnlGridViewOperations.Controls.Add(this.btnDelete);
-            this.pnlGridViewOperations.Controls.Add(this.btnAdd);
-            this.pnlGridViewOperations.Controls.Add(this.cmbSort);
             this.pnlGridViewOperations.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlGridViewOperations.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGridViewOperations.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -268,106 +260,7 @@
             this.btnPrint.Size = new System.Drawing.Size(158, 45);
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print Inventory";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Animated = true;
-            this.btnUpdate.AnimatedGIF = true;
-            this.btnUpdate.AutoRoundedCorners = true;
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.Green;
-            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnUpdate.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnUpdate.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnUpdate.Location = new System.Drawing.Point(58, 215);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(158, 45);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AnimatedGIF = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDelete.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnDelete.Location = new System.Drawing.Point(58, 285);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(158, 45);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete Item";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Animated = true;
-            this.btnAdd.AnimatedGIF = true;
-            this.btnAdd.AutoRoundedCorners = true;
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnAdd.Location = new System.Drawing.Point(58, 145);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(158, 45);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add Inventory";
-            // 
-            // cmbSort
-            // 
-            this.cmbSort.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSort.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.cmbSort.BorderRadius = 20;
-            this.cmbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSort.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbSort.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.ItemHeight = 30;
-            this.cmbSort.Items.AddRange(new object[] {
-            "Oldest",
-            "Newest"});
-            this.cmbSort.ItemsAppearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
-            this.cmbSort.Location = new System.Drawing.Point(58, 25);
-            this.cmbSort.Name = "cmbSort";
-            this.cmbSort.Size = new System.Drawing.Size(158, 36);
-            this.cmbSort.StartIndex = 1;
-            this.cmbSort.TabIndex = 0;
-            this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // ucSalesControl
             // 
@@ -390,10 +283,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlSearch;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlGridViewOperations;
         private Guna.UI2.WinForms.Guna2Button btnPrint;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
         private System.Windows.Forms.DataGridViewTextBoxColumn saleId;
         private System.Windows.Forms.DataGridViewTextBoxColumn saleDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn saleItems;

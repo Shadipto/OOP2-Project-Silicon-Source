@@ -19,21 +19,36 @@ namespace SiliconSource.Manager
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            if (gdvInventory.DataSource == null) return;
-
-            DataTable dt = gdvInventory.DataSource as DataTable;
-            if (dt == null) return;
-
-            string searchValue = txtSearch.Text.Trim().Replace("'", "''");
-
-            if (string.IsNullOrEmpty(searchValue))
+            try
             {
-                (gdvInventory.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+                if (gdvInventory.DataSource == null) return;
+
+                DataTable dt = gdvInventory.DataSource as DataTable;
+                if (dt == null) return;
+
+                string searchValue = txtSearch.Text.Trim().Replace("'", "''");
+
+                if (string.IsNullOrEmpty(searchValue))
+                {
+                    dt.DefaultView.RowFilter = string.Empty;
+                }
+                else
+                {
+                    // Filter ProductName safely
+                    dt.DefaultView.RowFilter = $"ProductName LIKE '%{searchValue}%'";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                dt.DefaultView.RowFilter = $"ProductName LIKE '%{searchValue}%'";
+                MessageBox.Show($"An error occurred while searching: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("InventoryReport.pdf");
+            exporter.Export(gdvInventory);
         }
     }
 }

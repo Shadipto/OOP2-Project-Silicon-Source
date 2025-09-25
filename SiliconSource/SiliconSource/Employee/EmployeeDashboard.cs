@@ -13,6 +13,7 @@ namespace SiliconSource
     public partial class EmployeeDashboard : Form
     {
         private DataAccess Da { get; set; }
+        internal string EmployeeId { get; set; }
 
         private Form LoginForm { get; set; } // loninForm reference (association) [Dipto]
 
@@ -20,12 +21,12 @@ namespace SiliconSource
         private ucInventoryControlEmployee inventory;
         private ucCart cart;
 
-
-        public EmployeeDashboard(Form loginForm, string employeeName)
+        public EmployeeDashboard(Form loginForm, string employeeName, string employeeId)
         {
             InitializeComponent();
 
             lblName.Text = employeeName;
+            EmployeeId = employeeId;
             rbtnInventory.Checked = true;
 
             this.LoginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
@@ -97,27 +98,17 @@ namespace SiliconSource
             cart.Visible = rbtnCart.Checked;
 
 
-            if (rbtnHome.Checked)
-            {
-                this.lblTitle.Text = rbtnHome.Text;
-                
-            }
-            else if (rbtnInventory.Checked)
+            if (rbtnInventory.Checked)
             {
                 this.lblTitle.Text = rbtnInventory.Text;
                 PopulateGridView("SELECT ProductID, ProductName, Category, Price, Cost, StockQuantity FROM Product;", "Inventory");
             }
             else if (rbtnCart.Checked)
             {
+                this.cart.EmployeeId = this.EmployeeId;
                 this.lblTitle.Text = rbtnCart.Text;
                 PopulateCartGridView();
                 this.cart.UpdateGrandTotal();
-
-            }
-            else if (rbtnRecord.Checked)
-            {
-                this.lblTitle.Text = rbtnRecord.Text;
-                PopulateGridView("SELECT AU.UserID AS SalesRepID, CONCAT(AU.FirstName, ' ', AU.LastName) AS SalesRepName, COUNT(S.SaleID) AS TotalSalesCount, SUM(S.TotalAmount) AS TotalSales, ( SELECT STRING_AGG(P.ProductName, ', ') FROM SaleItem AS SI INNER JOIN Product AS P ON SI.ProductID = P.ProductID WHERE SI.SaleID IN ( SELECT SaleID FROM Sale WHERE SalesRepresentativeID = AU.UserID ) ) AS ProductsSold FROM AppUser AS AU INNER JOIN Sale AS S ON AU.UserID = S.SalesRepresentativeID GROUP BY AU.UserID, AU.FirstName, AU.LastName ORDER BY TotalSales DESC;", "Analytics");
             }
         }
 
@@ -131,6 +122,12 @@ namespace SiliconSource
         {
             this.Hide();
             LoginForm.Show();
+        }
+
+        public void RefreshCart()
+        {
+            rbtnCart.Checked = false;
+            rbtnCart.Checked = true;
         }
     }
 }
