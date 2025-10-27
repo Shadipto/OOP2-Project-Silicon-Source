@@ -65,7 +65,6 @@
             this.pnlButtons = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dgvTopPerformer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.topPerformer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLeft.SuspendLayout();
             this.pnlRecentSold.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSales)).BeginInit();
@@ -450,7 +449,6 @@
             this.pnlButtons.BorderRadius = 10;
             this.pnlButtons.BorderThickness = 2;
             this.pnlButtons.Controls.Add(this.dgvTopPerformer);
-            this.pnlButtons.Controls.Add(this.btnRefresh);
             this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlButtons.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.pnlButtons.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -524,34 +522,6 @@
             this.topPerformer.ReadOnly = true;
             this.topPerformer.Width = 250;
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Animated = true;
-            this.btnRefresh.AnimatedGIF = true;
-            this.btnRefresh.AutoRoundedCorners = true;
-            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefresh.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnRefresh.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btnRefresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnRefresh.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnRefresh.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnRefresh.Location = new System.Drawing.Point(36, 493);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(180, 45);
-            this.btnRefresh.TabIndex = 12;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnRefresh.TextOffset = new System.Drawing.Point(-17, 0);
-            // 
             // ucHomeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,7 +557,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlLowStock;
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Guna.UI2.WinForms.Guna2Separator gunaSeperator;
-        private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2PictureBox pbRightArrow;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

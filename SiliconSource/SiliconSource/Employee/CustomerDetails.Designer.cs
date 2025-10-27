@@ -41,14 +41,14 @@
             this.lblRadiant = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDevelopedBy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlCustomerDetailsRight = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblPaymentMethod = new System.Windows.Forms.Label();
+            this.cmbPaymentMethod = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.ucCustomerEmail = new SiliconSource.LoginControl();
             this.ucPhoneNumber = new SiliconSource.LoginControl();
             this.ucCustomerLastName = new SiliconSource.LoginControl();
             this.ucCustomerFirstName = new SiliconSource.LoginControl();
-            this.cmbPaymentMethod = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblPaymentMethod = new System.Windows.Forms.Label();
             this.pnlCustomerDetailsLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBilling)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
@@ -202,6 +202,34 @@
             this.pnlCustomerDetailsRight.Size = new System.Drawing.Size(482, 763);
             this.pnlCustomerDetailsRight.TabIndex = 5;
             // 
+            // lblPaymentMethod
+            // 
+            this.lblPaymentMethod.AutoSize = true;
+            this.lblPaymentMethod.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaymentMethod.Location = new System.Drawing.Point(53, 506);
+            this.lblPaymentMethod.Name = "lblPaymentMethod";
+            this.lblPaymentMethod.Size = new System.Drawing.Size(138, 22);
+            this.lblPaymentMethod.TabIndex = 19;
+            this.lblPaymentMethod.Text = "Payment Method";
+            // 
+            // cmbPaymentMethod
+            // 
+            this.cmbPaymentMethod.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPaymentMethod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbPaymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPaymentMethod.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPaymentMethod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPaymentMethod.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbPaymentMethod.ItemHeight = 30;
+            this.cmbPaymentMethod.Items.AddRange(new object[] {
+            "Card",
+            "Cash"});
+            this.cmbPaymentMethod.Location = new System.Drawing.Point(57, 531);
+            this.cmbPaymentMethod.Name = "cmbPaymentMethod";
+            this.cmbPaymentMethod.Size = new System.Drawing.Size(349, 36);
+            this.cmbPaymentMethod.TabIndex = 18;
+            // 
             // btnClear
             // 
             this.btnClear.Animated = true;
@@ -284,34 +312,6 @@
             this.ucCustomerFirstName.TabIndex = 5;
             this.ucCustomerFirstName.TextboxText = "";
             // 
-            // cmbPaymentMethod
-            // 
-            this.cmbPaymentMethod.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPaymentMethod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPaymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPaymentMethod.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPaymentMethod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPaymentMethod.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbPaymentMethod.ItemHeight = 30;
-            this.cmbPaymentMethod.Items.AddRange(new object[] {
-            "Card",
-            "Cash"});
-            this.cmbPaymentMethod.Location = new System.Drawing.Point(57, 531);
-            this.cmbPaymentMethod.Name = "cmbPaymentMethod";
-            this.cmbPaymentMethod.Size = new System.Drawing.Size(349, 36);
-            this.cmbPaymentMethod.TabIndex = 18;
-            // 
-            // lblPaymentMethod
-            // 
-            this.lblPaymentMethod.AutoSize = true;
-            this.lblPaymentMethod.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaymentMethod.Location = new System.Drawing.Point(53, 506);
-            this.lblPaymentMethod.Name = "lblPaymentMethod";
-            this.lblPaymentMethod.Size = new System.Drawing.Size(138, 22);
-            this.lblPaymentMethod.TabIndex = 19;
-            this.lblPaymentMethod.Text = "Payment Method";
-            // 
             // CustomerDetails
             // 
             this.AcceptButton = this.btnSave;
@@ -321,6 +321,7 @@
             this.Controls.Add(this.pnlCustomerDetailsRight);
             this.Controls.Add(this.pnlCustomerDetailsLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CustomerDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddInventory";

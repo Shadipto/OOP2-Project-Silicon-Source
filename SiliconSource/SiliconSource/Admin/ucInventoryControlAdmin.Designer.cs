@@ -40,7 +40,6 @@
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gdvInventory = new Guna.UI2.WinForms.Guna2DataGridView();
             this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -112,7 +111,6 @@
             this.pnlGridViewOperations.Controls.Add(this.btnUpdate);
             this.pnlGridViewOperations.Controls.Add(this.btnDelete);
             this.pnlGridViewOperations.Controls.Add(this.btnAdd);
-            this.pnlGridViewOperations.Controls.Add(this.cmbSort);
             this.pnlGridViewOperations.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlGridViewOperations.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlGridViewOperations.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -226,31 +224,6 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add Inventory";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // cmbSort
-            // 
-            this.cmbSort.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSort.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.cmbSort.BorderRadius = 20;
-            this.cmbSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSort.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbSort.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.cmbSort.ItemHeight = 30;
-            this.cmbSort.Items.AddRange(new object[] {
-            "$ Low - High",
-            "$ High - Low"});
-            this.cmbSort.ItemsAppearance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
-            this.cmbSort.Location = new System.Drawing.Point(58, 25);
-            this.cmbSort.Name = "cmbSort";
-            this.cmbSort.Size = new System.Drawing.Size(158, 36);
-            this.cmbSort.StartIndex = 1;
-            this.cmbSort.TabIndex = 0;
-            this.cmbSort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gdvInventory
             // 
@@ -410,7 +383,6 @@
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbSort;
         private System.Windows.Forms.DataGridViewTextBoxColumn productID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productName;
         private System.Windows.Forms.DataGridViewTextBoxColumn category;

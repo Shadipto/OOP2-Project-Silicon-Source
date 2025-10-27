@@ -1,13 +1,7 @@
 ﻿using Guna.UI2.WinForms.Suite;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SiliconSource.Employee
@@ -61,27 +55,104 @@ namespace SiliconSource.Employee
                     return;
                 }
 
-                // Validate email 
-                if (!string.IsNullOrWhiteSpace(email))
-                {
-                    string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-                    if (!Regex.IsMatch(email, emailPattern))
+                
+                    // Validate email 
+                    if (!string.IsNullOrWhiteSpace(email))
                     {
-                        MessageBox.Show("Please enter a valid email address.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                        if (!Regex.IsMatch(email, emailPattern))
+                        {
+                            MessageBox.Show("Please enter a valid email address.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                    // (digits 11-11 characters)
+                    if (!string.IsNullOrWhiteSpace(phone))
+                    {
+                        string phonePattern = @"^\d{11,11}$";
+                        if (!Regex.IsMatch(phone, phonePattern))
+                        {
+                            MessageBox.Show("Please enter a valid phone number (11 digits).", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                string query = $@"INSERT INTO Customer (FirstName, LastName, PhoneNumber, Email) VALUES ('{firstName}', '{lastName}', '{phone}', '{email}')";
+
+                int rows = this.Da.ExecuteDMLQuery(query);
+
+                if (rows > 0)
+                {
+
+                    MessageBox.Show("Customer saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.DialogResult = DialogResult.OK;
+
+                    string quaryToFindCustomerID = $"SELECT [CustomerID] FROM [dbo].[Customer] WHERE [FirstName] = '{firstName}' AND [Email] = '{email}' ;";
+                    DataTable dtci = Da.ExecuteQueryTable(quaryToFindCustomerID);
+
+                    this.CustomerID = int.Parse(dtci.Rows[0][0].ToString());
+                    string saleDateString = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+
+                    string quaryToAddSale = $"INSERT INTO Sale (SaleDate, TotalAmount, PaymentMethod, SalesRepresentativeID, CustomerID) " +
+                                            $"VALUES ('{saleDateString}', {this.GrandTotalFromCart}, '{paymentMethod}', '{this.EmployeeID}', {this.CustomerID});";
+
+                    int didItWork = Da.ExecuteDMLQuery(quaryToAddSale);
+                    if (didItWork > 0)
+                    {
+                        foreach (var item in CartSession.CartItems)
+                        {
+                            string insertQuary = $@"UPDATE [dbo].[Product]
+                                    SET 
+                                        [StockQuantity] = StockQuantity - {item.Quantity}
+                                    WHERE 
+                                        [ProductID] = {item.ProductID};
+                                    ";
+                            Da.ExecuteDMLQuery(insertQuary);
+
+                        }
+                        MessageBox.Show("Purchase Successful");
+                        this.Hide();
+                        EmployeeDashboardForm.Show();
+
+                        if (EmployeeDashboardForm is EmployeeDashboard dashboard)
+                        {
+                            dashboard.RefreshCart();
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Something went wrong");
+                        this.Hide();
+                        EmployeeDashboardForm.Show();
+
+                        if (EmployeeDashboardForm is EmployeeDashboard dashboard)
+                        {
+                            dashboard.RefreshCart();
+                        }
+
+                    }
+
+
+                    CartSession.CartItems.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Customer could not be saved. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Hide();
+                    EmployeeDashboardForm.Show();
+
+                    if (EmployeeDashboardForm is EmployeeDashboard dashboard)
+                    {
+                        dashboard.RefreshCart();
                     }
                 }
 
-                // (digits only, 11-11 characters)
-                if (!string.IsNullOrWhiteSpace(phone))
-                {
-                    string phonePattern = @"^\d{11,11}$";
-                    if (!Regex.IsMatch(phone, phonePattern))
-                    {
-                        MessageBox.Show("Please enter a valid phone number (7-15 digits).", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-                }
+
+
+
             }
             catch (Exception ex)
             {
@@ -91,7 +162,7 @@ namespace SiliconSource.Employee
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             EmployeeDashboardForm.Show();
 
             if (EmployeeDashboardForm is EmployeeDashboard dashboard)

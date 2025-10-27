@@ -76,34 +76,6 @@ namespace SiliconSource
         {
 
 
-            //string productToUpdate =    $@"SELECT
-            //                              ,[ProductName]
-            //                              ,[Category]
-            //                              ,[Description]
-            //                              ,[Price]
-            //                              ,[Cost]
-            //                              ,[StockQuantity]
-            //                              ,[SKU]
-            //                              ,[SupplierID]
-            //                          FROM [dbo].[Product]
-            //                          WHERE [ProductID] = {ProductID};";
-            //DataTable dstUpdate = da.ExecuteQueryTable(productToUpdate);
-
-            //ucProductName.TextboxText = dstUpdate.Rows[0][0].ToString();
-            //cmbCategory.Text = dstUpdate.Rows[0][1].ToString();
-            //ucDescription.TextboxText = dstUpdate.Rows[0][2].ToString();
-            //ucPrice.TextboxText = dstUpdate.Rows[0][3].ToString();
-            //ucCost.TextboxText = dstUpdate.Rows[0][4].ToString();
-            //ucStockQuantity.TextboxText = dstUpdate.Rows[0][5].ToString();
-            //ucSKU.TextboxText = dstUpdate.Rows[0][6].ToString();
-
-            //int supplierID = int.Parse(dstUpdate.Rows[0][7].ToString());
-
-            //string queryToFindSuppilerName = $"SELECT [SupplierName] FROM [dbo].[Supplier] WHERE [SupplierID] = '{supplierID}';";
-            //DataTable dstSup = da.ExecuteQueryTable(queryToFindSuppilerName);
-
-            //cmbSupplierName.Text = dstSup.Rows[0][0].ToString();
-
             try
             {
                 string productName = ucProductName.TextboxText;

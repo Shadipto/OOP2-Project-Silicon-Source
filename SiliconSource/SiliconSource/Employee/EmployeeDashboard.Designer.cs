@@ -184,12 +184,11 @@
             this.rbtnCart.Image = ((System.Drawing.Image)(resources.GetObject("rbtnCart.Image")));
             this.rbtnCart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnCart.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnCart.Location = new System.Drawing.Point(9, 415);
+            this.rbtnCart.Location = new System.Drawing.Point(9, 407);
             this.rbtnCart.Name = "rbtnCart";
             this.rbtnCart.Size = new System.Drawing.Size(180, 45);
             this.rbtnCart.TabIndex = 2;
             this.rbtnCart.Text = "Cart";
-            
             // 
             // rbtnInventory
             // 
@@ -212,7 +211,7 @@
             this.rbtnInventory.Image = ((System.Drawing.Image)(resources.GetObject("rbtnInventory.Image")));
             this.rbtnInventory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rbtnInventory.ImageOffset = new System.Drawing.Point(20, 0);
-            this.rbtnInventory.Location = new System.Drawing.Point(9, 350);
+            this.rbtnInventory.Location = new System.Drawing.Point(9, 329);
             this.rbtnInventory.Name = "rbtnInventory";
             this.rbtnInventory.Size = new System.Drawing.Size(180, 45);
             this.rbtnInventory.TabIndex = 2;

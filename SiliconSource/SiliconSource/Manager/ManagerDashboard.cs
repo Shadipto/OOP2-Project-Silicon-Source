@@ -31,10 +31,21 @@ namespace SiliconSource
             InitializeUserControls(); // Initialize UserControls (aggregation) [Dipto]
             lblName.Text = managerName; // Set admin name label [Dipto]
             rbtnHome.Checked = true; // default [Dipto]
+            
 
             this.LoginForm = loginForm; // Assign the loginForm for keeping single login instance [Dipto]
 
             this.Da = new DataAccess();
+
+            try
+            {
+                this.PopulateGridView(
+                    "SELECT TOP 10 P.ProductName AS SoldRecently, SI.ProductID, SI.UnitPrice AS Price FROM SaleItem AS SI INNER JOIN Sale AS S ON SI.SaleID = S.SaleID INNER JOIN Product AS P ON SI.ProductID = P.ProductID ORDER BY S.SaleDate DESC; SELECT TOP 5 P.ProductName AS TopSelling, SUM(SI.Quantity) AS SoldQuantity FROM SaleItem AS SI INNER JOIN Product AS P ON SI.ProductID = P.ProductID GROUP BY P.ProductName ORDER BY SoldQuantity DESC; SELECT ProductName AS LowStockProducts, StockQuantity AS StockLeft FROM Product WHERE StockQuantity <= 10 ORDER BY StockQuantity ASC; SELECT TOP 1 CONCAT(AU.FirstName, ' ', AU.LastName) AS TopPerformer FROM AppUser AS AU INNER JOIN Sale AS S ON AU.UserID = S.SalesRepresentativeID GROUP BY AU.FirstName, AU.LastName ORDER BY SUM(S.TotalAmount) DESC;", "Home");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading dashboard data:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             rbtnHome.CheckedChanged += RadioButton_CheckedChanged;
             rbtnInventory.CheckedChanged += RadioButton_CheckedChanged;
@@ -226,5 +237,6 @@ namespace SiliconSource
             this.Hide();
             LoginForm.Show();
         }
+
     }
 }

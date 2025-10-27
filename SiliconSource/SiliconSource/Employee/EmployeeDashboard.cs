@@ -126,8 +126,8 @@ namespace SiliconSource
 
         public void RefreshCart()
         {
-            rbtnCart.Checked = false;
-            rbtnCart.Checked = true;
+            rbtnInventory.Checked = false;
+            rbtnInventory.Checked = true;
         }
     }
 }

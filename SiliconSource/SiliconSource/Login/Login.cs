@@ -43,14 +43,14 @@ namespace SiliconSource
                     else if (dst.Rows[0][0].ToString() == "Manager")
                     {
                         this.Hide();
-                        MessageBox.Show("Manager", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Login Successfully!", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         var managerDashboard = new ManagerDashboard(this, dst.Rows[0][1].ToString());
                         managerDashboard.Show();
                     }
                     else if (dst.Rows[0][0].ToString() == "SalesRepresentative")
                     {
                         this.Hide();
-                        MessageBox.Show("Sales Representative", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Login Successfully!", "Authenticator", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         var employeeDashboard = new EmployeeDashboard(this, dst.Rows[0][1].ToString(), userID);
                         employeeDashboard.Show();
                     }
@@ -69,8 +69,10 @@ namespace SiliconSource
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred during login:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
+        
     }
 }
