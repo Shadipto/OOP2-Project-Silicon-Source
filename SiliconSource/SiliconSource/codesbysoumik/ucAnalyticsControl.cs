@@ -1,0 +1,40 @@
+﻿using System;
+using System.Data;
+using System.Windows.Forms;
+
+namespace SiliconSource
+{
+    public partial class ucAnalyticsControl : UserControl
+    {
+        public ucAnalyticsControl()
+        {
+            InitializeComponent();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (gdvSalesAnalytics.DataSource == null) return;
+
+            DataTable dt = gdvSalesAnalytics.DataSource as DataTable;
+            if (dt == null) return;
+
+            string searchValue = txtSearch.Text.Trim().Replace("'", "''");
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                (gdvSalesAnalytics.DataSource as DataTable).DefaultView.RowFilter = string.Empty;
+            }
+            else
+            {
+                dt.DefaultView.RowFilter = $"SalesRepID LIKE '%{searchValue}%' OR SalesRepName LIKE '%{searchValue}%'";
+            }
+        }
+
+        private void btnAnalytics_Click(object sender, EventArgs e)
+        {
+            PDFExporter exporter = new PDFExporter("Analytics.pdf");
+
+            exporter.Export(gdvSalesAnalytics);
+        }
+    }
+}
